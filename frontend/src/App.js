@@ -1,8 +1,9 @@
 import { Header } from "./components/Header";
 import { Game } from "./components/Game";
-import { MainMenu } from "./components/MainMenu";
+import MainMenu from "./components/MainMenu";
+import { GamesList } from "./components/GamesList";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
@@ -18,7 +19,7 @@ function App() {
             <Game />
           </Route>
           <Route path="/public_games">
-            <MainMenu />
+            <GamesList />
           </Route>
           <Route path="/">
             <MainMenu />

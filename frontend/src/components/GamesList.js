@@ -1,6 +1,6 @@
 import React from 'react';
 
-export class GameList extends React.Component {
+export class GamesList extends React.Component {
   render() {
     return (
       <div>list</div>

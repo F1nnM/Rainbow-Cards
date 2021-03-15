@@ -17,7 +17,7 @@
   right: 0;
   background: radial-gradient( circle, #777777, #00000000);
   background-color: #1f1f1f;
-  filter: blur(2px);
+  filter: blur(1px);
   position: absolute;
   z-index: -10;
   margin: -10px;

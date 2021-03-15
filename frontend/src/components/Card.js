@@ -4,7 +4,7 @@ import './Card.css'
 export class Card extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { ...props, text: props.text.replace('[[BLANK]]', '______') };
+    this.state = { ...props, text: props.text.replace('[[BLANK]]', '________') };
   }
 
   render() {
