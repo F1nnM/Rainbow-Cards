@@ -1,0 +1,51 @@
+.card {
+    font-family: 'Cards';
+    font-size: 1vw;
+    border: solid black 2px;
+    border-radius: 10px;
+    margin: 0.5%;
+    display: block;
+    text-align: start;
+    outline: none;
+}
+.card.white {
+    color: black;
+    background-color: white;
+    width: 8%;
+    border-color: black;
+}
+.card.white:hover {
+    color: #444;
+    background-color: #aaa;
+    width: 8%;
+    border-color: black;
+}
+.card.white:active {
+    color: white;
+    background-color: black;
+    border-color: white;
+}
+.card.black {
+    color: white;
+    background-color: black;
+    width: 12%;
+    border-color: white;
+}
+
+.aspect-ratio-box {
+    position: relative;
+}
+.aspect-ratio-box:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 139.6825396825%;
+}
+.aspect-ratio-box > .aspect-ratio-box-inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10%
+}

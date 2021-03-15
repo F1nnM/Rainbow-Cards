@@ -1,0 +1,19 @@
+.cardArea {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.whiteCardContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.blackCardContainer {
+    /*display: flex;*/
+    flex: 1 
+}
