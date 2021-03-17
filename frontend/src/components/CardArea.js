@@ -15,7 +15,7 @@ export class CardArea extends React.Component {
           <Card type='black' text={this.state.blackCard} />
         </div>
         <div className='whiteCardContainer'>
-          {this.state.whiteCards.map((card, index) => {
+          {this.state.whiteCards && this.state.whiteCards.map((card, index) => {
             return <Card type='white' text={card} onclick={_ => this.state.whiteCardClicked(index)}/>
           })}
         </div>

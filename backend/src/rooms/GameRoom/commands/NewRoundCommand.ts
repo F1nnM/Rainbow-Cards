@@ -3,6 +3,10 @@ import { GameRoomState } from "../GameRoomState";
 
 export class NewRoundCommand extends Command<GameRoomState> {
 
+  validate(){
+    return this.state.gameRunning;
+  }
+
   execute() {
     // remove played cards
     this.state.cardsPlayed.clear();

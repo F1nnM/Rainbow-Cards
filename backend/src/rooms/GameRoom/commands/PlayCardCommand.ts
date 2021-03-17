@@ -4,7 +4,7 @@ import { GameRoomState, PlayedCard } from "../GameRoomState";
 export class PlayCardCommand extends Command<GameRoomState, {sessionId: string, index: number}> {
 
   validate({sessionId} = this.payload){
-    return !this.state.cardsPlayed.some(card => {
+    return this.state.gameRunning && !this.state.cardsPlayed.some(card => {
       card.playedBy == sessionId
     })
   }

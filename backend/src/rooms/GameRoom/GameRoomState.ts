@@ -18,9 +18,10 @@ export class Player extends Schema {
   @type("boolean")
   connected: boolean = true;
 
-  id: string;
+  @type("boolean")
+  left: boolean = false;
 
-  isOwner: boolean = false;
+  id: string;
 }
 
 export class PlayedCard extends Schema {
@@ -41,13 +42,16 @@ export class PlayedCard extends Schema {
 export class GameRoomState extends Schema {
 
   @type("string")
-  blackCard: string;
+  blackCard: string = "Game hasn't started yet";
 
   @type({ map: Player })
   players = new MapSchema<Player>();
 
   @type("boolean")
   gameRunning: boolean = false;
+
+  @type("string")
+  winner: string;
 
   @type("uint8")
   cardsPlayedNumber: number = 0;
@@ -62,6 +66,10 @@ export class GameRoomState extends Schema {
 
   whiteCardPile: string[];
 
+  creatorLeft: boolean = false;
+
   owner: string;
+
+  private: boolean;
 
 }

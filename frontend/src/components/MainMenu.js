@@ -4,13 +4,12 @@ import { withRouter } from "react-router-dom";
 
 class MainMenu extends React.Component {
 
-  constructor(props) {
-    super(props);
-    this.state = { ...props};
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.state = { ...props};
+  // }
 
   whiteCardClicked(me, index){
-    console.log(me.state)
     switch (index){
       case 0:
         me.props.history.push("/public_games");
@@ -19,7 +18,9 @@ class MainMenu extends React.Component {
         me.props.history.push("/join");
         break;
       case 2:
-        me.state.history.push("/create");
+        me.props.history.push("/create");
+        break;
+      default:
         break;
     }
   }

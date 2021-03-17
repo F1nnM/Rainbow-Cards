@@ -16,9 +16,10 @@
     border-color: black;
 }
 .card.white:hover {
-    color: #444;
+    /*color: #444;
     background-color: #aaa;
-    border-color: black;
+    border-color: black;*/
+    transform: translateY(-20px);
 }
 .card.white:active {
     color: white;
