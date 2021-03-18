@@ -7,11 +7,12 @@ class CreateGame extends React.Component {
     this.props.client.joinOrCreate('game').then(room => {
       console.log(room.sessionId, "joined", room.name);
       localStorage.setItem('roomId', room.id)
-      localStorage.removeItem('sessionId');
+      localStorage.setItem('sessionId', room.sessionId);
       room.leave()
       me.props.history.push("/game");
     }).catch(error =>{
       alert("Error! See console for details.")
+      alert(error)
       console.log(error)
     });
   }

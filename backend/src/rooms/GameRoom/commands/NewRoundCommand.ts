@@ -12,18 +12,21 @@ export class NewRoundCommand extends Command<GameRoomState> {
     this.state.cardsPlayed.clear();
     this.state.cardsPlayedNumber = 0;
 
+    this.state.blackCard = "Up and running"
+
     // draw cards until everyone has 10 cards. Handles players joining late
     this.state.players.forEach((player)=>{
       while(player.cards.length < 10)
         player.cards.push('white_card'+ Math.floor(Math.random()*100));
     })
+
     
     //determine new card czar. Not allowed to be the same as last round
     var possibleCzars: string[] = []
 
-    this.state.players.forEach(player => {
+    this.state.players.forEach((player, id) => {
       if (!player.isCzar)
-        possibleCzars.push(player.id);
+        possibleCzars.push(id);
       else
         player.isCzar = false;
     })

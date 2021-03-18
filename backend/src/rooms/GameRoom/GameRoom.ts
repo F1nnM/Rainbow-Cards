@@ -1,6 +1,5 @@
 import { Dispatcher } from "@colyseus/command";
 import { Room, Client, Delayed } from "colyseus";
-import { CloseCommand } from "./commands/CloseCommand";
 import { CzarVoteCommand } from "./commands/CzarVoteCommand";
 import { NewRoundCommand } from "./commands/NewRoundCommand";
 import { PlayCardCommand } from "./commands/PlayCardCommand";
@@ -17,8 +16,7 @@ export class GameRoom extends Room<GameRoomState> {
     this.autoDispose = false;
     this.setState(new GameRoomState());
 
-    this.state.private = options.private;
-    this.setPrivate(true) // private until creator rejoined
+    this.setPrivate(false)//options.private)
 
     this.clock.start()
 
@@ -35,66 +33,54 @@ export class GameRoom extends Room<GameRoomState> {
       this.dispatcher.dispatch(new CzarVoteCommand(), {sessionId: client.sessionId, index: message.index})
       this.clock.setTimeout(() => {
         this.dispatcher.dispatch(new NewRoundCommand())
-      }, 2000);
+      }, 5000);
     })
 
   }
 
   onJoin (client: Client, options: any) {
-    if(!this.state.creatorLeft)
-      return;
-    if(!this.state.owner){
-      // creator joined again
+    if(!this.state.owner)
       this.state.owner = client.sessionId;
-      this.autoDispose = true;
-      this.setPrivate(this.state.private)
-      this.noCreatorReturnClose.clear()
-    }
-    this.state.players.set(client.sessionId, new Player());
+    let player = new Player();
+    player.id = client.sessionId;
+    this.state.players.set(client.sessionId, player);
   }
 
   async onLeave (client: Client, consented: boolean) {
-    if (this.state.creatorLeft){
-      console.log(client.sessionId+" left")
-      this.state.players.get(client.sessionId).connected = false;
+    this.state.players.get(client.sessionId).connected = false;
 
-      // if the owner left replace them after 10 seconds.
-      let replaceOwnerTimeout;
-      if (this.state.owner == client.sessionId){
-        console.log(client.sessionId + " was owner, searching new")
-        replaceOwnerTimeout = this.clock.setTimeout(() => {
-          let newOwner;
-          this.state.players.forEach((player) => {
-            if(player.connected)
-              newOwner = player.id
-          })
-          if (newOwner){
-            console.log("found new owner: "+newOwner)
-            this.state.owner = newOwner
-          }
-          else{
-            console.log("no new owner found, disconnecting all")
-            this.disconnect()
-          }
-        }, 10_000);
-      }
-        
-      // if (consented) {
-      //   this.state.players.get(client.sessionId).left = true;
-      // }else{
-        try{
-          await this.allowReconnection(client, 60_000*5);
-          if(replaceOwnerTimeout)
-            replaceOwnerTimeout.clear() // owner returned, don't replace
-          this.state.players.get(client.sessionId).connected = true;
-        } catch {}
-      //}
-    }else{
-      console.log("Creator left")
-      this.state.creatorLeft = true;
-      this.noCreatorReturnClose = this.clock.setTimeout(()=>this.disconnect, 60_000) //kill room if the creator doesn't return in a minute.
+    // if the owner left replace them after 10 seconds.
+    let replaceOwnerTimeout;
+    if (this.state.owner == client.sessionId){
+      console.log(client.sessionId + " was owner")
+      replaceOwnerTimeout = this.clock.setTimeout(() => {
+        if(this.state.players.get(client.sessionId).connected) // owner returned
+          return;
+        console.log("didn't return, searching new")
+        let newOwner: string;
+        this.state.players.forEach((player, id) => {
+          console.log(id +" : "+ player.connected)
+          if(player.connected)
+            newOwner = id
+        })
+        console.log(newOwner)
+        if (newOwner){
+          console.log("found new owner: "+newOwner)
+          this.state.owner = newOwner
+        }
+        else{
+          console.log("no new owner found, disconnecting all")
+          this.disconnect()
+        }
+      }, 10_000);
     }
-
+        
+    try{
+      await this.allowReconnection(client, 60_000*5);
+      this.state.players.get(client.sessionId).connected = true;
+    } catch {
+      this.state.players.get(client.sessionId).left = true;
+    }
   }
 
   onDispose() {

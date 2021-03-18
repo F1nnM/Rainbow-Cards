@@ -5,7 +5,7 @@ export class PlayCardCommand extends Command<GameRoomState, {sessionId: string, 
 
   validate({sessionId} = this.payload){
     return this.state.gameRunning && !this.state.cardsPlayed.some(card => {
-      card.playedBy == sessionId
+      return card.playedBy == sessionId
     })
   }
 

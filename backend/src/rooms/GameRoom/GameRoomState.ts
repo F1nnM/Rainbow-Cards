@@ -26,7 +26,8 @@ export class Player extends Schema {
 
 export class PlayedCard extends Schema {
 
-  @filter(function(gameRoom: GameRoomState){
+  @filter(function(client: Client, value: PlayedCard['content'], gameRoom: GameRoomState){
+    console.log(gameRoom)
     return gameRoom.cardsPlayedNumber === gameRoom.players.size
   })
   @type("string")
@@ -42,7 +43,7 @@ export class PlayedCard extends Schema {
 export class GameRoomState extends Schema {
 
   @type("string")
-  blackCard: string = "Game hasn't started yet";
+  blackCard: string;
 
   @type({ map: Player })
   players = new MapSchema<Player>();
@@ -62,14 +63,11 @@ export class GameRoomState extends Schema {
   @type("uint8")
   pointsToWin: number;
 
+  @type("string")
+  owner: string;
+
   blackCardPile: string[];
 
   whiteCardPile: string[];
-
-  creatorLeft: boolean = false;
-
-  owner: string;
-
-  private: boolean;
 
 }

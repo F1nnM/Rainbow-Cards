@@ -1,0 +1,13 @@
+.games-list {
+    display: flex;
+    flex-direction: column;
+}
+.refresh-button {
+    margin: 1%;
+    border: solid 1px black;
+    font-family: 'Cards';
+    background-color: white;
+    border-radius: 10px;
+    padding: 0.5%;
+    font-size: larger
+}
