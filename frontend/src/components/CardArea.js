@@ -12,24 +12,39 @@ export class CardArea extends React.Component {
       <div className='cardArea'>
         <div class='tableArea'>
           <div className='blackCardContainer'>
-            <Card type='black' text={this.props.blackCard.text}>
+            <Card type='black' text={this.props.blackCard.content} mark={this.props.blackCard.mark}>
               {this.props.blackCard.children}
             </Card>
           </div>
-            <div className='playedCardArea'>
+          <div className='playedCardArea'>
             {this.props.playedCards && this.props.playedCards.map((card, index) => {
               return (
-              <React.Fragment>
-                <Card type='white' text={card.content} onclick={_ => this.props.playedCardsClicked(index)} key={card.content} chosen={card.chosenByCzar}/>
-              </React.Fragment>
+                <React.Fragment>
+                  <Card type='white' text={card.content} mark={card.mark} onclick={_ => this.props.playedCardsClicked(index)} key={card.content} chosen={card.chosenByCzar} />
+                </React.Fragment>
               )
             })}
           </div>
+          {
+            this.props.sidebar &&
+            <div className='sidebarContainer'>
+              <div className='sidebarContent'>
+                {this.props.sidebar}
+              </div>
+            </div>
+          }
         </div>
 
         <div className='whiteCardContainer'>
+          {this.props.isCzar &&
+            <div className="czarContainer">
+              <div className="czarBackdrop">
+                <span className="czarPrompt">You are the Czar!</span>
+              </div>
+            </div>
+          }
           {this.props.whiteCards && this.props.whiteCards.map((card, index) => {
-            return <Card type='white' text={card} onclick={_ => this.props.whiteCardClicked(index)} key={card}/>
+            return <Card type='white' text={card.content} mark={card.mark} onclick={_ => this.props.whiteCardClicked(index)} key={card} />
           })}
         </div>
       </div>

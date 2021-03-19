@@ -4,10 +4,10 @@ import { withRouter } from "react-router-dom";
 
 class MainMenu extends React.Component {
 
-  // constructor(props) {
-  //   super(props);
-  //   this.state = { ...props};
-  // }
+  constructor(props) {
+    super(props);
+    this.state = { name: localStorage.getItem("name") || "Anonymous"};
+  }
 
   whiteCardClicked(me, index){
     switch (index){
@@ -37,12 +37,19 @@ class MainMenu extends React.Component {
 
   render() {
 
-    let whiteCards = ["Join a public game", "Join a private game", "Create a new game"]
+    let whiteCards = [{content: "Join a public game"}, {content: "Join a private game"}, {content: "Create a new game"}]
     if (localStorage.getItem("roomId"))
       whiteCards[1] += " / rejoin the last game"
 
+    let sidebar = (
+      <div>
+        <span>Set your name:</span>
+        <input value={this.state.name} onChange={e => {this.setState({...this.state, name: e.target.value})}}/><button onClick={_=>localStorage.setItem("name", this.state.name)}>Set</button>
+      </div>
+    )
+
     return (
-      <CardArea blackCard={{text: "I'd like to [[BLANK]]"}} whiteCards={whiteCards} whiteCardClicked={index => this.whiteCardClicked(this, index)} />
+      <CardArea sidebar={sidebar} blackCard={{content: "I'd like to [[BLANK]]"}} whiteCards={whiteCards} whiteCardClicked={index => this.whiteCardClicked(this, index)} />
     );
   }
 }

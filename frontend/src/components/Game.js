@@ -2,6 +2,7 @@ import React from 'react';
 import { withRouter } from 'react-router';
 import { Card } from './Card';
 import { CardArea } from "./CardArea";
+import Scoreboard from './Scoreboard';
 
 class Game extends React.Component {
 
@@ -59,7 +60,7 @@ class Game extends React.Component {
       }).catch(e => gameJoinError(this, e));
     } else {
       console.log("new connection")
-      this.props.client.joinById(this.state.roomId).then(room => {
+      this.props.client.joinById(this.state.roomId, {name: localStorage.getItem("name")}).then(room => {
         console.log(room.sessionId, "joined", room.name);
         gameJoinSuccess(this, room)
       }).catch(e => gameJoinError(this, e));
@@ -93,19 +94,21 @@ class Game extends React.Component {
       return <div></div>
     let player = this.state.room.sessionId;
 
-    let blackcardText = this.state.game.blackCard || "Invite players with the code: " + this.state.roomId
+    let blackcardText = this.state.game.blackCard.content || "Invite players with the code: " + this.state.roomId
     let blackCardChildren;
     if (this.state.game.owner === player && !this.state.game.gameRunning)
       blackCardChildren = <button onClick={_ => this.startGame()}>Start Game</button>
-    let blackcard = { text: blackcardText, children: blackCardChildren }
+    let blackcard = { content: blackcardText, children: blackCardChildren }
 
     return (
-      <CardArea 
+      <CardArea
+        isCzar={this.state.game.players[player].isCzar}
         blackCard={blackcard}
         whiteCards={this.state.game.players[player].cards}
         whiteCardClicked={ index => this.playCard(this, index)}
         playedCards={this.state.game.cardsPlayed}
-        playedCardsClicked={index => this.czarVote(this, index)}/>
+        playedCardsClicked={index => this.czarVote(this, index)}
+        sidebar={<Scoreboard players={Array.from(this.state.game.players.values())}/>}/>
     );
   }
 }

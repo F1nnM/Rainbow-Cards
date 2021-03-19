@@ -61,3 +61,9 @@
 span {
     display: block;
 }
+
+.mark {
+    position: absolute;
+    bottom: 2%;
+    right: 5%;
+}

@@ -1,0 +1,4 @@
+.scoreboard {
+    display: flex;
+    flex-direction: column;
+}

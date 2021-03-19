@@ -16,7 +16,11 @@ export class GameRoom extends Room<GameRoomState> {
     this.autoDispose = false;
     this.setState(new GameRoomState());
 
-    this.setPrivate(false)//options.private)
+    this.setPrivate(options.private);
+    this.maxClients = Math.min(options.maxPlayers,50);
+    this.state.sets = options.sets;
+
+    this.state.initStacks();
 
     this.clock.start()
 
@@ -43,6 +47,8 @@ export class GameRoom extends Room<GameRoomState> {
       this.state.owner = client.sessionId;
     let player = new Player();
     player.id = client.sessionId;
+    if (options.name)
+      player.name = options.name
     this.state.players.set(client.sessionId, player);
   }
 
@@ -76,7 +82,7 @@ export class GameRoom extends Room<GameRoomState> {
     }
         
     try{
-      await this.allowReconnection(client, 60_000*5);
+      await this.allowReconnection(client, 60*5);
       this.state.players.get(client.sessionId).connected = true;
     } catch {
       this.state.players.get(client.sessionId).left = true;

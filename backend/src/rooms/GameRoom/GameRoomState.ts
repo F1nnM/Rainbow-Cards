@@ -1,13 +1,24 @@
 import { Schema, ArraySchema, MapSchema, type, filter } from "@colyseus/schema";
 import { Client } from "colyseus"
+import { blackSets, getShuffledStack, whiteSets } from "../../cards";
+
+export class Card extends Schema {
+
+  @type("string")
+  content: string;
+
+  @type("string")
+  mark: string;
+
+}
 
 export class Player extends Schema {
 
   @filter(function(this: Player, client: Client, value: Player['cards'], root: Schema) {
     return client.sessionId === this.id
   })
-  @type(["string"])
-  cards = new ArraySchema<string>();
+  @type([ Card ])
+  cards = new ArraySchema<Card>();
 
   @type("uint8")
   score: number = 0;
@@ -21,17 +32,25 @@ export class Player extends Schema {
   @type("boolean")
   left: boolean = false;
 
+  @type("string")
+  name: string = "Anonymous";
+
   id: string;
 }
 
 export class PlayedCard extends Schema {
 
   @filter(function(client: Client, value: PlayedCard['content'], gameRoom: GameRoomState){
-    console.log(gameRoom)
     return gameRoom.cardsPlayedNumber === gameRoom.players.size
   })
   @type("string")
   content: string;
+
+  @filter(function(client: Client, value: PlayedCard['content'], gameRoom: GameRoomState){
+    return gameRoom.cardsPlayedNumber === gameRoom.players.size
+  })
+  @type("string")
+  mark: string;
 
   @type("boolean")
   chosenByCzar: boolean = false;
@@ -42,8 +61,8 @@ export class PlayedCard extends Schema {
 
 export class GameRoomState extends Schema {
 
-  @type("string")
-  blackCard: string;
+  @type( Card )
+  blackCard: Card;
 
   @type({ map: Player })
   players = new MapSchema<Player>();
@@ -66,8 +85,37 @@ export class GameRoomState extends Schema {
   @type("string")
   owner: string;
 
-  blackCardPile: string[];
+  blackCardStack: Card[];
 
-  whiteCardPile: string[];
+  whiteCardStack: Card[];
+
+  sets: string[];
+
+  initStacks(){
+    this.refillBlackStack()
+    this.refillWhiteStack()
+  }
+
+  refillWhiteStack() {
+    this.whiteCardStack = [];
+    let newCards = getShuffledStack(whiteSets, this.sets);
+    for (let cardData of newCards){
+      let card = new Card();
+      card.content = cardData.text;
+      card.mark = cardData.mark;
+      this.whiteCardStack.push(card);
+    }
+  }
+
+  refillBlackStack() {
+    this.blackCardStack = []
+    let newCards = getShuffledStack(blackSets, this.sets)
+    for (let cardData of newCards){
+      let card = new Card();
+      card.content = cardData.text;
+      card.mark = cardData.mark;
+      this.blackCardStack.push(card);
+    }
+  }
 
 }

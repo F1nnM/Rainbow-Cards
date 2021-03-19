@@ -12,12 +12,17 @@ export class NewRoundCommand extends Command<GameRoomState> {
     this.state.cardsPlayed.clear();
     this.state.cardsPlayedNumber = 0;
 
-    this.state.blackCard = "Up and running"
+    this.state.blackCard = this.state.blackCardStack.pop()
+    if(this.state.blackCardStack.length == 0)
+      this.state.refillBlackStack()
 
     // draw cards until everyone has 10 cards. Handles players joining late
     this.state.players.forEach((player)=>{
-      while(player.cards.length < 10)
-        player.cards.push('white_card'+ Math.floor(Math.random()*100));
+      while(player.cards.length < 10){
+        player.cards.push(this.state.whiteCardStack.pop())
+        if(this.state.whiteCardStack.length == 0)
+          this.state.refillWhiteStack()
+      }
     })
 
     

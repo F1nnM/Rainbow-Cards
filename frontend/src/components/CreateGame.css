@@ -1,0 +1,32 @@
+.start-button {
+    margin: 1%;
+    border: solid 1px black;
+    font-family: 'Cards';
+    background-color: white;
+    border-radius: 10px;
+    padding: 0.5%;
+    font-size: larger
+}
+.options {
+    margin: 1%;
+    border: solid 1px black;
+    font-family: 'Cards';
+    background-color: white;
+    border-radius: 10px;
+    padding: 0.5%;
+}
+.options.warn {
+    background-color: orange;
+}
+.checkboxContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+.checkboxWithLabel {
+    display: inline-block;
+    margin-bottom: 0.5%;
+    margin-right: 1%;
+}
+input[type="number"] {
+    margin-left: 1%;
+}
