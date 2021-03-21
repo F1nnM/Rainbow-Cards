@@ -55,7 +55,7 @@ export class GameRoom extends Room<GameRoomState> {
     let replaceOwnerTimeout;
     if (this.state.players.get(client.sessionId).isOwner){
       console.log(client.sessionId + " was owner")
-      replaceOwnerTimeout = this.clock.setTimeout(() => this.dispatcher.dispatch(new NewOwnerCommand()), 10_000);
+      replaceOwnerTimeout = this.clock.setTimeout(() => this.dispatcher.dispatch(new NewOwnerCommand(), {lastOwnerId: client.sessionId}), 10_000);
     }
         
     try{

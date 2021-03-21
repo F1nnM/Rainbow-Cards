@@ -126,19 +126,19 @@ class Game extends React.Component {
   render() {
     if (!this.props.room || !this.state.game)
       return <div></div>
-    let player = this.props.room.sessionId;
+    let player = this.state.game.players[this.props.room.sessionId];
 
     let blackcardText = this.state.game.blackCard.content || "Invite players with the code: " + this.state.roomId
     let blackCardChildren;
-    if (this.state.game.owner === player && !this.state.game.gameRunning)
+    if (player.isOwner && !this.state.game.gameRunning)
       blackCardChildren = <button onClick={_ => this.startGame()}>Start Game</button>
     let blackcard = { content: blackcardText, children: blackCardChildren }
 
     return (
       <CardArea
-        isCzar={this.state.game.players[player].isCzar}
+        isCzar={player.isCzar}
         blackCard={blackcard}
-        whiteCards={this.state.game.players[player].cards}
+        whiteCards={player.cards}
         whiteCardClicked={ index => this.playCard(this, index)}
         playedCards={this.state.game.cardsPlayed}
         playedCardsClicked={index => this.czarVote(this, index)}
