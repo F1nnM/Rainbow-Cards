@@ -6,10 +6,17 @@ export class JoinGameCommand extends Command<GameRoomState, {sessionId: string, 
   execute({sessionId, name} = this.payload) {
     let player = new Player();
     player.id = sessionId;
-    if(!this.state.hasOwner)
-      player.isOwner = true
+    if(!this.state.hasOwner){
+        player.isOwner = true;
+        this.state.hasOwner = true;
+    }
     if (name)
-      player.name = name
+      player.name = name;
+
+    if (!this.state.czarsTurn) {
+        
+    }
+    
     this.state.players.set(sessionId, player);
   }
 
