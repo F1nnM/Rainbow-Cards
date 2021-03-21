@@ -35,20 +35,29 @@ export class Player extends Schema {
   @type("string")
   name: string = "Anonymous";
 
+  @type("boolean")
+  isOwner: boolean = false;
+
   id: string;
+}
+
+function everybodyPlayedFilter(client: Client, value: PlayedCard['content'], gameRoom: GameRoomState){
+  let everybodyOnlinePlayed = false;
+  gameRoom.players.forEach((player, id) => {
+    if( !player.connected || player.isCzar)
+      return
+    everybodyOnlinePlayed = everybodyOnlinePlayed || gameRoom.cardsPlayed.some(card => card.playedBy == client.id);
+  })
+  return everybodyOnlinePlayed
 }
 
 export class PlayedCard extends Schema {
 
-  @filter(function(client: Client, value: PlayedCard['content'], gameRoom: GameRoomState){
-    return gameRoom.cardsPlayedNumber === gameRoom.players.size
-  })
+  @filter(everybodyPlayedFilter)
   @type("string")
   content: string;
 
-  @filter(function(client: Client, value: PlayedCard['content'], gameRoom: GameRoomState){
-    return gameRoom.cardsPlayedNumber === gameRoom.players.size
-  })
+  @filter(everybodyPlayedFilter)
   @type("string")
   mark: string;
 
@@ -82,14 +91,13 @@ export class GameRoomState extends Schema {
   @type("uint8")
   pointsToWin: number;
 
-  @type("string")
-  owner: string;
-
   blackCardStack: Card[];
 
   whiteCardStack: Card[];
 
   sets: string[];
+
+  hasOwner: boolean = false;
 
   initStacks(){
     this.refillBlackStack()

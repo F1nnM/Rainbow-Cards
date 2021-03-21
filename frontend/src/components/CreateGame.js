@@ -7,7 +7,7 @@ class CreateGame extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { sets: [] }
+    this.state = { sets: [], currentTotalWhite: 0, currentTotalBlack: 0, maxPlayers: 10, private: false  }
   }
 
   componentDidMount() {
@@ -22,7 +22,7 @@ class CreateGame extends React.Component {
             currentTotalWhite += data[set].white;
           }
         }
-        this.setState({ ...this.state, sets: data, currentTotalWhite, currentTotalBlack, maxPlayers: 10, private: false })
+        this.setState({ ...this.state, sets: data, currentTotalWhite, currentTotalBlack})
       });
   }
 
@@ -34,10 +34,8 @@ class CreateGame extends React.Component {
     }
     this.props.client.create('game', {maxPlayers: this.state.maxPlayers, sets: selectedSets, private: this.state.private, name: localStorage.getItem("name")}).then(room => {
       console.log(room.sessionId, "joined", room.name);
-      localStorage.setItem('roomId', room.id)
-      localStorage.setItem('sessionId', room.sessionId);
-      room.leave()
-      me.props.history.push("/game");
+      me.props.setRoom(room)
+      me.props.history.push("/game")
     }).catch(error => {
       alert("Error! See console for details.")
       console.log(error)
@@ -69,7 +67,7 @@ class CreateGame extends React.Component {
           <div className="checkboxContainer">
             {Object.entries(this.state.sets).map(([set, metadata]) => {
               return (
-                <div className="checkboxWithLabel">
+                <div className="checkboxWithLabel" key={set}>
                   <input type="checkbox" checked={metadata.checked} onChange={e => this.toggleSelection(this, set)} />
                   <label>{set}</label>
                 </div>)

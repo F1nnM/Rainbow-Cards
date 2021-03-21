@@ -1,6 +1,8 @@
 import { Dispatcher } from "@colyseus/command";
 import { Room, Client, Delayed } from "colyseus";
 import { CzarVoteCommand } from "./commands/CzarVoteCommand";
+import { JoinGameCommand } from "./commands/JoinGameCommand";
+import { NewOwnerCommand } from "./commands/NewOwnerCommand";
 import { NewRoundCommand } from "./commands/NewRoundCommand";
 import { PlayCardCommand } from "./commands/PlayCardCommand";
 import { StartGameCommand } from "./commands/StartGameCommand";
@@ -43,13 +45,7 @@ export class GameRoom extends Room<GameRoomState> {
   }
 
   onJoin (client: Client, options: any) {
-    if(!this.state.owner)
-      this.state.owner = client.sessionId;
-    let player = new Player();
-    player.id = client.sessionId;
-    if (options.name)
-      player.name = options.name
-    this.state.players.set(client.sessionId, player);
+    this.dispatcher.dispatch(new JoinGameCommand(), {sessionId: client.sessionId, name: options.name})
   }
 
   async onLeave (client: Client, consented: boolean) {
@@ -57,32 +53,15 @@ export class GameRoom extends Room<GameRoomState> {
 
     // if the owner left replace them after 10 seconds.
     let replaceOwnerTimeout;
-    if (this.state.owner == client.sessionId){
+    if (this.state.players.get(client.sessionId).isOwner){
       console.log(client.sessionId + " was owner")
-      replaceOwnerTimeout = this.clock.setTimeout(() => {
-        if(this.state.players.get(client.sessionId).connected) // owner returned
-          return;
-        console.log("didn't return, searching new")
-        let newOwner: string;
-        this.state.players.forEach((player, id) => {
-          console.log(id +" : "+ player.connected)
-          if(player.connected)
-            newOwner = id
-        })
-        console.log(newOwner)
-        if (newOwner){
-          console.log("found new owner: "+newOwner)
-          this.state.owner = newOwner
-        }
-        else{
-          console.log("no new owner found, disconnecting all")
-          this.disconnect()
-        }
-      }, 10_000);
+      replaceOwnerTimeout = this.clock.setTimeout(() => this.dispatcher.dispatch(new NewOwnerCommand()), 10_000);
     }
         
     try{
-      await this.allowReconnection(client, 60*5);
+      await this.allowReconnection(client, 60*0.5);
+      if (replaceOwnerTimeout)
+        replaceOwnerTimeout.clear()
       this.state.players.get(client.sessionId).connected = true;
     } catch {
       this.state.players.get(client.sessionId).left = true;

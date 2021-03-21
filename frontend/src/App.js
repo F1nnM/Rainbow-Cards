@@ -12,10 +12,17 @@ import {
 import './App.css';
 
 import * as Colyseus from 'colyseus.js'
-
-var client = new Colyseus.Client('ws://dellfinnlin.fritz.box:2567');
-
 class App extends React.Component{
+
+  constructor(props){
+    super(props)
+    this.state = {client: new Colyseus.Client('ws://dellfinnlin.fritz.box:2567'), room: null}
+  }
+
+  setRoom(me, room) {
+    me.setState({...me.state, room})
+    console.log("Updated room")
+  }
 
   render(){
     return (
@@ -23,13 +30,13 @@ class App extends React.Component{
         <Header />
         <Switch>
           <Route path="/create">
-            <CreateGame client={client}/>
+            <CreateGame client={this.state.client} setRoom={(room) => this.setRoom(this, room)}/>
           </Route>
           <Route path="/game">
-            <Game client={client}/>
+            <Game client={this.state.client} room={this.state.room} setRoom={(room) => this.setRoom(this, room)}/>
           </Route>
           <Route path="/public_games">
-            <GamesList client={client}/>
+            <GamesList client={this.state.client}/>
           </Route>
           <Route path="/">
             <MainMenu />

@@ -4,17 +4,13 @@ import React from 'react';
 import './Scoreboard.css'
 export default class Scoreboard extends React.Component {
 
-  constructor(props) {
-    super(props);
-  }
-
   render() {
       console.log(this.props.players)
     return (
       <div className="scoreboard">
-          {this.props.players.map(player => {
+          {this.props.players.map((player, index) => {
               return (
-              <div className="player">{player.name}: {player.score} {!player.connected?player.left?'(Left)':'(Disconnected)':''}</div>
+              <div className="player" key={player.name+index}>{player.name}{player.isOwner}: {player.score} {!player.connected?player.left?'(Left)':'(Disconnected)':''}</div>
               )
           })}
       </div>

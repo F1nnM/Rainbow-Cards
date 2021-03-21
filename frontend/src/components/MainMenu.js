@@ -15,23 +15,29 @@ class MainMenu extends React.Component {
         me.props.history.push("/public_games");
         break;
       case 1:
-        let oldRoomId = localStorage.getItem("roomId");
-        let roomId = prompt("Enter the game code:", oldRoomId)
-        if (roomId.length !== 9){
-          alert("Invalid code! A valid one is 9 characters long")
-          break;
-        }
-        if (roomId!==oldRoomId){
-          localStorage.setItem("roomId", roomId);
-          localStorage.removeItem("sessionId");
-        }
+        this.joinPrivate()
         me.props.history.push("/game");
         break;
       case 2:
         me.props.history.push("/create");
         break;
+      case 3:
+        me.props.history.push("/game");
+        break;
       default:
         break;
+    }
+  }
+
+  joinPrivate(){
+    let roomId = prompt("Enter the game code:")
+    if (!roomId || roomId.length !== 9){
+      alert("Invalid code! A valid one is 9 characters long")
+      return;
+    }
+    if (roomId !== localStorage.getItem("roomId")){
+      localStorage.setItem("roomId", roomId);
+      localStorage.removeItem("sessionId");
     }
   }
 
@@ -39,7 +45,7 @@ class MainMenu extends React.Component {
 
     let whiteCards = [{content: "Join a public game"}, {content: "Join a private game"}, {content: "Create a new game"}]
     if (localStorage.getItem("roomId"))
-      whiteCards[1] += " / rejoin the last game"
+      whiteCards.push({content: "Rejoin the last game (might be closed already)"})
 
     let sidebar = (
       <div>

@@ -21,8 +21,10 @@ class GamesList extends React.Component {
   }
 
   openGame(roomId){
-    localStorage.setItem("roomId", roomId);
-    localStorage.removeItem("sessionId");
+    if(localStorage.getItem("roomId") !== roomId){
+      localStorage.removeItem("sessionId");
+      localStorage.setItem("roomId", roomId);
+    }
     this.props.history.push("/game");
   }
 
