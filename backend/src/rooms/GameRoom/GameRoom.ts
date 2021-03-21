@@ -10,7 +10,7 @@ import { GameRoomState, Player } from "./GameRoomState";
 
 export class GameRoom extends Room<GameRoomState> {
 
-  dispatcher = new Dispatcher(this);
+  dispatcher: Dispatcher ;
 
   noCreatorReturnClose: Delayed;
 
@@ -26,9 +26,11 @@ export class GameRoom extends Room<GameRoomState> {
 
     this.clock.start()
 
+    this.dispatcher = new Dispatcher(this);
+
     this.onMessage("startGame", (client, message) => {
       this.dispatcher.dispatch(new StartGameCommand(), {sessionId: client.sessionId})
-      this.dispatcher.dispatch(new NewRoundCommand())
+      this.dispatcher.dispatch(new NewRoundCommand(), {wait: 0})
     });
 
     this.onMessage("playCard", (client, message) => {
@@ -36,10 +38,7 @@ export class GameRoom extends Room<GameRoomState> {
     });
 
     this.onMessage("czarVote", (client, message) => {
-      this.dispatcher.dispatch(new CzarVoteCommand(), {sessionId: client.sessionId, index: message.index})
-      this.clock.setTimeout(() => {
-        this.dispatcher.dispatch(new NewRoundCommand())
-      }, 5000);
+      let czarVotePromise = this.dispatcher.dispatch(new CzarVoteCommand(), {sessionId: client.sessionId, index: message.index})
     })
 
   }

@@ -1,10 +1,11 @@
 import { Command } from "@colyseus/command";
 import { GameRoomState } from "../GameRoomState";
+import { NewRoundCommand } from "./NewRoundCommand";
 
 export class CzarVoteCommand extends Command<GameRoomState, {sessionId: string, index: number}> {
 
   validate({sessionId} = this.payload){
-    return this.state.gameRunning && this.state.players.get(sessionId).isCzar;
+    return this.state.gameRunning && this.state.players.get(sessionId).isCzar && this.state.czarsTurn && !this.state.czarDidVote;
   }
 
   execute({index} = this.payload) {
@@ -17,7 +18,8 @@ export class CzarVoteCommand extends Command<GameRoomState, {sessionId: string, 
       this.state.winner = winner.id;
       this.clock.setTimeout(this.room.disconnect, 60_000)
     }
-    
+    this.state.czarDidVote = true;
+    return [new NewRoundCommand().setPayload({wait: 5000})]
   }
 
 }

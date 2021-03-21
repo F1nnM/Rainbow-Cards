@@ -53,27 +53,28 @@ class Game extends React.Component {
     this.props.history.replace("/")
   }
 
-  joinGame() {
-    if (!this.state.roomId)
-      this.clearGameAfterError()
-    else if (this.state.sessionId) {
+  joinGame(me = this) {
+    console.log("joining init")
+    if (!me.state.roomId)
+      me.clearGameAfterError()
+    else if (me.state.sessionId) {
       console.log("reconnecting")
 
-      this.props.client.reconnect(this.state.roomId, this.state.sessionId).then(room => {
+      me.props.client.reconnect(me.state.roomId, me.state.sessionId).then(room => {
         console.log(room.sessionId, "joined", room.name);
-        this.joinedGame(this, room)
+        me.joinedGame(me, room)
       }).catch(e => {
         if ( e.message.match(/room "[^"]*" not found/gi)){
           alert("Couldn't find the selected room!")
-          this.clearGameAfterError()
+          me.clearGameAfterError()
         } else if(e.message.match(/room "[^"]*" not found/gi)){
           alert("Your game session for this room has expired!")
-          this.clearGameAfterError()
+          me.clearGameAfterError()
         }
         else{
           console.log(e.message)
           alert("RECONNECT Error, see console for details. Retrying in 10 seconds.")
-          setTimeout(this.joinGame, 10_000)
+          setTimeout(_ => me.joinGame(this), 10_000)
         }
       });
 
@@ -136,7 +137,7 @@ class Game extends React.Component {
 
     return (
       <CardArea
-        isCzar={player.isCzar}
+        blocker={player.isCzar?"You are the czar!":this.state.game.czarsTurn?"It's the czars turn to vote":null}
         blackCard={blackcard}
         whiteCards={player.cards}
         whiteCardClicked={ index => this.playCard(this, index)}

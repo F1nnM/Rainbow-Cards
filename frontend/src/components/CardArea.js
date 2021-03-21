@@ -33,10 +33,10 @@ export class CardArea extends React.Component {
         </div>
 
         <div className='whiteCardContainer'>
-          {this.props.isCzar &&
+          {this.props.blocker &&
             <div className="czarContainer">
               <div className="czarBackdrop">
-                <span className="czarPrompt">You are the Czar!</span>
+                <span className="czarPrompt">{this.props.blocker}</span>
               </div>
             </div>
           }

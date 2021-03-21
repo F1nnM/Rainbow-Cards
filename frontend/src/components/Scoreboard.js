@@ -10,7 +10,7 @@ export default class Scoreboard extends React.Component {
       <div className="scoreboard">
           {this.props.players.map((player, index) => {
               return (
-              <div className="player" key={player.name+index}>{player.name}{player.isOwner}: {player.score} {!player.connected?player.left?'(Left)':'(Disconnected)':''}</div>
+              <div className="player" key={player.name+index}>{player.name}{player.isOwner?" (Owner)": ""}: {player.score} {!player.connected?player.left?'(Left)':'(Disconnected)':''}</div>
               )
           })}
       </div>

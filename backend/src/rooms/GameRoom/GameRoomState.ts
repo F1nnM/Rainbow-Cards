@@ -41,23 +41,17 @@ export class Player extends Schema {
   id: string;
 }
 
-function everybodyPlayedFilter(client: Client, value: PlayedCard['content'], gameRoom: GameRoomState){
-  let everybodyOnlinePlayed = false;
-  gameRoom.players.forEach((player, id) => {
-    if( !player.connected || player.isCzar)
-      return
-    everybodyOnlinePlayed = everybodyOnlinePlayed || gameRoom.cardsPlayed.some(card => card.playedBy == client.id);
-  })
-  return everybodyOnlinePlayed
-}
-
 export class PlayedCard extends Schema {
 
-  @filter(everybodyPlayedFilter)
+  @filter(function everybodyPlayedFilter(client: Client, value: PlayedCard['content'], gameRoom: GameRoomState){
+    return gameRoom.czarsTurn
+  })
   @type("string")
   content: string;
 
-  @filter(everybodyPlayedFilter)
+  @filter(function everybodyPlayedFilter(client: Client, value: PlayedCard['content'], gameRoom: GameRoomState){
+    return gameRoom.czarsTurn
+  })
   @type("string")
   mark: string;
 
@@ -82,14 +76,16 @@ export class GameRoomState extends Schema {
   @type("string")
   winner: string;
 
-  @type("uint8")
-  cardsPlayedNumber: number = 0;
-
   @type([ PlayedCard ])
   cardsPlayed = new ArraySchema<PlayedCard>();
 
   @type("uint8")
   pointsToWin: number;
+
+  @type("boolean")
+  czarsTurn: boolean = false;
+
+  czarDidVote: boolean = false;
 
   blackCardStack: Card[];
 

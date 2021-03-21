@@ -9,6 +9,7 @@ export class StartGameCommand extends Command<GameRoomState, {sessionId: string}
 
   execute() {
     this.state.gameRunning = true;
+    this.room.lock()
   }
 
 }

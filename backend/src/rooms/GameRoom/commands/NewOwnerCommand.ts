@@ -17,6 +17,7 @@ export class NewOwnerCommand extends Command<GameRoomState, {lastOwnerId: string
     if (newOwner){
         console.log("found new owner: "+newOwner)
         this.state.players.get(newOwner).isOwner = true;
+        this.state.players.get(lastOwnerId).isOwner = false;
     }
     else{
         console.log("no new owner found, disconnecting all")

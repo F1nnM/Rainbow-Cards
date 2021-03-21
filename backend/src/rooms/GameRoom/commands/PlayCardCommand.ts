@@ -5,7 +5,7 @@ import { GameRoomState, PlayedCard } from "../GameRoomState";
 export class PlayCardCommand extends Command<GameRoomState, {sessionId: string, index: number}> {
 
   validate({sessionId} = this.payload){
-    return this.state.gameRunning && !this.state.players.get(sessionId).isCzar && !this.state.cardsPlayed.some(card => {
+    return this.state.gameRunning && !this.state.players.get(sessionId).isCzar && !this.state.czarsTurn && !this.state.cardsPlayed.some(card => {
       return card.playedBy == sessionId
     })
   }
@@ -18,11 +18,20 @@ export class PlayCardCommand extends Command<GameRoomState, {sessionId: string, 
     card.playedBy = sessionId;
     this.state.cardsPlayed.push(card);
     this.state.players.get(sessionId).cards.deleteAt(index);
-    if(this.state.cardsPlayedNumber === (this.state.players.size - 1)){ // see below comment
+
+    let everybodyOnlinePlayed = false;
+    this.state.players.forEach((player, id) => {
+      if( !player.connected || player.isCzar)
+        return
+      everybodyOnlinePlayed = everybodyOnlinePlayed || this.state.cardsPlayed.some(card => card.playedBy == id);
+    })
+
+    if(everybodyOnlinePlayed){
       shuffleArrayInplace(this.state.cardsPlayed);
+      this.state.czarsTurn = true;
     }
-    
-    this.state.cardsPlayedNumber++; // setting the card number equal to the player number will show all cards. We want to show them after they have been shuffled.
   }
+
+  
 
 }
