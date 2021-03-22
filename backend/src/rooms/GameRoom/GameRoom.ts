@@ -21,6 +21,7 @@ export class GameRoom extends Room<GameRoomState> {
     this.setPrivate(options.private);
     this.maxClients = Math.min(options.maxPlayers,50);
     this.state.sets = options.sets;
+    this.state.pointsToWin = options.pointsNeeded;
 
     this.state.initStacks();
 

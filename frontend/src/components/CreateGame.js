@@ -7,7 +7,7 @@ class CreateGame extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { sets: [], currentTotalWhite: 0, currentTotalBlack: 0, maxPlayers: 10, private: false  }
+    this.state = { sets: [], currentTotalWhite: 0, currentTotalBlack: 0, maxPlayers: 10, private: false, pointsNeeded: 10 }
   }
 
   componentDidMount() {
@@ -32,7 +32,7 @@ class CreateGame extends React.Component {
       if (this.state.sets[set].checked)
         selectedSets.push(set)
     }
-    this.props.client.create('game', {maxPlayers: this.state.maxPlayers, sets: selectedSets, private: this.state.private, name: localStorage.getItem("name")}).then(room => {
+    this.props.client.create('game', {maxPlayers: this.state.maxPlayers, pointsNeeded: this.state.pointsNeeded, sets: selectedSets, private: this.state.private, name: localStorage.getItem("name")}).then(room => {
       console.log(room.sessionId, "joined", room.name);
       me.props.setRoom(room)
       me.props.history.push("/game")
@@ -80,7 +80,11 @@ class CreateGame extends React.Component {
         </div>
         <div className="options">
           <label>Max. number of players:</label>
-          <input type="number" min="3" max="50" value={this.state.maxPlayers} onChange={e => this.setState({...this.state, maxPlayers: e.target.value})}/>
+          <input type="number" min="3" max="50" value={this.state.maxPlayers} onChange={e => this.setState({...this.state, maxPlayers: parseInt(e.target.value)})}/>
+        </div>
+        <div className="options">
+          <label>Points needed to win: </label>
+          <input type="number" min="1" max="50" value={this.state.pointsNeeded} onChange={e => this.setState({...this.state, pointsNeeded: parseInt(e.target.value)})}/>
         </div>
         <div className="options">
           <label>Make this game private: </label>

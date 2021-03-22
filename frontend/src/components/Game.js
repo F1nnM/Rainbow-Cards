@@ -129,21 +129,25 @@ class Game extends React.Component {
       return <div></div>
     let player = this.state.game.players[this.props.room.sessionId];
 
-    let blackcardText = this.state.game.blackCard.content || "Invite players with the code: " + this.state.roomId
+    let blackcardText = this.state.game.winner? 'And the winner is [[BLANK]]' : this.state.game.blackCard.content || "Invite players with the code: " + this.state.roomId
     let blackCardChildren;
-    if (player.isOwner && !this.state.game.gameRunning)
+    if (player.isOwner && !this.state.game.gameRunning && !this.state.game.winner)
       blackCardChildren = <button onClick={_ => this.startGame()}>Start Game</button>
     let blackcard = { content: blackcardText, children: blackCardChildren }
 
+    let playedCards = this.state.game.winner ? [{content: this.state.game.players[this.state.game.winner].name, mark: "WIN", chosenByCzar: true}]: this.state.game.cardsPlayed
     return (
+      
       <CardArea
-        blocker={player.isCzar?"You are the czar!":this.state.game.czarsTurn?"It's the czars turn to vote":null}
+        blocker={this.state.game.winner?'Game over':player.isCzar?"You are the czar!":this.state.game.czarsTurn?"It's the czars turn to vote":null}
+        enablePlayedCards={player.isCzar && !this.state.game.czarDidVote}
         blackCard={blackcard}
         whiteCards={player.cards}
         whiteCardClicked={ index => this.playCard(this, index)}
-        playedCards={this.state.game.cardsPlayed}
+        playedCards={playedCards}
         playedCardsClicked={index => this.czarVote(this, index)}
-        sidebar={<Scoreboard players={Array.from(this.state.game.players.values())}/>}/>
+        sidebar={<Scoreboard players={Array.from(this.state.game.players.values())}/>}
+        trustPlayedCards={!this.state.game.winner}/>
     );
   }
 }

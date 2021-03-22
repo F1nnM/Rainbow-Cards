@@ -9,15 +9,15 @@ export class CardArea extends React.Component {
       <div className='cardArea'>
         <div className='tableArea'>
           <div className='blackCardContainer'>
-            <Card type='black' text={this.props.blackCard.content} mark={this.props.blackCard.mark}>
+            <Card trust={true} type='black' text={this.props.blackCard.content} mark={this.props.blackCard.mark}>
               {this.props.blackCard.children}
             </Card>
           </div>
-          <div className='playedCardArea'>
+          <div className={'playedCardArea '+(this.props.enablePlayedCards?'':'blocked')}>
             {this.props.playedCards && this.props.playedCards.map((card, index) => {
               return (
                 <React.Fragment>
-                  <Card type='white' text={card.content} mark={card.mark} onclick={_ => this.props.playedCardsClicked(index)} key={card.content + "" + index} chosen={card.chosenByCzar} />
+                  <Card trust={this.props.trustPlayedCards} type='white' text={card.content} mark={card.mark} onclick={_ => this.props.playedCardsClicked(index)} key={card.content + "" + index} chosen={card.chosenByCzar} />
                 </React.Fragment>
               )
             })}
@@ -41,7 +41,7 @@ export class CardArea extends React.Component {
             </div>
           }
           {this.props.whiteCards && this.props.whiteCards.map((card, index) => {
-            return <Card type='white' text={card.content} mark={card.mark} onclick={_ => this.props.whiteCardClicked(index)} key={card.content + "" + index} />
+            return <Card trust={true} type='white' text={card.content} mark={card.mark} onclick={_ => this.props.whiteCardClicked(index)} key={card.content + "" + index} />
           })}
         </div>
       </div>

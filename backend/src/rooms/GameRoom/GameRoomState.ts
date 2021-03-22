@@ -85,6 +85,7 @@ export class GameRoomState extends Schema {
   @type("boolean")
   czarsTurn: boolean = false;
 
+  @type("boolean")
   czarDidVote: boolean = false;
 
   blackCardStack: Card[];

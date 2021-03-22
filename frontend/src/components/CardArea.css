@@ -36,7 +36,8 @@
     align-items: flex-start;
     flex-wrap: wrap;
     overflow-y: auto;
-    flex: 1
+    flex: 1;
+    position: relative;
 }
 
 .sidebarContainer {
@@ -75,4 +76,13 @@
 .czarBackdrop {
     background-color: #000000aa;
     box-shadow: 0px 0px 40px 40px #000000aa;
+}
+
+.blocked::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }

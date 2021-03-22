@@ -1,5 +1,6 @@
 import { Command } from "@colyseus/command";
 import { GameRoomState } from "../GameRoomState";
+import { DisplayWinnerCommand } from "./DisplayWinnerCommand";
 import { NewRoundCommand } from "./NewRoundCommand";
 
 export class CzarVoteCommand extends Command<GameRoomState, {sessionId: string, index: number}> {
@@ -10,16 +11,15 @@ export class CzarVoteCommand extends Command<GameRoomState, {sessionId: string, 
 
   execute({index} = this.payload) {
     this.state.cardsPlayed[index].chosenByCzar = true;
+    this.state.czarDidVote = true;
     let winnerId: string = this.state.cardsPlayed[index].playedBy;
     let winner = this.state.players.get(winnerId);
     winner.score ++;
-    if (winner.score >= this.state.pointsToWin){
-      this.state.gameRunning = false;
-      this.state.winner = winner.id;
-      this.clock.setTimeout(this.room.disconnect, 60_000)
-    }
-    this.state.czarDidVote = true;
-    return [new NewRoundCommand().setPayload({wait: 5000})]
+    if (winner.score >= this.state.pointsToWin)
+      return [new DisplayWinnerCommand().setPayload({wait: 5000, winnerId: winnerId})]
+    else
+      return [new NewRoundCommand().setPayload({wait: 5000})]
+    
   }
 
 }
