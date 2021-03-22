@@ -9,7 +9,7 @@ COPY package*.json ./
 
 RUN npm ci
 
-COPY . .
+COPY ./backend .
 
 EXPOSE 8080
 
