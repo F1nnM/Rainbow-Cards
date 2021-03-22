@@ -5,6 +5,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { HashRouter as Router } from 'react-router-dom';
 
+if(!process.env.REACT_APP_BACKEND)
+    throw new Error("Env-var REACT_APP_BACKEND not set!")
+
 ReactDOM.render(
   <React.StrictMode>
     <Router>

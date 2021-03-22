@@ -10,14 +10,13 @@ import {
   withRouter
 } from "react-router-dom";
 import './App.css';
-
 import * as Colyseus from 'colyseus.js'
-import { ws } from './server';
+
 class App extends React.Component{
 
   constructor(props){
     super(props)
-    this.state = {client: new Colyseus.Client(ws), room: null}
+    this.state = {client: new Colyseus.Client(`ws://${process.env.REACT_APP_BACKEND}`), room: null}
   }
 
   setRoom(me, room) {
