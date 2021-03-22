@@ -12,11 +12,12 @@ import {
 import './App.css';
 
 import * as Colyseus from 'colyseus.js'
+import { ws } from './server';
 class App extends React.Component{
 
   constructor(props){
     super(props)
-    this.state = {client: new Colyseus.Client('ws://dellfinnlin.fritz.box:2567'), room: null}
+    this.state = {client: new Colyseus.Client(ws), room: null}
   }
 
   setRoom(me, room) {
