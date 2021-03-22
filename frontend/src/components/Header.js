@@ -5,7 +5,7 @@ export class Header extends React.Component {
   render() {
     return (
       <div className="header">
-        <span>Yet another Cards against Humanity clone</span>
+        <span>Yet another <a href="https://cardsagainsthumanity.com/">Cards against Humanity</a> clone.</span>
       </div>
     );
   }
