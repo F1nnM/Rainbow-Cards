@@ -17,7 +17,7 @@ class App extends React.Component{
 
   constructor(props){
     super(props)
-    this.state = {client: new Colyseus.Client(`ws://${env.REACT_APP_BACKEND}`), room: null}
+    this.state = {client: new Colyseus.Client(`${env.REACT_APP_USE_HTTPS?'wss':'ws'}://${env.REACT_APP_BACKEND}`), room: null}
   }
 
   setRoom(me, room) {

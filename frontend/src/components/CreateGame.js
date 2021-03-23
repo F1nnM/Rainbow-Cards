@@ -12,7 +12,7 @@ class CreateGame extends React.Component {
   }
 
   componentDidMount() {
-    fetch(`http://${env.REACT_APP_BACKEND}/getCards`)
+    fetch(`${env.REACT_APP_USE_HTTPS?'https':'http'}://${env.REACT_APP_BACKEND}/getCards`)
       .then(response => response.json())
       .then(data => {
         let currentTotalWhite = 0;
