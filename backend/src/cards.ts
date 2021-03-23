@@ -31,7 +31,7 @@ export const blackSets = {
         ]
     },
     "Base Game (Canada)": {
-        "mark": "US",
+        "mark": "CA",
         "cards": [
             "My fellow Americans: Before this decade is out, we <i>will</i> have ____ on the moon!",
             "Introducing X-treme Baseball! It's like baseball, but with ____!",
@@ -59,7 +59,7 @@ export const blackSets = {
         ]
     },
     "Base Game (UK)": {
-        "mark": "US",
+        "mark": "UK",
         "cards": [
             "Life for American Indians was forever changed when the White Man introduced them to ____.",
             "&#x2605;&#x2606;&#x2606;&#x2606;&#x2606; Do NOT go here! Found ____ in my Kung Pao chicken!",
@@ -92,7 +92,7 @@ export const blackSets = {
         ]
     },
     "Base Game (Australia)": {
-        "mark": "US",
+        "mark": "AU",
         "cards": [
             "50% of all marriages end in ____.",
             "This is the way the world ends This is the way the world ends Not with a bang but with ____.",
@@ -161,7 +161,7 @@ export const blackSets = {
         ]
     },
     "Base Game (International)": {
-        "mark": "US",
+        "mark": "INT",
         "cards": [
             "Next from J.K. Rowling: <i>Harry Potter and the Chamber of ____.</i>",
             "What's there a ton of in heaven?",
@@ -220,7 +220,7 @@ export const blackSets = {
         ]
     },
     "Red Box Expansion": {
-        "mark": "INTL",
+        "mark": "RED",
         "cards": [
             "What brought the orgy to a grinding halt?",
             "Lovin' you is easy 'cause you're ____.",
@@ -451,7 +451,7 @@ export const blackSets = {
         ]
     },
     "Vote for Hillary Pack": {
-        "mark": "GREEN",
+        "mark": "V4HIL",
         "cards": [
             "As reparations for slavery, all African Americans will receive ____.",
             "When you go to the polls on Tuesday, remember: a vote for me is a vote for ____.",
@@ -459,7 +459,7 @@ export const blackSets = {
         ]
     },
     "Vote for Trump Pack": {
-        "mark": "V4 45",
+        "mark": "V4TR",
         "cards": [
             "Trump's great! Trump's got ____. I love that.",
             "It's 3 AM. The red phone rings. It's ____. Who do you want answering?",
@@ -583,14 +583,14 @@ export const blackSets = {
         ]
     },
     "Geek Pack": {
-        "mark": "PE13C",
+        "mark": "GEEK",
         "cards": [
             "Press &darr;&darr;&larr;&rarr;B to unleash ____.",
             "____ is way better in ____ mode."
         ]
     },
     "PAX East 2014 Pack": {
-        "mark": "GEEK",
+        "mark": "PE14",
         "cards": [
             "<i>(Heavy breathing)</i> Luke, I am ____.",
             "What the hell?! They added a 6/6 with flying, trample, and ____.",
@@ -610,7 +610,7 @@ export const blackSets = {
         ]
     },
     "PAX Prime 2013 Pack": {
-        "mark": "GEEK",
+        "mark": "PAX13",
         "cards": [
             "____: Achievement unlocked.",
             "What's the latest bullshit that's troubling this quaint fantasy town?",
@@ -633,7 +633,7 @@ export const blackSets = {
         ]
     },
     "Post-Trump Pack": {
-        "mark": "PST45",
+        "mark": "PSTT",
         "cards": [
             "Donald Trump's first act as president was to outlaw ____.",
             "Donald Trump has nominated ____ for his VP.",
@@ -763,7 +763,7 @@ export const whiteSets = {
         ]
     },
     "Base Game (Canada)": {
-        "mark": "US",
+        "mark": "CA",
         "cards": [
             "The Hamburglar.",
             "Forced sterilization.",
@@ -839,7 +839,7 @@ export const whiteSets = {
         ]
     },
     "Base Game (UK)": {
-        "mark": "US",
+        "mark": "UK",
         "cards": [
             "Getting so angry that you pop a boner.",
             "My cheating son-of-a-bitch husband.",
@@ -933,7 +933,7 @@ export const whiteSets = {
         ]
     },
     "Base Game (Australia)": {
-        "mark": "US",
+        "mark": "AU",
         "cards": [
             "My Uber driver, Pavel.",
             "White privilege.",
@@ -1128,7 +1128,7 @@ export const whiteSets = {
         ]
     },
     "Base Game (International)": {
-        "mark": "US",
+        "mark": "INT",
         "cards": [
             "Throwing grapes at a man until he loses touch with reality.",
             "A stray pube.",
@@ -1524,7 +1524,7 @@ export const whiteSets = {
         ]
     },
     "Red Box Expansion": {
-        "mark": "INTL",
+        "mark": "RED",
         "cards": [
             "An ass disaster.",
             "Disco fever.",
@@ -2284,7 +2284,7 @@ export const whiteSets = {
         ]
     },
     "Vote for Trump Pack": {
-        "mark": "V4 45",
+        "mark": "V4TR",
         "cards": [
             "Actually voting for Donald Trump to be President of the actual United States.",
             "Growing up and becoming a Republican.",
@@ -2562,7 +2562,7 @@ export const whiteSets = {
         ]
     },
     "Geek Pack": {
-        "mark": "PE13A",
+        "mark": "GEEK",
         "cards": [
             "Getting bitch slapped by Dhalsim.",
             "Running out of stamina.",
@@ -2676,7 +2676,7 @@ export const whiteSets = {
         ]
     },
     "Post-Trump Pack": {
-        "mark": "PST45",
+        "mark": "PSTT",
         "cards": [
             "Whipping lower-class white men into a xenophobic frenzy.",
             "Extra rations for my little girl.",
@@ -2913,7 +2913,7 @@ export const whiteSets = {
         ]
     },
     "Box Expansion Pack": {
-        "mark": "BOX",
+        "mark": "BOXEX",
         "cards": [
             "Boxing up my feelings.",
             "An alternate universe in which boxes store things inside of people.",
@@ -2938,7 +2938,7 @@ export const whiteSets = {
         ]
     },
     "Hidden Compartment Pack": {
-        "mark": "US",
+        "mark": "HCOMP",
         "cards": [
             "How far I can get my own penis up my butt.",
             "Getting drugs off the street and into my body.",
@@ -2958,7 +2958,7 @@ export const whiteSets = {
         ]
     },
     "PAX Prime 2014 Pack: ": {
-        "mark": "GEEK",
+        "mark": "PAX14",
         "cards": [
             "Getting bitten by a radioactive spider and then battling leukemia for 30 years.",
             "Separate drinking fountains for dark elves.",
