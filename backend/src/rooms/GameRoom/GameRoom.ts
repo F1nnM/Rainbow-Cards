@@ -15,7 +15,6 @@ export class GameRoom extends Room<GameRoomState> {
   noCreatorReturnClose: Delayed;
 
   onCreate (options: any) {
-    this.autoDispose = false;
     this.setState(new GameRoomState());
 
     this.setPrivate(options.private);
