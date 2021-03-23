@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter } from "react-router-dom";
+import { env } from '../config';
 
 import './CreateGame.css'
 
@@ -11,7 +12,7 @@ class CreateGame extends React.Component {
   }
 
   componentDidMount() {
-    fetch(`http://${process.env.REACT_APP_BACKEND}/getCards`)
+    fetch(`http://${env.REACT_APP_BACKEND}/getCards`)
       .then(response => response.json())
       .then(data => {
         let currentTotalWhite = 0;

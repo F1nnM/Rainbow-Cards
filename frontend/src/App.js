@@ -11,12 +11,13 @@ import {
 } from "react-router-dom";
 import './App.css';
 import * as Colyseus from 'colyseus.js'
+import { env } from './config';
 
 class App extends React.Component{
 
   constructor(props){
     super(props)
-    this.state = {client: new Colyseus.Client(`ws://${process.env.REACT_APP_BACKEND}`), room: null}
+    this.state = {client: new Colyseus.Client(`ws://${env.REACT_APP_BACKEND}`), room: null}
   }
 
   setRoom(me, room) {
