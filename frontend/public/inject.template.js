@@ -1,4 +1,3 @@
 window.injectedEnv = {
-    NODE_ENV: '${NODE_ENV}',
-    FRONTEND_EXAMPLE_ENV: '${FRONTEND_EXAMPLE_ENV}',
+    REACT_APP_BACKEND: '${REACT_APP_BACKEND}',
 };
