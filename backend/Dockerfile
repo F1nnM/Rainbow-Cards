@@ -5,11 +5,11 @@ ENV PORT 8080
 WORKDIR /usr/src/app
 
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
-COPY backend/package*.json ./
+COPY package*.json ./
 
 RUN npm ci
 
-COPY ./backend .
+COPY . .
 
 EXPOSE 8080
 

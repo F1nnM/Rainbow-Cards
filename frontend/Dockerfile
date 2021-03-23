@@ -13,7 +13,7 @@ RUN npm install
 RUN npm install react-scripts@3.4.1 -g
 
 # add app
-COPY ./frontend ./
+COPY . ./
 
 RUN npm run-script build
 
@@ -24,11 +24,11 @@ WORKDIR /usr/share/nginx/html
 
 RUN apk add --no-cache gettext
 
-COPY ./frontend/nginx/nginx-entrypoint.sh /
+COPY ./nginx/nginx-entrypoint.sh /
 
 COPY --from=build /app/build ./
 
-COPY frontend/nginx/nginx.conf /etc/nginx/conf.d/default.conf
+COPY nginx/nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
 
