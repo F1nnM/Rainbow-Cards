@@ -4,4 +4,7 @@ const env = {
   ...processEnv,
   ...injectedEnv,
 };
+console.log(processEnv)
+console.log(injectedEnv)
+console.log(env)
 export { env };
