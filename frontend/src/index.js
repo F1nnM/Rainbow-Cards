@@ -4,8 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { HashRouter as Router } from 'react-router-dom';
+import { env } from './config';
 
-if(!process.env.REACT_APP_BACKEND)
+if(!env.REACT_APP_BACKEND)
     throw new Error("Env-var REACT_APP_BACKEND not set!")
 
 ReactDOM.render(
