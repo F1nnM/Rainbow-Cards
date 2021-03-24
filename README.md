@@ -1,5 +1,8 @@
 # Yet another Cards Against Humanity clone
 
+[![Publish latest Docker image](https://github.com/F1nnM/Yet-another-Cards-Against-Humanity-clone/actions/workflows/docker_push.yaml/badge.svg)](https://github.com/F1nnM/Yet-another-Cards-Against-Humanity-clone/actions/workflows/docker_push.yaml)
+[![Publish release Docker image](https://github.com/F1nnM/Yet-another-Cards-Against-Humanity-clone/actions/workflows/docker_release.yaml/badge.svg)](https://github.com/F1nnM/Yet-another-Cards-Against-Humanity-clone/actions/workflows/docker_release.yaml)
+
 As the title suggests, this is yet another [Cards against Humanity](https://cardsagainsthumanity.com/) clone.
 
 The game is available to play [here](https://cah.mfinn.de).
