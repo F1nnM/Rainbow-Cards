@@ -22,3 +22,5 @@ Both can be configured via environment variables:
 
 ### Backend
 - `ADMIN_PASS`: Password for the colyseus monitor.
+
+<!-- Test -->
