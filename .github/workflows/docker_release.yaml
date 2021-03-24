@@ -28,7 +28,7 @@ jobs:
           load: true
       - 
         name: Push backend to Docker Hub
-        uuses: docker/build-push-action@v2
+        uses: docker/build-push-action@v2
         with:
           tags: f1nnm/yacahc:latest
           context: ./backend
