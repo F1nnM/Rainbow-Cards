@@ -4,6 +4,7 @@
 openIssueColumns: 
   - To do
   - In progress
+  - Prio / Selected
 # Close issues that are moved to these project columns. Set to `[]` to disable
 closedIssueColumns:
   - Done
