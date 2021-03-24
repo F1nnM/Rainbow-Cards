@@ -10,6 +10,10 @@ There are docker images available:
 - `f1nnm/yacahc` for the frontend
 - `f1nnm/yacahc_backend` for the backend
 
+The tags available are:
+- `latest`: Always the state of the repo
+- `release-{version number}`: All the releases
+
 Both can be configured via environment variables:
 
 ### Frontend
