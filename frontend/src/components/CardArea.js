@@ -13,12 +13,22 @@ export class CardArea extends React.Component {
               {this.props.blackCard.children}
             </Card>
           </div>
-          <div className={'playedCardArea '+(this.props.enablePlayedCards?'':'blocked')}>
-            {this.props.playedCards && this.props.playedCards.map((card, index) => {
+          <div className={'playedCardArea ' + (this.props.enablePlayedCards ? '' : 'blocked')}>
+            {this.props.playedCards && this.props.playedCards.map((cardsStack, index) => {
               return (
-                <React.Fragment>
-                  <Card trust={this.props.trustPlayedCards} type='white' text={card.content} mark={card.mark} onclick={_ => this.props.playedCardsClicked(index)} key={card.content + "" + index} chosen={card.chosenByCzar} />
-                </React.Fragment>
+                <div className="cardGroup" key={index}>
+                  {cardsStack["cards"].map((card, innerIndex) => {
+                    return (
+                      <Card
+                        sticky={innerIndex > 0}
+                        trust={this.props.trustPlayedCards}
+                        type='white' text={card.content} mark={card.mark}
+                        onclick={_ => this.props.playedCardsClicked(index)}
+                        key={card.content + "" + index + Math.random()} // Random: Fix for ghost cards appearing
+                        chosen={cardsStack.chosenByCzar} />
+                    )
+                  })}
+                </div>
               )
             })}
           </div>
@@ -41,7 +51,13 @@ export class CardArea extends React.Component {
             </div>
           }
           {this.props.whiteCards && this.props.whiteCards.map((card, index) => {
-            return <Card trust={true} type='white' text={card.content} mark={card.mark} onclick={_ => this.props.whiteCardClicked(index)} key={card.content + "" + index} />
+            return <Card
+              trust={true}
+              type='white'
+              text={card.content}
+              mark={card.mark}
+              onclick={_ => this.props.whiteCardClicked(index)}
+              key={card.content + "" + index} />
           })}
         </div>
       </div>

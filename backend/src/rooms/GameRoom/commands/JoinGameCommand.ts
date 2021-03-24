@@ -12,10 +12,6 @@ export class JoinGameCommand extends Command<GameRoomState, {sessionId: string, 
     }
     if (name)
       player.name = name;
-
-    if (!this.state.czarsTurn) {
-        
-    }
     
     this.state.players.set(sessionId, player);
   }

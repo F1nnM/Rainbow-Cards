@@ -8,6 +8,8 @@
     text-align: start;
     outline: none;
     transition-duration: .1s;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 .card.white {
     color: black;
@@ -17,9 +19,6 @@
     width: 10vw;
 }
 .card.white:hover {
-    /*color: #444;
-    background-color: #aaa;
-    border-color: black;*/
     transform: translateY(-20px);
 }
 .card.white:active {
@@ -40,6 +39,10 @@
     font-size: xx-large;
 }
 
+.card.sticky {
+    margin-left: -0.5%;
+}
+
 .aspect-ratio-box {
     position: relative;
 }
@@ -55,7 +58,8 @@
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 10%
+    padding: 8%;
+    overflow-y: auto;
 }
 
 span {
@@ -66,4 +70,8 @@ span {
     position: absolute;
     bottom: 2%;
     right: 5%;
+}
+
+.black .mark{
+    color:white;
 }

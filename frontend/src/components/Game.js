@@ -32,7 +32,11 @@ class Game extends React.Component {
 
     room.onStateChange.once((gameState) => me.setState({ ...me.state, game: gameState }));
 
-    room.onStateChange((gameState) => me.setState({ ...me.state, game: gameState }));
+    room.onStateChange((gameState) => {
+      me.setState({ ...me.state, game: gameState })
+      console.log("________NEW STATE_____________")
+      console.log(gameState)
+    } );
 
     room.onLeave((code) => {
       console.log("client left the room, code: " + code);
@@ -67,7 +71,7 @@ class Game extends React.Component {
         if ( e.message.match(/room "[^"]*" not found/gi)){
           alert("Couldn't find the selected room!")
           me.clearGameAfterError()
-        } else if(e.message.match(/room "[^"]*" not found/gi)){
+        } else if(e.message.match(/session expired:/gi)){
           alert("Your game session for this room has expired!")
           me.clearGameAfterError()
         }
@@ -133,9 +137,10 @@ class Game extends React.Component {
     let blackCardChildren;
     if (player.isOwner && !this.state.game.gameRunning && !this.state.game.winner)
       blackCardChildren = <button onClick={_ => this.startGame()}>Start Game</button>
-    let blackcard = { content: blackcardText, children: blackCardChildren }
+    let blackcard = { content: blackcardText, children: blackCardChildren, mark: this.state.game.blackCard.mark}
 
-    let playedCards = this.state.game.winner ? [{content: this.state.game.players[this.state.game.winner].name, mark: "WIN", chosenByCzar: true}]: this.state.game.cardsPlayed
+    let playedCards = this.state.game.winner ? [{cards: [{content: this.state.game.players[this.state.game.winner].name, mark: "WIN"}], chosenByCzar: true}] : this.state.game.cardsPlayed
+
     return (
       
       <CardArea

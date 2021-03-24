@@ -12,12 +12,34 @@ export class Card extends Schema {
 
 }
 
+export class BlackCard extends Card {
+
+  blanks: number;
+
+}
+
+export class PlayedCard extends Schema{
+
+  @filter(function(client: Client, value: PlayedCard['content'], gameRoom: GameRoomState) {
+    return gameRoom.czarsTurn
+  })
+  @type("string")
+  content: string;
+
+  @filter(function(client: Client, value: PlayedCard['mark'], gameRoom: GameRoomState) {
+    return gameRoom.czarsTurn
+  })
+  @type("string")
+  mark: string;
+
+}
+
 export class Player extends Schema {
 
-  @filter(function(this: Player, client: Client, value: Player['cards'], root: Schema) {
+  @filter(function (this: Player, client: Client, value: Player['cards'], root: Schema) {
     return client.sessionId === this.id
   })
-  @type([ Card ])
+  @type([Card])
   cards = new ArraySchema<Card>();
 
   @type("uint8")
@@ -41,19 +63,10 @@ export class Player extends Schema {
   id: string;
 }
 
-export class PlayedCard extends Schema {
+export class PlayedCardStack extends Schema {
 
-  @filter(function everybodyPlayedFilter(client: Client, value: PlayedCard['content'], gameRoom: GameRoomState){
-    return gameRoom.czarsTurn
-  })
-  @type("string")
-  content: string;
-
-  @filter(function everybodyPlayedFilter(client: Client, value: PlayedCard['content'], gameRoom: GameRoomState){
-    return gameRoom.czarsTurn
-  })
-  @type("string")
-  mark: string;
+  @type([PlayedCard])
+  cards = new ArraySchema<PlayedCard>()
 
   @type("boolean")
   chosenByCzar: boolean = false;
@@ -64,8 +77,8 @@ export class PlayedCard extends Schema {
 
 export class GameRoomState extends Schema {
 
-  @type( Card )
-  blackCard: Card;
+  @type(Card)
+  blackCard: BlackCard;
 
   @type({ map: Player })
   players = new MapSchema<Player>();
@@ -76,8 +89,8 @@ export class GameRoomState extends Schema {
   @type("string")
   winner: string;
 
-  @type([ PlayedCard ])
-  cardsPlayed = new ArraySchema<PlayedCard>();
+  @type([PlayedCardStack])
+  cardsPlayed = new ArraySchema<PlayedCardStack>();
 
   @type("uint8")
   pointsToWin: number;
@@ -88,7 +101,7 @@ export class GameRoomState extends Schema {
   @type("boolean")
   czarDidVote: boolean = false;
 
-  blackCardStack: Card[];
+  blackCardStack: BlackCard[];
 
   whiteCardStack: Card[];
 
@@ -96,7 +109,7 @@ export class GameRoomState extends Schema {
 
   hasOwner: boolean = false;
 
-  initStacks(){
+  initStacks() {
     this.refillBlackStack()
     this.refillWhiteStack()
   }
@@ -104,7 +117,7 @@ export class GameRoomState extends Schema {
   refillWhiteStack() {
     this.whiteCardStack = [];
     let newCards = getShuffledStack(whiteSets, this.sets);
-    for (let cardData of newCards){
+    for (let cardData of newCards) {
       let card = new Card();
       card.content = cardData.text;
       card.mark = cardData.mark;
@@ -115,10 +128,11 @@ export class GameRoomState extends Schema {
   refillBlackStack() {
     this.blackCardStack = []
     let newCards = getShuffledStack(blackSets, this.sets)
-    for (let cardData of newCards){
-      let card = new Card();
+    for (let cardData of newCards) {
+      let card = new BlackCard();
       card.content = cardData.text;
       card.mark = cardData.mark;
+      card.blanks = cardData.blanks;
       this.blackCardStack.push(card);
     }
   }

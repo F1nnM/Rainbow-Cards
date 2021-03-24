@@ -18,20 +18,6 @@ export class NewRoundCommand extends Command<GameRoomState, {wait: number}> {
         this.state.czarsTurn = false;
         this.state.czarDidVote = false;
 
-        this.state.blackCard = this.state.blackCardStack.pop()
-        if(this.state.blackCardStack.length == 0)
-          this.state.refillBlackStack()
-
-        // draw cards until everyone has 10 cards. Handles players joining late
-        this.state.players.forEach((player)=>{
-          while(player.cards.length < 10){
-            player.cards.push(this.state.whiteCardStack.pop())
-            if(this.state.whiteCardStack.length == 0)
-              this.state.refillWhiteStack()
-          }
-        })
-
-        
         //determine new card czar. Not allowed to be the same as last round
         var possibleCzars: string[] = []
 
@@ -44,6 +30,21 @@ export class NewRoundCommand extends Command<GameRoomState, {wait: number}> {
 
         var newCzarId: string = possibleCzars[Math.floor(Math.random()*possibleCzars.length)];
         this.state.players.get(newCzarId).isCzar = true;
+
+
+        if(this.state.blackCardStack.length == 0)
+          this.state.refillBlackStack()
+        this.state.blackCard = this.state.blackCardStack.pop()
+
+        // draw cards until everyone has 10 cards. Handles players joining late
+        this.state.players.forEach((player)=>{
+          if(!player.isCzar)
+            while(player.cards.length < (9+this.state.blackCard.blanks)){
+              if(this.state.whiteCardStack.length == 0)
+                this.state.refillWhiteStack()
+              player.cards.push(this.state.whiteCardStack.pop())
+            }
+        })
 
         resolve(null);
       }, wait)

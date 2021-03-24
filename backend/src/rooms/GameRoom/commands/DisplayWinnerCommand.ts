@@ -9,7 +9,7 @@ export class DisplayWinnerCommand extends Command<GameRoomState, { wait: number,
         this.state.gameRunning = false;
         this.state.winner = winnerId;
         this.state.cardsPlayed.clear()
-        this.clock.setTimeout(this.room.disconnect, 60_000)
+        this.clock.setTimeout(() => this.room.disconnect(), 60_000)
         resolve(null);
       }, wait);
     });

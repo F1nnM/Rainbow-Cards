@@ -4,7 +4,7 @@ import cors from "cors";
 import { Server } from "colyseus";
 import { monitor } from "@colyseus/monitor";
 import { GameRoom } from "./rooms/GameRoom/GameRoom";
-import { clientData } from "./cards";
+import { blackSets, clientData } from "./cards";
 import basicAuth from "express-basic-auth";
 
 require("dotenv").config();

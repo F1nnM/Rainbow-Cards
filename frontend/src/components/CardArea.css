@@ -40,6 +40,11 @@
     position: relative;
 }
 
+.cardGroup {
+    flex: 1;
+    display: flex;
+}
+
 .sidebarContainer {
     flex-basis: 15%;
     display: flex;
