@@ -6,6 +6,8 @@ jobs:
     name: Push Docker image to multiple registries
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
       - name: Set up Docker Buildx
@@ -19,7 +21,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           tags: f1nnm/yacahc:latest
-          context: .
+          context: ./frontend
           load: true
       - name: Push backend to Docker Hub
         uses: docker/build-push-action@v2
