@@ -2,6 +2,8 @@
 
 As the title suggests, this is yet another [Cards against Humanity](https://cardsagainsthumanity.com/) clone.
 
+The game is available to play [here](https://cah.mfinn.de).
+
 ## How to run
 
 There are docker images available:
