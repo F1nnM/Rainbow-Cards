@@ -33,7 +33,6 @@ jobs:
         name: Push frontend to Docker Hub
         uses: docker/build-push-action@v2
         with:
-          tags: f1nnm/yacahc:latest
           context: ./frontend
           push: true
           tags: |
@@ -43,7 +42,6 @@ jobs:
         name: Push backend to Docker Hub
         uses: docker/build-push-action@v2
         with:
-          tags: f1nnm/yacahc:latest
           context: ./backend
           push: true
           tags: |
