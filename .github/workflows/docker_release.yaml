@@ -7,6 +7,10 @@ jobs:
     name: Push Docker image to multiple registries
     runs-on: ubuntu-latest
     steps:
+      - name: echo tag_name
+        env:
+          TAG: ${{ github.event.release.tag_name }}
+        run: echo "$TAG"
       - 
         name: Checkout
         uses: actions/checkout@v2
