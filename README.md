@@ -9,7 +9,7 @@ The game is available to play [here](https://cah.mfinn.de).
 
 ## How to run
 
-There are docker images available:
+There are docker images available here on github as well as in the official docker registry:
 - `f1nnm/yacahc` for the frontend
 - `f1nnm/yacahc_backend` for the backend
 
