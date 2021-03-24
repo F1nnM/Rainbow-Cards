@@ -19,7 +19,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           tags: f1nnm/yacahc:latest
-          context: frontend
+          context: .
           load: true
       - name: Push backend to Docker Hub
         uses: docker/build-push-action@v2
