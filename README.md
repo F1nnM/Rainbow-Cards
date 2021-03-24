@@ -17,8 +17,8 @@ The tags available are:
 Both can be configured via environment variables:
 
 ### Frontend
-`REACT_APP_BACKEND`: URL of the backend. Example: `example.com`, `test.net:1234`
-`REACT_APP_USE_HTTPS`: Use htpps and wss for the connections to the backend
+- `REACT_APP_BACKEND`: URL of the backend. Example: `example.com`, `test.net:1234`
+- `REACT_APP_USE_HTTPS`: Use htpps and wss for the connections to the backend
 
 ### Backend
-`ADMIN_PASS`: Password for the colyseus monitor.
+- `ADMIN_PASS`: Password for the colyseus monitor.
