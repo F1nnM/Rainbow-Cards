@@ -6,11 +6,11 @@ import { NewRoundCommand } from "./NewRoundCommand";
 export class FinishRoundCommand extends Command<GameRoomState> {
 
     validate() {
-        let everybodyOnlinePlayed = false;
+        let everybodyOnlinePlayed = true;
         this.state.players.forEach((player, id) => {
             if (!player.connected || player.isCzar)
                 return
-            everybodyOnlinePlayed = everybodyOnlinePlayed || this.state.cardsPlayed.some(cardStack => (cardStack.playedBy === id && cardStack.cards.length === this.state.blackCard.blanks)) || player.cards.length == 0;
+            everybodyOnlinePlayed = everybodyOnlinePlayed && ( this.state.cardsPlayed.some(cardStack => (cardStack.playedBy === id && cardStack.cards.length === this.state.blackCard.blanks)) || player.cards.length === 0);
         })
         return everybodyOnlinePlayed
     }
