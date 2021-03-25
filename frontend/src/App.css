@@ -15,9 +15,9 @@
   left: 0;
   bottom: 0;
   right: 0;
-  background: radial-gradient( circle, #777777, #00000000);
-  background-color: #1f1f1f;
-  filter: blur(1px);
+  background: linear-gradient( #ffffff, #ffffff 20%, #cccccc 60%, #00000000 90%, #00000000);
+  background-color: #000000;
+  filter: blur(3px);
   position: absolute;
   z-index: -10;
   margin: -10px;
