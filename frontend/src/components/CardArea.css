@@ -41,8 +41,9 @@
 }
 
 .cardGroup {
-    flex: 1;
+    flex: 0;
     display: flex;
+    margin: 0.5%;
 }
 
 .sidebarContainer {
