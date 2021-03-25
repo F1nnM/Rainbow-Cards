@@ -1,6 +1,7 @@
 import { Command } from "@colyseus/command";
 import { shuffleArrayInplace } from "../../../utils";
 import { GameRoomState, PlayedCardStack, PlayedCard } from "../GameRoomState";
+import { FinishRoundCommand } from "./FinishRoundCommand";
 
 export class PlayCardCommand extends Command<GameRoomState, {sessionId: string, index: number}> {
 
@@ -24,22 +25,7 @@ export class PlayCardCommand extends Command<GameRoomState, {sessionId: string, 
     playedCardStack.cards.push(card)
     this.state.players.get(sessionId).cards.deleteAt(index);
 
-    let everybodyOnlinePlayed = false;
-    this.state.players.forEach((player, id) => {
-      if( !player.connected || player.isCzar)
-        return
-      everybodyOnlinePlayed = everybodyOnlinePlayed || this.state.cardsPlayed.some(cardStack => (cardStack.playedBy === id && cardStack.cards.length === this.state.blackCard.blanks));
-    })
-
-    if(everybodyOnlinePlayed){
-      shuffleArrayInplace(this.state.cardsPlayed);
-      this.state.cardsPlayed.forEach(cardStack => {
-        cardStack.cards.forEach(card => {
-          card['$changes'].touch(0);
-        })
-      })
-      this.state.czarsTurn = true;
-    }
+    return [new FinishRoundCommand()]
   }
 
   

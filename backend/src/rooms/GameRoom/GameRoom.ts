@@ -5,6 +5,7 @@ import { JoinGameCommand } from "./commands/JoinGameCommand";
 import { NewOwnerCommand } from "./commands/NewOwnerCommand";
 import { NewRoundCommand } from "./commands/NewRoundCommand";
 import { PlayCardCommand } from "./commands/PlayCardCommand";
+import { ReplaceHandCommand } from "./commands/ReplaceHandCommand";
 import { StartGameCommand } from "./commands/StartGameCommand";
 import { GameRoomState, Player } from "./GameRoomState";
 
@@ -22,8 +23,6 @@ export class GameRoom extends Room<GameRoomState> {
     this.state.sets = options.sets;
     this.state.pointsToWin = options.pointsNeeded;
 
-    this.state.initStacks();
-
     this.clock.start()
 
     this.dispatcher = new Dispatcher(this);
@@ -38,7 +37,11 @@ export class GameRoom extends Room<GameRoomState> {
     });
 
     this.onMessage("czarVote", (client, message) => {
-      let czarVotePromise = this.dispatcher.dispatch(new CzarVoteCommand(), {sessionId: client.sessionId, index: message.index})
+      this.dispatcher.dispatch(new CzarVoteCommand(), {sessionId: client.sessionId, index: message.index})
+    })
+
+    this.onMessage("replaceHand", (client, message) => {
+      this.dispatcher.dispatch(new ReplaceHandCommand(), {sessionId: client.sessionId})
     })
 
   }

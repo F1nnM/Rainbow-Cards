@@ -38,12 +38,13 @@ export class NewRoundCommand extends Command<GameRoomState, {wait: number}> {
 
         // draw cards until everyone has 10 cards. Handles players joining late
         this.state.players.forEach((player)=>{
-          if(!player.isCzar)
-            while(player.cards.length < (9+this.state.blackCard.blanks)){
-              if(this.state.whiteCardStack.length == 0)
-                this.state.refillWhiteStack()
-              player.cards.push(this.state.whiteCardStack.pop())
-            }
+          let maxCards = player.isCzar ? 10 : (9+this.state.blackCard.blanks)
+
+          while(player.cards.length < maxCards){
+            if(this.state.whiteCardStack.length == 0)
+              this.state.refillWhiteStack()
+            player.cards.push(this.state.whiteCardStack.pop())
+          }
         })
 
         resolve(null);

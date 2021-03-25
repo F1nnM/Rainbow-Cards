@@ -101,18 +101,13 @@ export class GameRoomState extends Schema {
   @type("boolean")
   czarDidVote: boolean = false;
 
-  blackCardStack: BlackCard[];
+  blackCardStack: BlackCard[] = [];
 
-  whiteCardStack: Card[];
+  whiteCardStack: Card[] = [];
 
   sets: string[];
 
   hasOwner: boolean = false;
-
-  initStacks() {
-    this.refillBlackStack()
-    this.refillWhiteStack()
-  }
 
   refillWhiteStack() {
     this.whiteCardStack = [];

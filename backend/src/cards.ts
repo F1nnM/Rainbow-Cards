@@ -54,11 +54,11 @@ export const blackSets: any = {
       },
       {
         "text": "What is Batman's guilty pleasure.",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "After eight years in the White House, how is Obama finally letting loose?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "This season at Steppenwolf, Samuel Beckett's classic existential play: Waiting for ____.",
@@ -82,7 +82,7 @@ export const blackSets: any = {
       },
       {
         "text": "What's Teach For America using to inspire inner city students to succeed?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "Brought to you by Bud Light&reg;, the official Beer of ____.",
@@ -228,7 +228,7 @@ export const blackSets: any = {
       },
       {
         "text": "What did I bring back from Amsterdam?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "Mate, <i>do not go</i> in that bathroom. There's ____ in there.",
@@ -272,7 +272,7 @@ export const blackSets: any = {
       },
       {
         "text": "What's the next Happy Meal&reg; toy?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "Next up on Channel 4: Ramsay's ____ Nightmares.",
@@ -361,7 +361,7 @@ export const blackSets: any = {
       },
       {
         "text": "How did I lose my virginity?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "I'm going on a cleanse this week. Nothing but kale juice and ____.",
@@ -425,7 +425,7 @@ export const blackSets: any = {
       },
       {
         "text": "What is George W. Bush thinking about right now?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "I get by with a little help from ____.",
@@ -457,7 +457,7 @@ export const blackSets: any = {
       },
       {
         "text": "But before I kill you, Mr. Bond, I must show you.",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "When I am a billionaire, I shall erect a 20-metre statue to commemorate ____.",
@@ -465,7 +465,7 @@ export const blackSets: any = {
       },
       {
         "text": "Daddy, why is mummy crying?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "Just once I'd like to hear you say \"Thanks, Mum. Thanks for ____.\"",
@@ -473,7 +473,7 @@ export const blackSets: any = {
       },
       {
         "text": "How am I maintaining my relationship status?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "As the mum of five rambunctious boys, I'm not stranger to ____.",
@@ -489,7 +489,7 @@ export const blackSets: any = {
       },
       {
         "text": "What did I bring back from Bali?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "MTV's new reality show features eight washed-up celebrities living with ____.",
@@ -501,7 +501,7 @@ export const blackSets: any = {
       },
       {
         "text": "What broke up the original Wiggles?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "Today on <i>Jerry Springer:</i> \"Help! My son is ____!\"",
@@ -517,11 +517,11 @@ export const blackSets: any = {
       },
       {
         "text": "What's there a tonne of in heaven?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "What makes me a true blue Aussie?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "The school excursion was completely ruined by ____.",
@@ -586,7 +586,7 @@ export const blackSets: any = {
       },
       {
         "text": "What's there a ton of in heaven?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "It's a pity that kids these days are all getting involved with ____.",
@@ -594,11 +594,11 @@ export const blackSets: any = {
       },
       {
         "text": "What's a girl's best friend?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "Make a haiku.",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "The class field trip was completely ruined by ____.",
@@ -630,7 +630,7 @@ export const blackSets: any = {
       },
       {
         "text": "Why can't I sleep at night?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "Dude, <i>do not</i> go in that bathroom. There's ____ in there.",
@@ -642,7 +642,7 @@ export const blackSets: any = {
       },
       {
         "text": "What made my first kiss so awkward?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "Just saw this upsetting video! Please retweet!! #stop____",
@@ -650,27 +650,27 @@ export const blackSets: any = {
       },
       {
         "text": "What never fails to liven up the party?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "What would grandma find disturbing, yet oddly charming?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "What's that sound?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "What will always get you laid?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "What ended my last relationship?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "Why do I hurt all over?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "But before I kill you, Mr. Bond, I must show you ____.",
@@ -678,7 +678,7 @@ export const blackSets: any = {
       },
       {
         "text": "War! What is it good for?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "A romantic, candlelit dinner would be incomplete without ____.",
@@ -698,7 +698,7 @@ export const blackSets: any = {
       },
       {
         "text": "What gives me uncontrollable gas?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "For my next trick, I will pull ____ out of ____.",
@@ -706,7 +706,7 @@ export const blackSets: any = {
       },
       {
         "text": "What's that smell?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "____. It's a trap!",
@@ -718,23 +718,23 @@ export const blackSets: any = {
       },
       {
         "text": "Why am I sticky?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "What makes life worth living?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "What's my secret power?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "What are my parents hiding from me?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "Daddy, why is mommy crying?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "During sex, I like to think about ____.",
@@ -754,7 +754,7 @@ export const blackSets: any = {
       },
       {
         "text": "What is Batman's guilty pleasure?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "The theme for next year's Eurovision Song Contest is \"We are ____.\"",
@@ -803,7 +803,7 @@ export const blackSets: any = {
     "cards": [
       {
         "text": "What brought the orgy to a grinding halt?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "Lovin' you is easy 'cause you're ____.",
@@ -819,7 +819,7 @@ export const blackSets: any = {
       },
       {
         "text": "What has been making life difficult at the nudist colony?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "Charades was ruined for me forever when my mom had to act out ____.",
@@ -847,7 +847,7 @@ export const blackSets: any = {
       },
       {
         "text": "When I pooped, what came out of my butt?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "A successful job interview begins with a firm handshake and ends with ____.",
@@ -859,7 +859,7 @@ export const blackSets: any = {
       },
       {
         "text": "And what did <i>you</i> bring for show and tell?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "When all else fails, I can always masturbate to ____.",
@@ -927,7 +927,7 @@ export const blackSets: any = {
       },
       {
         "text": "What left this stain on my couch?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "I'm not like the rest of you. I'm too rich and busy for ____.",
@@ -979,7 +979,7 @@ export const blackSets: any = {
       },
       {
         "text": "What's harshing my mellow, man?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "I love being a mom. But it's tough when my kids come home filthy from ____. That's why there's Tide&reg;.",
@@ -1104,7 +1104,7 @@ export const blackSets: any = {
       },
       {
         "text": "What's fun until it gets weird?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "And today's soup is Cream of ____.",
@@ -1168,7 +1168,7 @@ export const blackSets: any = {
       },
       {
         "text": "Why am I broke?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "Wes Anderson's new film tells the story of a precocious child coming to terms with ____.",
@@ -1292,7 +1292,7 @@ export const blackSets: any = {
       },
       {
         "text": "What's making things awkward in the sauna?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "Listen, Gary, I like you. But if you want that corner office, you're going to have to show me ____.",
@@ -1332,7 +1332,7 @@ export const blackSets: any = {
       },
       {
         "text": "As king, how will I keep the peasants in line?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "I'm sorry, sir, but we don't allow ____ at the country club.",
@@ -1348,7 +1348,7 @@ export const blackSets: any = {
       },
       {
         "text": "What killed my boner?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "Hi, this is Jim from accounting. We noticed a $1,200 charge labeled \"____.\" Can you explain?",
@@ -1364,7 +1364,7 @@ export const blackSets: any = {
       },
       {
         "text": "How am I compensating for my tiny penis?",
-        "blanks": 0
+        "blanks": 1
       }
     ]
   },
@@ -1377,11 +1377,11 @@ export const blackSets: any = {
       },
       {
         "text": "What's about to take this dance floor to the next level?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "What are all those whales singing about?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "I've got rhythm, I've got music, I've got ____. Who could ask for anything more?",
@@ -1393,7 +1393,7 @@ export const blackSets: any = {
       },
       {
         "text": "What turned me into a Republican?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "If at first you don't succeed, try ____.",
@@ -1449,7 +1449,7 @@ export const blackSets: any = {
       },
       {
         "text": "What's the gayest?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "Son, take it from someone who's been around the block a few times. Nothin' puts her in the mood like ____.",
@@ -1461,7 +1461,7 @@ export const blackSets: any = {
       },
       {
         "text": "What will end racism once and for all?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "No, no, no, no, no, NO! I will NOT let ____ ruin this wedding.",
@@ -1477,7 +1477,7 @@ export const blackSets: any = {
       },
       {
         "text": "What sucks balls?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "Errbody in the club ____.",
@@ -1513,7 +1513,7 @@ export const blackSets: any = {
       },
       {
         "text": "Why am I laughing and crying and taking off my clothes?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "Google Calendar alert: ____ in 10 minutes.",
@@ -1545,7 +1545,7 @@ export const blackSets: any = {
       },
       {
         "text": "What's the most problematic?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "With a one-time gift of just $10, you can save this child from ____.",
@@ -1561,7 +1561,7 @@ export const blackSets: any = {
       },
       {
         "text": "What totally destroyed my asshole?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "I don't believe in God. I believe in ____.",
@@ -1594,7 +1594,7 @@ export const blackSets: any = {
     "cards": [
       {
         "text": "How did Stella get her groove back?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "Siskel and Ebert have panned ____ as \"poorly conceived\" and \"sloppily executed.\"",
@@ -1631,7 +1631,7 @@ export const blackSets: any = {
       },
       {
         "text": "What keeps me warm during the cold, cold winter?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "Wake up, America. Christmas is under attack by secular liberals and their ____.",
@@ -1797,7 +1797,7 @@ export const blackSets: any = {
       },
       {
         "text": "Who blasphemes and bubbles at the center of all infinity, whose name no lips dare speak aloud, and who gnaws hungrily in inconceivable, unlighted chambers beyond time?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "Legend tells of a princess who has been asleep for a thousand years and can only be awoken by ____.",
@@ -1851,7 +1851,7 @@ export const blackSets: any = {
       },
       {
         "text": "Why am I so tired?",
-        "blanks": 0
+        "blanks": 1
       }
     ]
   },
@@ -1931,7 +1931,7 @@ export const blackSets: any = {
       },
       {
         "text": "What's the one thing that makes an elf instantly ejaculate?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "Donna, pick up my dry cleaning and get my wife something for christmas. I think she likes ____.",
@@ -2008,7 +2008,7 @@ export const blackSets: any = {
     "cards": [
       {
         "text": "What's so important right now that you can't call your mother?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "According to Freud, all children progress through three stages of development: the oral stage, the anal stage, and the ____ stage.",
@@ -2037,11 +2037,11 @@ export const blackSets: any = {
       },
       {
         "text": "What's the latest bullshit that's troubling this quaint fantasy town?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "What made Spock cry?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "In the new DLC for Mass Effect, Shepard must save the galaxy from ____.",
@@ -2066,7 +2066,7 @@ export const blackSets: any = {
     "cards": [
       {
         "text": "What gets me wet?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "My body, my voice! ____, my choice!",
@@ -2112,7 +2112,7 @@ export const blackSets: any = {
     "cards": [
       {
         "text": "What are two cards in your hand that you want to get rid of?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "From WBEZ Chicago, it's <i>This American Life.</i> Today on our program, ____. Stay with us.",
@@ -2124,11 +2124,11 @@ export const blackSets: any = {
       },
       {
         "text": "[rorschach test] What do you see?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "Sir, we found you passed out naked on the side of the road. What's the last thing you remember?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "You can't wait forever. It's time to talk to your doctor about ____.",
@@ -2153,7 +2153,7 @@ export const blackSets: any = {
       },
       {
         "text": "How are the writers of Cards Against Humanity spending your $25?",
-        "blanks": 0
+        "blanks": 1
       }
     ]
   },
@@ -2186,7 +2186,7 @@ export const blackSets: any = {
       },
       {
         "text": "What is the answer to life, the universe, and everything?",
-        "blanks": 0
+        "blanks": 1
       }
     ]
   },
@@ -2195,7 +2195,7 @@ export const blackSets: any = {
     "cards": [
       {
         "text": "Why did the chicken cross the road?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "Some men aren't looking for anything logical, like money. They can't be bought, bullied, reasoned, or negotiated with. Some men just want ____.",
@@ -2223,11 +2223,11 @@ export const blackSets: any = {
       },
       {
         "text": "Hey, whatever happened to Renee Zellweger?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "What's wrong with these gorillas?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "You say tomato, I say ____.",
@@ -2244,7 +2244,7 @@ export const blackSets: any = {
       },
       {
         "text": "What really killed the dinosaurs?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "In line with our predictions, we find a robust correlation between ____ and ____ ( <i>p&lt;.05).</i>",
@@ -2285,7 +2285,7 @@ export const blackSets: any = {
       },
       {
         "text": "Instead of playing a card this round, everyone must stare at the Card Czar while making a sound you'd make after tasting something delicious.",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "Everyone is staring at you because you're ____.",
@@ -2328,7 +2328,7 @@ export const blackSets: any = {
       },
       {
         "text": "What did I nickname my genitals?",
-        "blanks": 0
+        "blanks": 1
       },
       {
         "text": "This app is basically Tinder, but for ____.",

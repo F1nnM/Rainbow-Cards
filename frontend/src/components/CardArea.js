@@ -60,6 +60,9 @@ export class CardArea extends React.Component {
               key={card.content + "" + index} />
           })}
         </div>
+        <div className='additionalSpace'>
+          {this.props.additionalSpace}
+        </div>
       </div>
     );
   }

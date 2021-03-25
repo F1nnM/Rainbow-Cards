@@ -3,6 +3,7 @@ import { withRouter } from 'react-router';
 import { CardArea } from "./CardArea";
 import Scoreboard from './Scoreboard';
 
+import './Game.css'
 class Game extends React.Component {
 
   constructor(props) {
@@ -128,6 +129,10 @@ class Game extends React.Component {
     me.props.room.send("czarVote", { index: index })
   }
 
+  replaceHand(){
+    this.props.room.send("replaceHand")
+  }
+
   render() {
     if (!this.props.room || !this.state.game)
       return <div></div>
@@ -152,7 +157,8 @@ class Game extends React.Component {
         playedCards={playedCards}
         playedCardsClicked={index => this.czarVote(this, index)}
         sidebar={<Scoreboard players={Array.from(this.state.game.players.values())}/>}
-        trustPlayedCards={!this.state.game.winner}/>
+        trustPlayedCards={!this.state.game.winner}
+        additionalSpace={<button hidden={!this.state.game.gameRunning} className='replaceHandButton' onClick={_=>this.replaceHand()} disabled={this.state.game.czarsTurn || player.isCzar || player.cards.length == 0}>Replace hand instead of playing a card</button>}/>
     );
   }
 }
