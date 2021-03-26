@@ -32,7 +32,7 @@ class App extends React.Component{
   render(){
     return (
       <div className="App">
-        <Header showHome={this.props.location !== "/"}/>
+        <Header showHome={this.props.location.pathname !== "/"}/>
         <Switch>
           <Route path="/create">
             <CreateGame client={this.state.client} setRoom={(room) => this.setRoom(this, room)}/>

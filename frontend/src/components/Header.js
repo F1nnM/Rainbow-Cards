@@ -8,9 +8,11 @@ class Header extends React.Component {
   render() {
     return (
       <div className="header">
-        <div className="homeContainer" onClick={_=>this.props.history.push("/")}>
-          {this.props.showHome && <img className="home" src={home}></img>}
-        </div>
+        {this.props.showHome &&
+          <div className="homeContainer" onClick={_ => this.props.history.push("/")}>
+            <img className="home" src={home}></img>
+          </div>
+        }
         <span>Yet another <a href="https://cardsagainsthumanity.com/">Cards against Humanity</a> clone.</span>
         <div className="spreader" />
         <div className="center">
