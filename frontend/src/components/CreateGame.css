@@ -12,8 +12,18 @@
 }
 
 .start-button {
-    font-size: larger
+    font-size: larger;
+    outline: none;
 }
+.start-button:hover {
+    transform: translateY(-5%);
+}
+.start-button:active {
+    color: white;
+    background-color: black;
+    border-color: white;
+}
+
 .options {
     margin: .5%;
     border: solid 1px black;
