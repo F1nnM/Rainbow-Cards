@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header } from "./components/Header";
+import Header from "./components/Header";
 import Game from "./components/Game";
 import MainMenu from "./components/MainMenu";
 import GamesList from "./components/GamesList";
@@ -25,10 +25,14 @@ class App extends React.Component{
     console.log("Updated room")
   }
 
+  leaveGame() {
+    this.props.history.push("/")
+  }
+
   render(){
     return (
       <div className="App">
-        <Header />
+        <Header showHome={this.props.location !== "/"}/>
         <Switch>
           <Route path="/create">
             <CreateGame client={this.state.client} setRoom={(room) => this.setRoom(this, room)}/>
