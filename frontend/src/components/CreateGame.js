@@ -62,7 +62,7 @@ class CreateGame extends React.Component {
   render() {
     let warnCards = this.state.currentTotalBlack<20 || this.state.currentTotalWhite<200
     return (
-      <div>
+      <div className="container">
         <div className="options">
           <h2>Sets to use</h2>
           <div className="checkboxContainer">
@@ -91,7 +91,7 @@ class CreateGame extends React.Component {
           <label>Make this game private: </label>
           <input type="checkbox" checked={this.state.private} onChange={e => this.setState({...this.state, private: e.target.checked})}/>
         </div>
-        <button onClick={_ => this.onclick(this)} className="start-button">Start Game</button>
+        <button onClick={_ => this.onclick(this)} className="start-button options">Start Game</button>
       </div>
     );
   }
