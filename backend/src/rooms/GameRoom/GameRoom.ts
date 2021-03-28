@@ -61,7 +61,7 @@ export class GameRoom extends Room<GameRoomState> {
     }
         
     try{
-      await this.allowReconnection(client, 60*0.5);
+      await this.allowReconnection(client, 60*5);
       if (replaceOwnerTimeout)
         replaceOwnerTimeout.clear()
       this.state.players.get(client.sessionId).connected = true;
