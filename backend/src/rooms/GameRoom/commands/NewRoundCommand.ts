@@ -1,5 +1,5 @@
 import { Command } from "@colyseus/command";
-import { GameRoomState } from "../GameRoomState";
+import { GameRoomState, Player } from "../GameRoomState";
 
 export class NewRoundCommand extends Command<GameRoomState, {wait: number}> {
 
@@ -19,18 +19,28 @@ export class NewRoundCommand extends Command<GameRoomState, {wait: number}> {
         this.state.czarDidVote = false;
 
         //determine new card czar. Not allowed to be the same as last round
-        var possibleCzars: string[] = []
+        var possibleCzars: Player[] = [];
+
+        var minTimesCzar = Infinity;
 
         this.state.players.forEach((player, id) => {
-          if (!player.isCzar)
-            possibleCzars.push(id);
+          if (!player.isCzar && player.connected)
+            possibleCzars.push(player);
           else
             player.isCzar = false;
+          
+          minTimesCzar = Math.min(minTimesCzar, player.timesCzar);
         })
 
-        var newCzarId: string = possibleCzars[Math.floor(Math.random()*possibleCzars.length)];
-        this.state.players.get(newCzarId).isCzar = true;
+        possibleCzars = possibleCzars.filter(player => player.timesCzar === minTimesCzar);
 
+        let newCzarId: string;
+        if (possibleCzars.length === 1)
+          newCzarId = possibleCzars[0].id;
+        else
+          newCzarId = possibleCzars[Math.floor(Math.random()*possibleCzars.length)].id;
+        this.state.players.get(newCzarId).isCzar = true;
+        this.state.players.get(newCzarId).timesCzar++;
 
         if(this.state.blackCardStack.length == 0)
           this.state.refillBlackStack()

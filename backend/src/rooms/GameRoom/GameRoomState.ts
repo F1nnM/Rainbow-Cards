@@ -60,6 +60,8 @@ export class Player extends Schema {
   @type("boolean")
   isOwner: boolean = false;
 
+  timesCzar: number = 0;
+
   id: string;
 }
 
