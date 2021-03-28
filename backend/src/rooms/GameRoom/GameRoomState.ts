@@ -21,7 +21,7 @@ export class BlackCard extends Card {
 export class PlayedCard extends Schema{
 
   @filter(function(client: Client, value: PlayedCard['content'], gameRoom: GameRoomState) {
-    return gameRoom.czarsTurn
+    return gameRoom.czarsTurn || gameRoom.cardsPlayed.find(stack => stack.playedBy === client.sessionId)?.cards.some(card => card.content === value)
   })
   @type("string")
   content: string;
