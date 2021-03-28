@@ -598,7 +598,7 @@ export const blackSets: any = {
       },
       {
         "text": "Make a haiku.",
-        "blanks": 1
+        "blanks": 3
       },
       {
         "text": "The class field trip was completely ruined by ____.",
