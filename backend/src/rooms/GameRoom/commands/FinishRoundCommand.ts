@@ -10,7 +10,7 @@ export class FinishRoundCommand extends Command<GameRoomState> {
         this.state.players.forEach((player, id) => {
             if (!player.connected || player.isCzar)
                 return
-            everybodyOnlinePlayed = everybodyOnlinePlayed && ( this.state.cardsPlayed.some(cardStack => (cardStack.playedBy === id && cardStack.cards.length === this.state.blackCard.blanks)) || player.cards.length === 0);
+            everybodyOnlinePlayed = everybodyOnlinePlayed && player.played;
         })
         return everybodyOnlinePlayed
     }

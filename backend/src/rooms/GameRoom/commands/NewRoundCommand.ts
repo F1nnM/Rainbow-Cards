@@ -18,6 +18,8 @@ export class NewRoundCommand extends Command<GameRoomState, {wait: number}> {
         this.state.czarsTurn = false;
         this.state.czarDidVote = false;
 
+        this.state.roundWinner = null;
+
         //determine new card czar. Not allowed to be the same as last round
         var possibleCzars: Player[] = [];
 
@@ -30,6 +32,8 @@ export class NewRoundCommand extends Command<GameRoomState, {wait: number}> {
             player.isCzar = false;
           
           minTimesCzar = Math.min(minTimesCzar, player.timesCzar);
+
+          player.played = false;
         })
 
         possibleCzars = possibleCzars.filter(player => player.timesCzar === minTimesCzar);

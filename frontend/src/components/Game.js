@@ -146,6 +146,10 @@ class Game extends React.Component {
 
     let playedCards = this.state.game.winner ? [{cards: [{content: this.state.game.players[this.state.game.winner].name, mark: "WIN"}], chosenByCzar: true}] : this.state.game.cardsPlayed
 
+    console.log("Winners")
+    console.log(this.state.game.winner)
+    console.log(this.state.game.roundWinner)
+
     return (
       
       <CardArea
@@ -156,9 +160,9 @@ class Game extends React.Component {
         whiteCardClicked={ index => this.playCard(this, index)}
         playedCards={playedCards}
         playedCardsClicked={index => this.czarVote(this, index)}
-        sidebar={<Scoreboard players={Array.from(this.state.game.players.values())}/>}
+        sidebar={<Scoreboard players={Array.from(this.state.game.players.values())} gameRunning={this.state.game.gameRunning} winner={this.state.game.winner || this.state.game.roundWinner}/>}
         trustPlayedCards={!this.state.game.winner}
-        additionalSpace={<button hidden={!this.state.game.gameRunning} className='replaceHandButton' onClick={_=>this.replaceHand()} disabled={this.state.game.czarsTurn || player.isCzar || player.cards.length == 0}>Replace hand instead of playing a card</button>}/>
+        additionalSpace={<button hidden={!this.state.game.gameRunning} className='replaceHandButton' onClick={_=>this.replaceHand()} disabled={this.state.game.czarsTurn || player.isCzar || player.cards.length === 0}>Replace hand instead of playing a card</button>}/>
     );
   }
 }

@@ -5,51 +5,51 @@ export const blackSets: any = {
     "mark": "US",
     "cards": [
       {
-        "text": "Here is the church Here is the steeple Open the doors And there is ____.",
+        "text": "Here is the church Here is the steeple Open the doors And there is [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "As the mom of five rambunctious boys, I'm no stranger to ____.",
+        "text": "As the mom of five rambunctious boys, I'm no stranger to [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "When I am a billionaire, I shall erect a 50-foot statue to commemorate ____.",
+        "text": "When I am a billionaire, I shall erect a 50-foot statue to commemorate [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Next on ESPN2: The World Series of ____.",
+        "text": "Next on ESPN2: The World Series of [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Dear Abby, I'm having some trouble with ____ and would like your advice.",
+        "text": "Dear Abby, I'm having some trouble with [[BLANK]] and would like your advice.",
         "blanks": 1
       },
       {
-        "text": "Lifetime&reg; presents \"____: the Story of ____.\"",
+        "text": "Lifetime&reg; presents \"[[BLANK]]: the Story of [[BLANK]].\"",
         "blanks": 2
       },
       {
-        "text": "Hey guys, welcome to Chili's! Would you like to start the night off right with ____?",
+        "text": "Hey guys, welcome to Chili's! Would you like to start the night off right with [[BLANK]]?",
         "blanks": 1
       },
       {
-        "text": "Old Macdonald had ____. E-I-E-I-O.",
+        "text": "Old Macdonald had [[BLANK]]. E-I-E-I-O.",
         "blanks": 1
       },
       {
-        "text": "Men's Wearhouse. You're gonna like ____. I guarantee it.",
+        "text": "Men's Wearhouse. You're gonna like [[BLANK]]. I guarantee it.",
         "blanks": 1
       },
       {
-        "text": "The Chevy Tahoe. With the power and space to take ____ everywhere you go.",
+        "text": "The Chevy Tahoe. With the power and space to take [[BLANK]] everywhere you go.",
         "blanks": 1
       },
       {
-        "text": "Click here for ____!!!",
+        "text": "Click here for [[BLANK]]!!!",
         "blanks": 1
       },
       {
-        "text": "TSA guidelines now prohibit ____ on airplanes.",
+        "text": "TSA guidelines now prohibit [[BLANK]] on airplanes.",
         "blanks": 1
       },
       {
@@ -61,23 +61,23 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "This season at Steppenwolf, Samuel Beckett's classic existential play: Waiting for ____.",
+        "text": "This season at Steppenwolf, Samuel Beckett's classic existential play: Waiting for [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "A recent laboratory study shows that undergraduates have 50% less sex after being exposed to ____.",
+        "text": "A recent laboratory study shows that undergraduates have 50% less sex after being exposed to [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Mabe she's born with it. Maybe it's ____.",
+        "text": "Mabe she's born with it. Maybe it's [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Arby's: We Have ____.",
+        "text": "Arby's: We Have [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "When I am President, I will create the Department of ____.",
+        "text": "When I am President, I will create the Department of [[BLANK]].",
         "blanks": 1
       },
       {
@@ -85,19 +85,19 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "Brought to you by Bud Light&reg;, the official Beer of ____.",
+        "text": "Brought to you by Bud Light&reg;, the official Beer of [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "I'm no doctor but I'm pretty sure what you're suffering from is called \"____.\"",
+        "text": "I'm no doctor but I'm pretty sure what you're suffering from is called \"[[BLANK]].\"",
         "blanks": 1
       },
       {
-        "text": "Bravo's new reality show features eight washed-up celebrities living with ____.",
+        "text": "Bravo's new reality show features eight washed-up celebrities living with [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "In the Disney Channel Original Movie, Hannah Montana struggles with ____ for the first time.",
+        "text": "In the Disney Channel Original Movie, Hannah Montana struggles with [[BLANK]] for the first time.",
         "blanks": 1
       }
     ]
@@ -106,95 +106,95 @@ export const blackSets: any = {
     "mark": "CA",
     "cards": [
       {
-        "text": "My fellow Americans: Before this decade is out, we <i>will</i> have ____ on the moon!",
+        "text": "My fellow Americans: Before this decade is out, we <i>will</i> have [[BLANK]] on the moon!",
         "blanks": 1
       },
       {
-        "text": "Introducing X-treme Baseball! It's like baseball, but with ____!",
+        "text": "Introducing X-treme Baseball! It's like baseball, but with [[BLANK]]!",
         "blanks": 1
       },
       {
-        "text": "IF you like ____, YOU MIGHT BE A REDNECK.",
+        "text": "IF you like [[BLANK]], YOU MIGHT BE A REDNECK.",
         "blanks": 1
       },
       {
-        "text": "Today on <i>Maury</i> : \"Help! My son is ____!\"",
+        "text": "Today on <i>Maury</i> : \"Help! My son is [[BLANK]]!\"",
         "blanks": 1
       },
       {
-        "text": "While the United States raced the Soviet Union to the moon, the Mexican government funneled millions of pesos into research on ____.",
+        "text": "While the United States raced the Soviet Union to the moon, the Mexican government funneled millions of pesos into research on [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "As the mom of five rambunctious boys, I'm not stranger to ____.",
+        "text": "As the mom of five rambunctious boys, I'm not stranger to [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "CBC presents \"____: the Story of ____.\"",
+        "text": "CBC presents \"[[BLANK]]: the Story of [[BLANK]].\"",
         "blanks": 2
       },
       {
-        "text": "Just once I'd like to hear you say \"Thanks, Mom. Thanks for ____.\"",
+        "text": "Just once I'd like to hear you say \"Thanks, Mom. Thanks for [[BLANK]].\"",
         "blanks": 1
       },
       {
-        "text": "Bravo's new reality show feature eight washed-up celebrities living with ____.",
+        "text": "Bravo's new reality show feature eight washed-up celebrities living with [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Air Canada guidelines now prohibit ____ on airplanes.",
+        "text": "Air Canada guidelines now prohibit [[BLANK]] on airplanes.",
         "blanks": 1
       },
       {
-        "text": "When I am Prime Minister of Canada, I will create the Ministry of ____.",
+        "text": "When I am Prime Minister of Canada, I will create the Ministry of [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Coming to Broadway this season, ____; The Musical.",
+        "text": "Coming to Broadway this season, [[BLANK]]; The Musical.",
         "blanks": 1
       },
       {
-        "text": "This season at the Princess of Wales Theatre, Samuel Beckett's classic existential play: <i>Waiting for ____.</i>",
+        "text": "This season at the Princess of Wales Theatre, Samuel Beckett's classic existential play: <i>Waiting for [[BLANK]].</i>",
         "blanks": 1
       },
       {
-        "text": "Penalty! ____: that's 5 minutes in the box!",
+        "text": "Penalty! [[BLANK]]: that's 5 minutes in the box!",
         "blanks": 1
       },
       {
-        "text": "Hey guys, welcome to Boston Pizza! Would you like to start the night off right with ____?",
+        "text": "Hey guys, welcome to Boston Pizza! Would you like to start the night off right with [[BLANK]]?",
         "blanks": 1
       },
       {
-        "text": "I know when that hotline bling, that can only mean one thing: ____.",
+        "text": "I know when that hotline bling, that can only mean one thing: [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Dude, <i>do not</i> go in that washroom. There's ____ in there.",
+        "text": "Dude, <i>do not</i> go in that washroom. There's [[BLANK]] in there.",
         "blanks": 1
       },
       {
-        "text": "Brought to you by Molson Canadian, the Official Beer of ____.",
+        "text": "Brought to you by Molson Canadian, the Official Beer of [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Next on TSN: The World Series of ____.",
+        "text": "Next on TSN: The World Series of [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "O Canada, we stand on guard for ____.",
+        "text": "O Canada, we stand on guard for [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Dear Abby, I'm having some trouble ____ and would like your advice.",
+        "text": "Dear Abby, I'm having some trouble [[BLANK]] and would like your advice.",
         "blanks": 1
       },
       {
-        "text": "Skidamarink a dink a dink, skidamarink a doo, I love ____.",
+        "text": "Skidamarink a dink a dink, skidamarink a doo, I love [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "The new Chevy Tahoe. With the power and space to take ____ everywhere you go.",
+        "text": "The new Chevy Tahoe. With the power and space to take [[BLANK]] everywhere you go.",
         "blanks": 1
       }
     ]
@@ -203,27 +203,27 @@ export const blackSets: any = {
     "mark": "UK",
     "cards": [
       {
-        "text": "Life for American Indians was forever changed when the White Man introduced them to ____.",
+        "text": "Life for American Indians was forever changed when the White Man introduced them to [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "&#x2605;&#x2606;&#x2606;&#x2606;&#x2606; Do NOT go here! Found ____ in my Kung Pao chicken!",
+        "text": "&#x2605;&#x2606;&#x2606;&#x2606;&#x2606; Do NOT go here! Found [[BLANK]] in my Kung Pao chicken!",
         "blanks": 1
       },
       {
-        "text": "A romantic, candlelit dinner would be incomplete without  ____.",
+        "text": "A romantic, candlelit dinner would be incomplete without  [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Airport security guidelines now prohibit ____ on airplanes.",
+        "text": "Airport security guidelines now prohibit [[BLANK]] on airplanes.",
         "blanks": 1
       },
       {
-        "text": "____? Jim'll fix it!",
+        "text": "[[BLANK]]? Jim'll fix it!",
         "blanks": 1
       },
       {
-        "text": "Today on <i>The Jeremy Kyle Show:</i> \"Help! My son is ____!\"",
+        "text": "Today on <i>The Jeremy Kyle Show:</i> \"Help! My son is [[BLANK]]!\"",
         "blanks": 1
       },
       {
@@ -231,43 +231,43 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "Mate, <i>do not go</i> in that bathroom. There's ____ in there.",
+        "text": "Mate, <i>do not go</i> in that bathroom. There's [[BLANK]] in there.",
         "blanks": 1
       },
       {
-        "text": "____. Once you pop, the fun don't stop!",
+        "text": "[[BLANK]]. Once you pop, the fun don't stop!",
         "blanks": 1
       },
       {
-        "text": "When I am Prime Minister of the United Kingdom, I will create the Ministry of ____.",
+        "text": "When I am Prime Minister of the United Kingdom, I will create the Ministry of [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Instead of coal, Father Christmas now gives the bad children ____.",
+        "text": "Instead of coal, Father Christmas now gives the bad children [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "UKIP: Putting ____ First!",
+        "text": "UKIP: Putting [[BLANK]] First!",
         "blanks": 1
       },
       {
-        "text": "And the BAFTA for ____ goes to____.",
+        "text": "And the BAFTA for [[BLANK]] goes to[[BLANK]].",
         "blanks": 2
       },
       {
-        "text": "TFL apologizes for the delay in train service due to ____.",
+        "text": "TFL apologizes for the delay in train service due to [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Nobody expects the Spanish Inquisition. Our chief weapons are fear, surprise, and ____.",
+        "text": "Nobody expects the Spanish Inquisition. Our chief weapons are fear, surprise, and [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "The school trip was completely ruined by ____.",
+        "text": "The school trip was completely ruined by [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Next on Sky Sports: The World Champion of ____..",
+        "text": "Next on Sky Sports: The World Champion of [[BLANK]]..",
         "blanks": 1
       },
       {
@@ -275,43 +275,43 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "Next up on Channel 4: Ramsay's ____ Nightmares.",
+        "text": "Next up on Channel 4: Ramsay's [[BLANK]] Nightmares.",
         "blanks": 1
       },
       {
-        "text": "In Belmarsh Prison, word is you can trade 200 cigarettes for ____.",
+        "text": "In Belmarsh Prison, word is you can trade 200 cigarettes for [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Now at the Natural History Museum: an interactive exhibit on ____.",
+        "text": "Now at the Natural History Museum: an interactive exhibit on [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Hey guys, welcome to TGIF! Would you like to start the night off right with ____?",
+        "text": "Hey guys, welcome to TGIF! Would you like to start the night off right with [[BLANK]]?",
         "blanks": 1
       },
       {
-        "text": "Coming to the West End this year, ____: The Musical.",
+        "text": "Coming to the West End this year, [[BLANK]]: The Musical.",
         "blanks": 1
       },
       {
-        "text": "This season at the Old Vic, Samuel Beckett's classic existential play: Waiting for ____.",
+        "text": "This season at the Old Vic, Samuel Beckett's classic existential play: Waiting for [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Channel 5's new reality show feature eight washed-up celebrities living with ____.",
+        "text": "Channel 5's new reality show feature eight washed-up celebrities living with [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "____. That's what mums go to Iceland.",
+        "text": "[[BLANK]]. That's what mums go to Iceland.",
         "blanks": 1
       },
       {
-        "text": "Channel 4 presents \"____: the Story of ____.\"",
+        "text": "Channel 4 presents \"[[BLANK]]: the Story of [[BLANK]].\"",
         "blanks": 2
       },
       {
-        "text": "Dear Agony Aunt, I'm having some trouble with ____ and would like your advice.",
+        "text": "Dear Agony Aunt, I'm having some trouble with [[BLANK]] and would like your advice.",
         "blanks": 1
       }
     ]
@@ -320,43 +320,43 @@ export const blackSets: any = {
     "mark": "AU",
     "cards": [
       {
-        "text": "50% of all marriages end in ____.",
+        "text": "50% of all marriages end in [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "This is the way the world ends This is the way the world ends Not with a bang but with ____.",
+        "text": "This is the way the world ends This is the way the world ends Not with a bang but with [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "After four platinum albums and three Grammys, it's time to get back to my roots, to what inspired me to make music in the first place: ____.",
+        "text": "After four platinum albums and three Grammys, it's time to get back to my roots, to what inspired me to make music in the first place: [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "When Pharaoh remained unmoved, Moses called down a Plague of ____.",
+        "text": "When Pharaoh remained unmoved, Moses called down a Plague of [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "____. High five, bro.",
+        "text": "[[BLANK]]. High five, bro.",
         "blanks": 1
       },
       {
-        "text": "Step 1: ____. Step 2: ____. Step 3: Profit.",
+        "text": "Step 1: [[BLANK]]. Step 2: [[BLANK]]. Step 3: Profit.",
         "blanks": 2
       },
       {
-        "text": "If you can't be with the one you love, love ____.",
+        "text": "If you can't be with the one you love, love [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "I'm LeBron James, and when I'm not slamming dunks, I love ____.",
+        "text": "I'm LeBron James, and when I'm not slamming dunks, I love [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Alternative medicine is now embracing the curative powers of ____.",
+        "text": "Alternative medicine is now embracing the curative powers of [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "That's right, I killed ____. How, you ask? ____.",
+        "text": "That's right, I killed [[BLANK]]. How, you ask? [[BLANK]].",
         "blanks": 2
       },
       {
@@ -364,63 +364,63 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "I'm going on a cleanse this week. Nothing but kale juice and ____.",
+        "text": "I'm going on a cleanse this week. Nothing but kale juice and [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "____. That was so metal.",
+        "text": "[[BLANK]]. That was so metal.",
         "blanks": 1
       },
       {
-        "text": "Kids, I don't need drugs to get high. I'm high on ____.",
+        "text": "Kids, I don't need drugs to get high. I'm high on [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "When I was tripping on acid, ____ turned into ____.",
+        "text": "When I was tripping on acid, [[BLANK]] turned into [[BLANK]].",
         "blanks": 2
       },
       {
-        "text": "____. Betcha can't have just one!",
+        "text": "[[BLANK]]. Betcha can't have just one!",
         "blanks": 1
       },
       {
-        "text": "Instead of coal, Santa now gives the bad children ____.",
+        "text": "Instead of coal, Santa now gives the bad children [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Introducing the amazing superhero/sidekick duo! It's ____ and ____!",
+        "text": "Introducing the amazing superhero/sidekick duo! It's [[BLANK]] and [[BLANK]]!",
         "blanks": 2
       },
       {
-        "text": "They said we were crazy. They said we couldn't put ____ inside of ____. They were wrong.",
+        "text": "They said we were crazy. They said we couldn't put [[BLANK]] inside of [[BLANK]]. They were wrong.",
         "blanks": 2
       },
       {
-        "text": "____ + ____ = ____.",
+        "text": "[[BLANK]] + [[BLANK]] = [[BLANK]].",
         "blanks": 3
       },
       {
-        "text": "In M. Night Shyamalan's new movie, Bruce Willis discovers that ____ had really been ____ all along.",
+        "text": "In M. Night Shyamalan's new movie, Bruce Willis discovers that [[BLANK]] had really been [[BLANK]] all along.",
         "blanks": 2
       },
       {
-        "text": "Military historians remember Alexander the Great for his brilliant use of ____ against the Persians.",
+        "text": "Military historians remember Alexander the Great for his brilliant use of [[BLANK]] against the Persians.",
         "blanks": 1
       },
       {
-        "text": "Check me out, yo! I call this dance move \"____.\"",
+        "text": "Check me out, yo! I call this dance move \"[[BLANK]].\"",
         "blanks": 1
       },
       {
-        "text": "White people like ____.",
+        "text": "White people like [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "____: kid-tested, mother-approved.",
+        "text": "[[BLANK]]: kid-tested, mother-approved.",
         "blanks": 1
       },
       {
-        "text": "____ is a slippery slope that leads to ____.",
+        "text": "[[BLANK]] is a slippery slope that leads to [[BLANK]].",
         "blanks": 2
       },
       {
@@ -428,31 +428,31 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "I get by with a little help from ____.",
+        "text": "I get by with a little help from [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Here is church Here is the steeple Open the doors And there is ____.",
+        "text": "Here is church Here is the steeple Open the doors And there is [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Just saw this upsetting video! Please retweet!! #stop ____",
+        "text": "Just saw this upsetting video! Please retweet!! #stop [[BLANK]]",
         "blanks": 1
       },
       {
-        "text": "Maybe she's born with it. Maybe it's ____.",
+        "text": "Maybe she's born with it. Maybe it's [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Old MacDonald has ____. E-I-E-I-O.",
+        "text": "Old MacDonald has [[BLANK]]. E-I-E-I-O.",
         "blanks": 1
       },
       {
-        "text": "A recent laboratory study shows that undergraduates have 50% less sex after being exposed to: ____.",
+        "text": "A recent laboratory study shows that undergraduates have 50% less sex after being exposed to: [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "In the new Disney Channel Original Movie, Hannah Montana struggles with ____ for the first time.",
+        "text": "In the new Disney Channel Original Movie, Hannah Montana struggles with [[BLANK]] for the first time.",
         "blanks": 1
       },
       {
@@ -460,7 +460,7 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "When I am a billionaire, I shall erect a 20-metre statue to commemorate ____.",
+        "text": "When I am a billionaire, I shall erect a 20-metre statue to commemorate [[BLANK]].",
         "blanks": 1
       },
       {
@@ -468,7 +468,7 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "Just once I'd like to hear you say \"Thanks, Mum. Thanks for ____.\"",
+        "text": "Just once I'd like to hear you say \"Thanks, Mum. Thanks for [[BLANK]].\"",
         "blanks": 1
       },
       {
@@ -476,15 +476,15 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "As the mum of five rambunctious boys, I'm not stranger to ____.",
+        "text": "As the mum of five rambunctious boys, I'm not stranger to [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "I'm sorry, Sir, but I couldn't complete my homework because of ____.",
+        "text": "I'm sorry, Sir, but I couldn't complete my homework because of [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Oi! Show us ____!",
+        "text": "Oi! Show us [[BLANK]]!",
         "blanks": 1
       },
       {
@@ -492,11 +492,11 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "MTV's new reality show features eight washed-up celebrities living with ____.",
+        "text": "MTV's new reality show features eight washed-up celebrities living with [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "&#x2605;&#x2606;&#x2606;&#x2606;&#x2606; Do NOT go here! Found ____ in my Mongolian chicken!",
+        "text": "&#x2605;&#x2606;&#x2606;&#x2606;&#x2606; Do NOT go here! Found [[BLANK]] in my Mongolian chicken!",
         "blanks": 1
       },
       {
@@ -504,15 +504,15 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "Today on <i>Jerry Springer:</i> \"Help! My son is ____!\"",
+        "text": "Today on <i>Jerry Springer:</i> \"Help! My son is [[BLANK]]!\"",
         "blanks": 1
       },
       {
-        "text": "This season at the Sydney Opera House, Samuel Beckett's classic existential play: <i>Waiting for ____.</i>",
+        "text": "This season at the Sydney Opera House, Samuel Beckett's classic existential play: <i>Waiting for [[BLANK]].</i>",
         "blanks": 1
       },
       {
-        "text": "Crikey! I've never seen ____ like this before! Let's get a bit closer.",
+        "text": "Crikey! I've never seen [[BLANK]] like this before! Let's get a bit closer.",
         "blanks": 1
       },
       {
@@ -524,55 +524,55 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "The school excursion was completely ruined by ____.",
+        "text": "The school excursion was completely ruined by [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Channel 9 is pleased to present its new variety show, \"Hey Hey It's ____.\"",
+        "text": "Channel 9 is pleased to present its new variety show, \"Hey Hey It's [[BLANK]].\"",
         "blanks": 1
       },
       {
-        "text": "Qantas now prohibits ____ on airplanes.",
+        "text": "Qantas now prohibits [[BLANK]] on airplanes.",
         "blanks": 1
       },
       {
-        "text": "ABC presents \"____: the Story of ____.\"",
+        "text": "ABC presents \"[[BLANK]]: the Story of [[BLANK]].\"",
         "blanks": 2
       },
       {
-        "text": "Next on Nine's Wide World of Sports: The World Series of ____.",
+        "text": "Next on Nine's Wide World of Sports: The World Series of [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Are you thinking what I'm thinking, B1? I think I am, B2: it's ____ time!",
+        "text": "Are you thinking what I'm thinking, B1? I think I am, B2: it's [[BLANK]] time!",
         "blanks": 1
       },
       {
-        "text": "____? Yeah, nah.",
+        "text": "[[BLANK]]? Yeah, nah.",
         "blanks": 1
       },
       {
-        "text": "Life for Aboriginal people was forever changed when the white man introduced them to ____.",
+        "text": "Life for Aboriginal people was forever changed when the white man introduced them to [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Hey guys, welcome to Sizzler! Would you like to start the night off right with ____?",
+        "text": "Hey guys, welcome to Sizzler! Would you like to start the night off right with [[BLANK]]?",
         "blanks": 1
       },
       {
-        "text": "Brought to you by XXXX Gold, the Official Beer of ____.",
+        "text": "Brought to you by XXXX Gold, the Official Beer of [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Mate, <i>do not</i> go in that toilet. There's ____ in there.",
+        "text": "Mate, <i>do not</i> go in that toilet. There's [[BLANK]] in there.",
         "blanks": 1
       },
       {
-        "text": "In Australia, ____ is twice as big and twice as deadly.",
+        "text": "In Australia, [[BLANK]] is twice as big and twice as deadly.",
         "blanks": 1
       },
       {
-        "text": "When I am Prime Minister, I will create the Department of ____.",
+        "text": "When I am Prime Minister, I will create the Department of [[BLANK]].",
         "blanks": 1
       }
     ]
@@ -581,7 +581,7 @@ export const blackSets: any = {
     "mark": "INT",
     "cards": [
       {
-        "text": "Next from J.K. Rowling: <i>Harry Potter and the Chamber of ____.</i>",
+        "text": "Next from J.K. Rowling: <i>Harry Potter and the Chamber of [[BLANK]].</i>",
         "blanks": 1
       },
       {
@@ -589,7 +589,7 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "It's a pity that kids these days are all getting involved with ____.",
+        "text": "It's a pity that kids these days are all getting involved with [[BLANK]].",
         "blanks": 1
       },
       {
@@ -601,31 +601,31 @@ export const blackSets: any = {
         "blanks": 3
       },
       {
-        "text": "The class field trip was completely ruined by ____.",
+        "text": "The class field trip was completely ruined by [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Uh, hey guys, I know this was my idea, but I'm having serious doubts about ____.",
+        "text": "Uh, hey guys, I know this was my idea, but I'm having serious doubts about [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "I never truly understood ____ until I encountered ____.",
+        "text": "I never truly understood [[BLANK]] until I encountered [[BLANK]].",
         "blanks": 2
       },
       {
-        "text": "I'm sorry, Professor, but I couldn't complete my homework because of ____.",
+        "text": "I'm sorry, Professor, but I couldn't complete my homework because of [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "I drink to forget ____.",
+        "text": "I drink to forget [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Hey Reddit! I'm ____. Ask me anything.",
+        "text": "Hey Reddit! I'm [[BLANK]]. Ask me anything.",
         "blanks": 1
       },
       {
-        "text": "I got 99 problems but ____ ain't one.",
+        "text": "I got 99 problems but [[BLANK]] ain't one.",
         "blanks": 1
       },
       {
@@ -633,11 +633,11 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "Dude, <i>do not</i> go in that bathroom. There's ____ in there.",
+        "text": "Dude, <i>do not</i> go in that bathroom. There's [[BLANK]] in there.",
         "blanks": 1
       },
       {
-        "text": "Just once, I'd like to hear you say \"Thanks, Mom. Thanks for ____.\"",
+        "text": "Just once, I'd like to hear you say \"Thanks, Mom. Thanks for [[BLANK]].\"",
         "blanks": 1
       },
       {
@@ -645,7 +645,7 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "Just saw this upsetting video! Please retweet!! #stop____",
+        "text": "Just saw this upsetting video! Please retweet!! #stop[[BLANK]]",
         "blanks": 1
       },
       {
@@ -673,7 +673,7 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "But before I kill you, Mr. Bond, I must show you ____.",
+        "text": "But before I kill you, Mr. Bond, I must show you [[BLANK]].",
         "blanks": 1
       },
       {
@@ -681,19 +681,19 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "A romantic, candlelit dinner would be incomplete without ____.",
+        "text": "A romantic, candlelit dinner would be incomplete without [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Coming to Broadway this season, ____: The Musical.",
+        "text": "Coming to Broadway this season, [[BLANK]]: The Musical.",
         "blanks": 1
       },
       {
-        "text": "And the Academy Award for ____ goes to ____.",
+        "text": "And the Academy Award for [[BLANK]] goes to [[BLANK]].",
         "blanks": 2
       },
       {
-        "text": "Fun tip! When your man asks you to go down on him, try surprising him with ____ instead.",
+        "text": "Fun tip! When your man asks you to go down on him, try surprising him with [[BLANK]] instead.",
         "blanks": 1
       },
       {
@@ -701,7 +701,7 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "For my next trick, I will pull ____ out of ____.",
+        "text": "For my next trick, I will pull [[BLANK]] out of [[BLANK]].",
         "blanks": 2
       },
       {
@@ -709,11 +709,11 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "____. It's a trap!",
+        "text": "[[BLANK]]. It's a trap!",
         "blanks": 1
       },
       {
-        "text": "Well if you'll excuse me, gentlemen, I have a date with ____.",
+        "text": "Well if you'll excuse me, gentlemen, I have a date with [[BLANK]].",
         "blanks": 1
       },
       {
@@ -737,19 +737,19 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "During sex, I like to think about ____.",
+        "text": "During sex, I like to think about [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Mr. and Mrs. Diaz, we called you in because we're concerned about Cynthia. Are you aware that your daughter is ____?",
+        "text": "Mr. and Mrs. Diaz, we called you in because we're concerned about Cynthia. Are you aware that your daughter is [[BLANK]]?",
         "blanks": 1
       },
       {
-        "text": "I'm no doctor, but I'm pretty sure what you're suffering from is called \"____.\"",
+        "text": "I'm no doctor, but I'm pretty sure what you're suffering from is called \"[[BLANK]].\"",
         "blanks": 1
       },
       {
-        "text": "Click Here for ____!!!",
+        "text": "Click Here for [[BLANK]]!!!",
         "blanks": 1
       },
       {
@@ -757,43 +757,43 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "The theme for next year's Eurovision Song Contest is \"We are ____.\"",
+        "text": "The theme for next year's Eurovision Song Contest is \"We are [[BLANK]].\"",
         "blanks": 1
       },
       {
-        "text": "In a world ravaged by ____, our only solace is ____.",
+        "text": "In a world ravaged by [[BLANK]], our only solace is [[BLANK]].",
         "blanks": 2
       },
       {
-        "text": "Your persistence is admirable, my dear Prince. But you cannot win my heart with ____ alone.",
+        "text": "Your persistence is admirable, my dear Prince. But you cannot win my heart with [[BLANK]] alone.",
         "blanks": 1
       },
       {
-        "text": "The blind date was going horrible until we discovered our shared interest in ____.",
+        "text": "The blind date was going horrible until we discovered our shared interest in [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Tonight's top story: What you don't know about ____ could kills you.",
+        "text": "Tonight's top story: What you don't know about [[BLANK]] could kills you.",
         "blanks": 1
       },
       {
-        "text": "Coming this season, Samuel Beckett's classic existential play: <i>Waiting for ____.</i>",
+        "text": "Coming this season, Samuel Beckett's classic existential play: <i>Waiting for [[BLANK]].</i>",
         "blanks": 1
       },
       {
-        "text": "When I am a billionaire, I shall erect a 20-meter statue to commemorate ____.",
+        "text": "When I am a billionaire, I shall erect a 20-meter statue to commemorate [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Next on Eurosport: The World Championship of ____.",
+        "text": "Next on Eurosport: The World Championship of [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "When I am Prime Minister, I will create the Ministry of ____.",
+        "text": "When I am Prime Minister, I will create the Ministry of [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Dear Sir or Madam, We regret to inform you that the Office of ____ has denied your request for ____.",
+        "text": "Dear Sir or Madam, We regret to inform you that the Office of [[BLANK]] has denied your request for [[BLANK]].",
         "blanks": 2
       }
     ]
@@ -806,15 +806,15 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "Lovin' you is easy 'cause you're ____.",
+        "text": "Lovin' you is easy 'cause you're [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Science will never explain ____.",
+        "text": "Science will never explain [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "The Five Stages of Grief: denial, anger, bargaining, ____, acceptance.",
+        "text": "The Five Stages of Grief: denial, anger, bargaining, [[BLANK]], acceptance.",
         "blanks": 1
       },
       {
@@ -822,27 +822,27 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "Charades was ruined for me forever when my mom had to act out ____.",
+        "text": "Charades was ruined for me forever when my mom had to act out [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Money can't buy me love, but it can buy me ____.",
+        "text": "Money can't buy me love, but it can buy me [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "During his midlife crisis, my dad got really into ____.",
+        "text": "During his midlife crisis, my dad got really into [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "When you get right down to it, ____ is just ____.",
+        "text": "When you get right down to it, [[BLANK]] is just [[BLANK]].",
         "blanks": 2
       },
       {
-        "text": "This is your captain speaking. Fasten your seatbelts and prepare for ____.",
+        "text": "This is your captain speaking. Fasten your seatbelts and prepare for [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Future historians will agree that ____ marked the beginning of America's decline.",
+        "text": "Future historians will agree that [[BLANK]] marked the beginning of America's decline.",
         "blanks": 1
       },
       {
@@ -850,11 +850,11 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "A successful job interview begins with a firm handshake and ends with ____.",
+        "text": "A successful job interview begins with a firm handshake and ends with [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Finally! A service that delivers ____ right to your door.",
+        "text": "Finally! A service that delivers [[BLANK]] right to your door.",
         "blanks": 1
       },
       {
@@ -862,67 +862,67 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "When all else fails, I can always masturbate to ____.",
+        "text": "When all else fails, I can always masturbate to [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "I spent my whole life working toward ____, only to have it ruined by ____.",
+        "text": "I spent my whole life working toward [[BLANK]], only to have it ruined by [[BLANK]].",
         "blanks": 2
       },
       {
-        "text": "____ would be woefully incomplete without ____.",
+        "text": "[[BLANK]] would be woefully incomplete without [[BLANK]].",
         "blanks": 2
       },
       {
-        "text": "In his new self-produced album, Kanye West raps over the sounds of ____.",
+        "text": "In his new self-produced album, Kanye West raps over the sounds of [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "In Rome, there are whisperings that the Vatican has a secret room devoted to ____.",
+        "text": "In Rome, there are whisperings that the Vatican has a secret room devoted to [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Having problems with ____? Try ____!",
+        "text": "Having problems with [[BLANK]]? Try [[BLANK]]!",
         "blanks": 2
       },
       {
-        "text": "The secret to a lasting marriage is communication, communication, and ____.",
+        "text": "The secret to a lasting marriage is communication, communication, and [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "My mom freaked out when she looked at my browser history and found ____.com/____.",
+        "text": "My mom freaked out when she looked at my browser history and found [[BLANK]].com/[[BLANK]].",
         "blanks": 2
       },
       {
-        "text": "In the seventh circle of Hell, sinners must endure ____ for all eternity.",
+        "text": "In the seventh circle of Hell, sinners must endure [[BLANK]] for all eternity.",
         "blanks": 1
       },
       {
-        "text": "____. Awesome in theory, kind of a mess in practice.",
+        "text": "[[BLANK]]. Awesome in theory, kind of a mess in practice.",
         "blanks": 1
       },
       {
-        "text": "My plan for world domination begins with ____.",
+        "text": "My plan for world domination begins with [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "I learned the hard way that you can't cheer up a grieving friend with ____.",
+        "text": "I learned the hard way that you can't cheer up a grieving friend with [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "A remarkable new study shows that chimps have evolved their own primitive version of ____.",
+        "text": "A remarkable new study shows that chimps have evolved their own primitive version of [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "After months of practice with ____, I think I'm finally ready for ____.",
+        "text": "After months of practice with [[BLANK]], I think I'm finally ready for [[BLANK]].",
         "blanks": 2
       },
       {
-        "text": "Turns out that ____-Man was neither the hero we needed nor wanted.",
+        "text": "Turns out that [[BLANK]]-Man was neither the hero we needed nor wanted.",
         "blanks": 1
       },
       {
-        "text": "With enough time and pressure, ____ will turn into ____.",
+        "text": "With enough time and pressure, [[BLANK]] will turn into [[BLANK]].",
         "blanks": 2
       },
       {
@@ -930,51 +930,51 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "I'm not like the rest of you. I'm too rich and busy for ____.",
+        "text": "I'm not like the rest of you. I'm too rich and busy for [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "The healing process began when I joined a support group for victims of ____.",
+        "text": "The healing process began when I joined a support group for victims of [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Doctor, you've gone too far! The human body wasn't meant to withstand that amount of ____!",
+        "text": "Doctor, you've gone too far! The human body wasn't meant to withstand that amount of [[BLANK]]!",
         "blanks": 1
       },
       {
-        "text": "Only two things in life are certain: death and ____.",
+        "text": "Only two things in life are certain: death and [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "This month's Cosmo: \"Spice up your sex life by bringing ____ into the bedroom.\"",
+        "text": "This month's Cosmo: \"Spice up your sex life by bringing [[BLANK]] into the bedroom.\"",
         "blanks": 1
       },
       {
-        "text": "Next time on Dr. Phil: How to talk to your child about ____.",
+        "text": "Next time on Dr. Phil: How to talk to your child about [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Tonight on 20/20: What you don't know about ____ could kill you.",
+        "text": "Tonight on 20/20: What you don't know about [[BLANK]] could kill you.",
         "blanks": 1
       },
       {
-        "text": "My new favorite porn star is Joey \"____\" McGee.",
+        "text": "My new favorite porn star is Joey \"[[BLANK]]\" McGee.",
         "blanks": 1
       },
       {
-        "text": "Michael Bay's new three-hour action epic pits ____ against ____.",
+        "text": "Michael Bay's new three-hour action epic pits [[BLANK]] against [[BLANK]].",
         "blanks": 2
       },
       {
-        "text": "Before ____, all we had was ____.",
+        "text": "Before [[BLANK]], all we had was [[BLANK]].",
         "blanks": 2
       },
       {
-        "text": "I went from ____ to ____ all thanks to ____.",
+        "text": "I went from [[BLANK]] to [[BLANK]] all thanks to [[BLANK]].",
         "blanks": 3
       },
       {
-        "text": "Aww, sick! I just saw this skater do a 720 kickflip into ____!",
+        "text": "Aww, sick! I just saw this skater do a 720 kickflip into [[BLANK]]!",
         "blanks": 1
       },
       {
@@ -982,103 +982,103 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "I love being a mom. But it's tough when my kids come home filthy from ____. That's why there's Tide&reg;.",
+        "text": "I love being a mom. But it's tough when my kids come home filthy from [[BLANK]]. That's why there's Tide&reg;.",
         "blanks": 1
       },
       {
-        "text": "As part of his daily regimen, Anderson Cooper sets aside 15 minutes for ____.",
+        "text": "As part of his daily regimen, Anderson Cooper sets aside 15 minutes for [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "To prepare for his upcoming role, Daniel Day-Lewis immersed himself in the world of ____.",
+        "text": "To prepare for his upcoming role, Daniel Day-Lewis immersed himself in the world of [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Welcome to Se&ntilde;or Frog's! Would you like to try our signature cocktail, \"____ on the Beach\"?",
+        "text": "Welcome to Se&ntilde;or Frog's! Would you like to try our signature cocktail, \"[[BLANK]] on the Beach\"?",
         "blanks": 1
       },
       {
-        "text": "Hey baby, come back to my place and I'll show you ____.",
+        "text": "Hey baby, come back to my place and I'll show you [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "You haven't truly lived until you've experienced ____ and ____ at the same time.",
+        "text": "You haven't truly lived until you've experienced [[BLANK]] and [[BLANK]] at the same time.",
         "blanks": 2
       },
       {
-        "text": "Your persistence is admirable, my dear Prince, But you cannot win my heart with ____ alone.",
+        "text": "Your persistence is admirable, my dear Prince, But you cannot win my heart with [[BLANK]] alone.",
         "blanks": 1
       },
       {
-        "text": "In a pinch, ____ can be a suitable substitute for ____.",
+        "text": "In a pinch, [[BLANK]] can be a suitable substitute for [[BLANK]].",
         "blanks": 2
       },
       {
-        "text": "During high school, I never really fit in until I found ____ club.",
+        "text": "During high school, I never really fit in until I found [[BLANK]] club.",
         "blanks": 1
       },
       {
-        "text": "Little Miss Muffet<br>Sat on a tuffet,<br>Eating her curds<br>and ____.",
+        "text": "Little Miss Muffet<br>Sat on a tuffet,<br>Eating her curds<br>and [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "In its new tourism campaign, Detroit proudly proclaims that it has finally eliminated ____.",
+        "text": "In its new tourism campaign, Detroit proudly proclaims that it has finally eliminated [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "My gym teacher got fired for adding ____ to the obstacle course.",
+        "text": "My gym teacher got fired for adding [[BLANK]] to the obstacle course.",
         "blanks": 1
       },
       {
-        "text": "The blind date was going horribly until we discovered our shared interest in ____.",
+        "text": "The blind date was going horribly until we discovered our shared interest in [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "My country, 'tis of thee, sweet land of ____.",
+        "text": "My country, 'tis of thee, sweet land of [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Call the law offices of Goldstein &amp; Goldstein, because no one should have to tolerate ____ in the workplace.",
+        "text": "Call the law offices of Goldstein &amp; Goldstein, because no one should have to tolerate [[BLANK]] in the workplace.",
         "blanks": 1
       },
       {
-        "text": "Members of New York's social elite are paying thousands of dollars just to experience ____.",
+        "text": "Members of New York's social elite are paying thousands of dollars just to experience [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "In his newest and most difficult stunt, David Blaine must escape from ____.",
+        "text": "In his newest and most difficult stunt, David Blaine must escape from [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Dear Sir or Madam, <br>We regret to inform you that the Office of ____ has denied your request for ____.",
+        "text": "Dear Sir or Madam, <br>We regret to inform you that the Office of [[BLANK]] has denied your request for [[BLANK]].",
         "blanks": 2
       },
       {
-        "text": "____: Hours of fun. Easy to use. Perfect for ____!",
+        "text": "[[BLANK]]: Hours of fun. Easy to use. Perfect for [[BLANK]]!",
         "blanks": 2
       },
       {
-        "text": "Listen, son. If you want to get involved with ____, I won't stop you. Just steer clear of ____.",
+        "text": "Listen, son. If you want to get involved with [[BLANK]], I won't stop you. Just steer clear of [[BLANK]].",
         "blanks": 2
       },
       {
-        "text": "Next week on the Discovery Channel, one man must survive in the depths of the Amazon with only ____ and his wits.",
+        "text": "Next week on the Discovery Channel, one man must survive in the depths of the Amazon with only [[BLANK]] and his wits.",
         "blanks": 1
       },
       {
-        "text": "If God didn't want us to enjoy ____, he wouldn't have given us ____.",
+        "text": "If God didn't want us to enjoy [[BLANK]], he wouldn't have given us [[BLANK]].",
         "blanks": 2
       },
       {
-        "text": "My life is ruined by a vicious cycle of ____ and ____.",
+        "text": "My life is ruined by a vicious cycle of [[BLANK]] and [[BLANK]].",
         "blanks": 2
       },
       {
-        "text": "And I would have gotten away with it, too, if it hadn't been for ____!",
+        "text": "And I would have gotten away with it, too, if it hadn't been for [[BLANK]]!",
         "blanks": 1
       },
       {
-        "text": "Legend has it Prince wouldn't perform without ____ in his dressing room.",
+        "text": "Legend has it Prince wouldn't perform without [[BLANK]] in his dressing room.",
         "blanks": 1
       }
     ]
@@ -1087,19 +1087,19 @@ export const blackSets: any = {
     "mark": "BLUE",
     "cards": [
       {
-        "text": "Dear Leader Kim Jong-un, our village praises your infinite wisdom with a humble offering of ____.",
+        "text": "Dear Leader Kim Jong-un, our village praises your infinite wisdom with a humble offering of [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "We never did find ____, but along the way we sure learned a lot about ____.",
+        "text": "We never did find [[BLANK]], but along the way we sure learned a lot about [[BLANK]].",
         "blanks": 2
       },
       {
-        "text": "Do <i>not</i> fuck with me! I am literally ____ right now.",
+        "text": "Do <i>not</i> fuck with me! I am literally [[BLANK]] right now.",
         "blanks": 1
       },
       {
-        "text": "And would you like those buffalo wings mild, hot, or ____?",
+        "text": "And would you like those buffalo wings mild, hot, or [[BLANK]]?",
         "blanks": 1
       },
       {
@@ -1107,63 +1107,63 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "And today's soup is Cream of ____.",
+        "text": "And today's soup is Cream of [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Come to Dubai, where you can relax in our world-famous spas, experience the nightlife, or simply enjoy ____ by the poolside.",
+        "text": "Come to Dubai, where you can relax in our world-famous spas, experience the nightlife, or simply enjoy [[BLANK]] by the poolside.",
         "blanks": 1
       },
       {
-        "text": "She's up all night for good fun. I'm up all night for ____.",
+        "text": "She's up all night for good fun. I'm up all night for [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Hi MTV! My name is Kendra, I live in Malibu, I'm into ____, and I love to have a good time.",
+        "text": "Hi MTV! My name is Kendra, I live in Malibu, I'm into [[BLANK]], and I love to have a good time.",
         "blanks": 1
       },
       {
-        "text": "I am become ____, destroyer of ____!",
+        "text": "I am become [[BLANK]], destroyer of [[BLANK]]!",
         "blanks": 2
       },
       {
-        "text": "____ may pass, but ____ will last forever.",
+        "text": "[[BLANK]] may pass, but [[BLANK]] will last forever.",
         "blanks": 2
       },
       {
-        "text": "In the beginning, there was ____. And the Lord said, \"Let there be ____.\"",
+        "text": "In the beginning, there was [[BLANK]]. And the Lord said, \"Let there be [[BLANK]].\"",
         "blanks": 2
       },
       {
-        "text": "You guys, I saw this crazy movie last night. It opens on ____, and then there's some stuff about ____, and then it ends with ____.",
+        "text": "You guys, I saw this crazy movie last night. It opens on [[BLANK]], and then there's some stuff about [[BLANK]], and then it ends with [[BLANK]].",
         "blanks": 3
       },
       {
-        "text": "This year's hottest album is \"____\" by ____.",
+        "text": "This year's hottest album is \"[[BLANK]]\" by [[BLANK]].",
         "blanks": 2
       },
       {
-        "text": "\"This is madness!\"<br><br>\" <i>No.</i> THIS IS ____!\"",
+        "text": "\"This is madness!\"<br><br>\" <i>No.</i> THIS IS [[BLANK]]!\"",
         "blanks": 1
       },
       {
-        "text": "It lurks in the night. It hungers for flesh. This summer, no one is safe from ____.",
+        "text": "It lurks in the night. It hungers for flesh. This summer, no one is safe from [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "____ will never be the same after ____.",
+        "text": "[[BLANK]] will never be the same after [[BLANK]].",
         "blanks": 2
       },
       {
-        "text": "I don't mean to brag, but they call me the Michael Jordan of ____.",
+        "text": "I don't mean to brag, but they call me the Michael Jordan of [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Don't forget! Beginning this week, Casual Friday will officially become \"____ Friday.\"",
+        "text": "Don't forget! Beginning this week, Casual Friday will officially become \"[[BLANK]] Friday.\"",
         "blanks": 1
       },
       {
-        "text": "Having the worst day EVER. #____",
+        "text": "Having the worst day EVER. #[[BLANK]]",
         "blanks": 1
       },
       {
@@ -1171,123 +1171,123 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "Wes Anderson's new film tells the story of a precocious child coming to terms with ____.",
+        "text": "Wes Anderson's new film tells the story of a precocious child coming to terms with [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Adventure. Romance. ____. From Paramount Pictures, \"____.\"",
+        "text": "Adventure. Romance. [[BLANK]]. From Paramount Pictures, \"[[BLANK]].\"",
         "blanks": 2
       },
       {
-        "text": "Patient presents with ____. Likely a result of ____.",
+        "text": "Patient presents with [[BLANK]]. Likely a result of [[BLANK]].",
         "blanks": 2
       },
       {
-        "text": "Yo' mama so fat she ____!",
+        "text": "Yo' mama so fat she [[BLANK]]!",
         "blanks": 1
       },
       {
-        "text": "Now in bookstores: \"The Audacity of ____,\" by Barack Obama.",
+        "text": "Now in bookstores: \"The Audacity of [[BLANK]],\" by Barack Obama.",
         "blanks": 1
       },
       {
-        "text": "In his new action comedy, Jackie Chan must fend off ninjas while also dealing with ____.",
+        "text": "In his new action comedy, Jackie Chan must fend off ninjas while also dealing with [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Armani suit: $1,000. Dinner for two at that swanky restaurant: $300. The look on her face when you surprise her with ____: priceless.",
+        "text": "Armani suit: $1,000. Dinner for two at that swanky restaurant: $300. The look on her face when you surprise her with [[BLANK]]: priceless.",
         "blanks": 1
       },
       {
-        "text": "Behind every powerful man is ____.",
+        "text": "Behind every powerful man is [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Life's pretty tough in the fast lane. That's why I never leave the house without ____.",
+        "text": "Life's pretty tough in the fast lane. That's why I never leave the house without [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "You are not alone. Millions of Americans struggle with ____ every day.",
+        "text": "You are not alone. Millions of Americans struggle with [[BLANK]] every day.",
         "blanks": 1
       },
       {
-        "text": "My grandfather worked his way up from nothing. When he came to this country, all he had was the shoes on his feet and ____.",
+        "text": "My grandfather worked his way up from nothing. When he came to this country, all he had was the shoes on his feet and [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "If you can't handle ____, you'd better stay away from ____.",
+        "text": "If you can't handle [[BLANK]], you'd better stay away from [[BLANK]].",
         "blanks": 2
       },
       {
-        "text": "Man, this is bullshit. Fuck ____.",
+        "text": "Man, this is bullshit. Fuck [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "In return for my soul, the Devil promised me ____, but all I got was ____.",
+        "text": "In return for my soul, the Devil promised me [[BLANK]], but all I got was [[BLANK]].",
         "blanks": 2
       },
       {
-        "text": "The Japanese have developed a smaller, more efficient version of ____.",
+        "text": "The Japanese have developed a smaller, more efficient version of [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Do you lack energy? Does it sometimes feel like the whole world is ____? Ask your doctor about Zoloft&reg;.",
+        "text": "Do you lack energy? Does it sometimes feel like the whole world is [[BLANK]]? Ask your doctor about Zoloft&reg;.",
         "blanks": 1
       },
       {
-        "text": "I work my ass off all day for this family, and this is what I come home to? ____!?",
+        "text": "I work my ass off all day for this family, and this is what I come home to? [[BLANK]]!?",
         "blanks": 1
       },
       {
-        "text": "This is America. If you don't work hard, you don't succeed. I don't care if you're black, white, purple, or ____.",
+        "text": "This is America. If you don't work hard, you don't succeed. I don't care if you're black, white, purple, or [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Dammit, Gary. You can't just solve every problem with ____.",
+        "text": "Dammit, Gary. You can't just solve every problem with [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "James is a lonely boy. But when he discovers a secret door in his attic, he meets a magical new friend: ____.",
+        "text": "James is a lonely boy. But when he discovers a secret door in his attic, he meets a magical new friend: [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "This is the prime of my life. I'm young, hot, and full of ____.",
+        "text": "This is the prime of my life. I'm young, hot, and full of [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Every step towards ____ gets me a little bit closer to ____.",
+        "text": "Every step towards [[BLANK]] gets me a little bit closer to [[BLANK]].",
         "blanks": 2
       },
       {
-        "text": "Well if ____ is good enough for ____, it's good enough for me.",
+        "text": "Well if [[BLANK]] is good enough for [[BLANK]], it's good enough for me.",
         "blanks": 2
       },
       {
-        "text": "WHOOO! God <i>damn</i> I love ____!",
+        "text": "WHOOO! God <i>damn</i> I love [[BLANK]]!",
         "blanks": 1
       },
       {
-        "text": "You Won't Believe These 15 Hilarious ____ Bloopers!",
+        "text": "You Won't Believe These 15 Hilarious [[BLANK]] Bloopers!",
         "blanks": 1
       },
       {
-        "text": "You've seen the bearded lady! You've seen the ring of fire! Now, ladies and gentlemen, feast your eyes upon ____!",
+        "text": "You've seen the bearded lady! You've seen the ring of fire! Now, ladies and gentlemen, feast your eyes upon [[BLANK]]!",
         "blanks": 1
       },
       {
-        "text": "When I was a kid, we used to play Cowboys and ____.",
+        "text": "When I was a kid, we used to play Cowboys and [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Do the Dew&reg; with our most extreme flavor yet! Get ready for Mountain Dew ____!",
+        "text": "Do the Dew&reg; with our most extreme flavor yet! Get ready for Mountain Dew [[BLANK]]!",
         "blanks": 1
       },
       {
-        "text": "Honey, I have a new role-play I want to try tonight! You can be ____, and I'll be ____.",
+        "text": "Honey, I have a new role-play I want to try tonight! You can be [[BLANK]], and I'll be [[BLANK]].",
         "blanks": 2
       },
       {
-        "text": "Forget everything you know about ____, because now we've supercharged it with ____!",
+        "text": "Forget everything you know about [[BLANK]], because now we've supercharged it with [[BLANK]]!",
         "blanks": 2
       },
       {
@@ -1295,39 +1295,39 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "Listen, Gary, I like you. But if you want that corner office, you're going to have to show me ____.",
+        "text": "Listen, Gary, I like you. But if you want that corner office, you're going to have to show me [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Help me doctor, I've got ____ in my butt.",
+        "text": "Help me doctor, I've got [[BLANK]] in my butt.",
         "blanks": 1
       },
       {
-        "text": "Oprah's book of the month is \"____ For ____: A Story of Hope.\"",
+        "text": "Oprah's book of the month is \"[[BLANK]] For [[BLANK]]: A Story of Hope.\"",
         "blanks": 2
       },
       {
-        "text": "You know, once you get past ____, ____ ain't so bad.",
+        "text": "You know, once you get past [[BLANK]], [[BLANK]] ain't so bad.",
         "blanks": 2
       },
       {
-        "text": "In his farewell address, George Washington famously warned Americans about the dangers of ____.",
+        "text": "In his farewell address, George Washington famously warned Americans about the dangers of [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Well what do you have to say for yourself, Casey? This is the third time you've been sent to the principal's office for ____.",
+        "text": "Well what do you have to say for yourself, Casey? This is the third time you've been sent to the principal's office for [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Here at the Academy for Gifted Children, we allow students to explore ____ at their own pace.",
+        "text": "Here at the Academy for Gifted Children, we allow students to explore [[BLANK]] at their own pace.",
         "blanks": 1
       },
       {
-        "text": "Get ready for the movie of the summer! One cop plays by the book. The other's only interested in one thing: ____.",
+        "text": "Get ready for the movie of the summer! One cop plays by the book. The other's only interested in one thing: [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Heed my voice, mortals! I am the god of ____, and I will not tolerate ____!",
+        "text": "Heed my voice, mortals! I am the god of [[BLANK]], and I will not tolerate [[BLANK]]!",
         "blanks": 2
       },
       {
@@ -1335,15 +1335,15 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "I'm sorry, sir, but we don't allow ____ at the country club.",
+        "text": "I'm sorry, sir, but we don't allow [[BLANK]] at the country club.",
         "blanks": 1
       },
       {
-        "text": "2 AM in the city that never sleeps. The door swings open and <i>she</i> walks in, legs up to here. Something in her eyes tells me she's looking for ____.",
+        "text": "2 AM in the city that never sleeps. The door swings open and <i>she</i> walks in, legs up to here. Something in her eyes tells me she's looking for [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "I have a strict policy. First date, dinner. Second date, kiss. Third date, ____.",
+        "text": "I have a strict policy. First date, dinner. Second date, kiss. Third date, [[BLANK]].",
         "blanks": 1
       },
       {
@@ -1351,15 +1351,15 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "Hi, this is Jim from accounting. We noticed a $1,200 charge labeled \"____.\" Can you explain?",
+        "text": "Hi, this is Jim from accounting. We noticed a $1,200 charge labeled \"[[BLANK]].\" Can you explain?",
         "blanks": 1
       },
       {
-        "text": "I'm pretty sure I'm high right now, because I'm absolutely mesmerized by ____.",
+        "text": "I'm pretty sure I'm high right now, because I'm absolutely mesmerized by [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Don't worry, kid. It gets better. I've been living with ____ for 20 years.",
+        "text": "Don't worry, kid. It gets better. I've been living with [[BLANK]] for 20 years.",
         "blanks": 1
       },
       {
@@ -1372,7 +1372,7 @@ export const blackSets: any = {
     "mark": "GREEN",
     "cards": [
       {
-        "text": "Ooo, daddy like ____.",
+        "text": "Ooo, daddy like [[BLANK]].",
         "blanks": 1
       },
       {
@@ -1384,11 +1384,11 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "I've got rhythm, I've got music, I've got ____. Who could ask for anything more?",
+        "text": "I've got rhythm, I've got music, I've got [[BLANK]]. Who could ask for anything more?",
         "blanks": 1
       },
       {
-        "text": "Then the princess kissed the frog, and all of a sudden the frog was ____!",
+        "text": "Then the princess kissed the frog, and all of a sudden the frog was [[BLANK]]!",
         "blanks": 1
       },
       {
@@ -1396,55 +1396,55 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "If at first you don't succeed, try ____.",
+        "text": "If at first you don't succeed, try [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Poor Brandon, still living in his parents' basement. I hear he never got over ____.",
+        "text": "Poor Brandon, still living in his parents' basement. I hear he never got over [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Coming to Red Lobster&reg; this month, ____.",
+        "text": "Coming to Red Lobster&reg; this month, [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Most Americans would not vote for a candidate who is openly ____.",
+        "text": "Most Americans would not vote for a candidate who is openly [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "This Friday at the Liquid Lounge, it's ____ Night! Ladies drink free.",
+        "text": "This Friday at the Liquid Lounge, it's [[BLANK]] Night! Ladies drink free.",
         "blanks": 1
       },
       {
-        "text": "Well, shit. My eyes ain't so good, but I'll eat my own boot if that ain't ____!",
+        "text": "Well, shit. My eyes ain't so good, but I'll eat my own boot if that ain't [[BLANK]]!",
         "blanks": 1
       },
       {
-        "text": "CNN breaking news! Scientists discover ____.",
+        "text": "CNN breaking news! Scientists discover [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "She's a lady in the streets, ____ in the sheets.",
+        "text": "She's a lady in the streets, [[BLANK]] in the sheets.",
         "blanks": 1
       },
       {
-        "text": "There is no God. It's just ____ and then you die.",
+        "text": "There is no God. It's just [[BLANK]] and then you die.",
         "blanks": 1
       },
       {
-        "text": "Best you go back where you came from, now. We don't take too kindly to ____ in these parts.",
+        "text": "Best you go back where you came from, now. We don't take too kindly to [[BLANK]] in these parts.",
         "blanks": 1
       },
       {
-        "text": "I've had a horrible vision, father. I saw mountains crumbling, stars falling from the sky. I saw ____.",
+        "text": "I've had a horrible vision, father. I saw mountains crumbling, stars falling from the sky. I saw [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Oh no! Siri, how do I fix ____?",
+        "text": "Oh no! Siri, how do I fix [[BLANK]]?",
         "blanks": 1
       },
       {
-        "text": "Girls just wanna have ____.",
+        "text": "Girls just wanna have [[BLANK]].",
         "blanks": 1
       },
       {
@@ -1452,11 +1452,11 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "Son, take it from someone who's been around the block a few times. Nothin' puts her in the mood like ____.",
+        "text": "Son, take it from someone who's been around the block a few times. Nothin' puts her in the mood like [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Mom's to-do list:<br><br>Buy groceries<br>Clean up ____<br>Soccer practice",
+        "text": "Mom's to-do list:<br><br>Buy groceries<br>Clean up [[BLANK]]<br>Soccer practice",
         "blanks": 1
       },
       {
@@ -1464,15 +1464,15 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "No, no, no, no, no, NO! I will NOT let ____ ruin this wedding.",
+        "text": "No, no, no, no, no, NO! I will NOT let [[BLANK]] ruin this wedding.",
         "blanks": 1
       },
       {
-        "text": "Summer lovin', had me a blast. ____, happened so fast.",
+        "text": "Summer lovin', had me a blast. [[BLANK]], happened so fast.",
         "blanks": 1
       },
       {
-        "text": "I'm sorry, sir, but your insurance plan doesn't cover injuries caused by ____.",
+        "text": "I'm sorry, sir, but your insurance plan doesn't cover injuries caused by [[BLANK]].",
         "blanks": 1
       },
       {
@@ -1480,35 +1480,35 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "Errbody in the club ____.",
+        "text": "Errbody in the club [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "I'll take the BBQ bacon burger with a fried egg and fuck it how about ____.",
+        "text": "I'll take the BBQ bacon burger with a fried egg and fuck it how about [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "You won't believe what's in my pussy. It's ____.",
+        "text": "You won't believe what's in my pussy. It's [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "The top Google auto-complete results for \"Barack Obama\": <br>Barack Obama height.<br>Barack Obama net worth.<br>Barack Obama ____.",
+        "text": "The top Google auto-complete results for \"Barack Obama\": <br>Barack Obama height.<br>Barack Obama net worth.<br>Barack Obama [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "I may not be much to look at, but I fuck like ____.",
+        "text": "I may not be much to look at, but I fuck like [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "LSD + ____ = really bad time.",
+        "text": "LSD + [[BLANK]] = really bad time.",
         "blanks": 1
       },
       {
-        "text": "Feeling so grateful! #amazing #mylife #____",
+        "text": "Feeling so grateful! #amazing #mylife #[[BLANK]]",
         "blanks": 1
       },
       {
-        "text": "Art isn't just a painting in a stuffy museum. Art is alive. Art is ____.",
+        "text": "Art isn't just a painting in a stuffy museum. Art is alive. Art is [[BLANK]].",
         "blanks": 1
       },
       {
@@ -1516,31 +1516,31 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "Google Calendar alert: ____ in 10 minutes.",
+        "text": "Google Calendar alert: [[BLANK]] in 10 minutes.",
         "blanks": 1
       },
       {
-        "text": "One more thing. Watch out for Big Mike. They say he killed a man with ____.",
+        "text": "One more thing. Watch out for Big Mike. They say he killed a man with [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Dance like there's nobody watching, love like you'll never be hurt, and live like you're ____.",
+        "text": "Dance like there's nobody watching, love like you'll never be hurt, and live like you're [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "____: Brought to you by ____.",
+        "text": "[[BLANK]]: Brought to you by [[BLANK]].",
         "blanks": 2
       },
       {
-        "text": "In the 1950s, psychologists prescribed ____ as a cure for homosexuality.",
+        "text": "In the 1950s, psychologists prescribed [[BLANK]] as a cure for homosexuality.",
         "blanks": 1
       },
       {
-        "text": "Well if ____ is a crime, then lock me up!",
+        "text": "Well if [[BLANK]] is a crime, then lock me up!",
         "blanks": 1
       },
       {
-        "text": "Run, run, as fast as you can! You can't catch me, I'm ____!",
+        "text": "Run, run, as fast as you can! You can't catch me, I'm [[BLANK]]!",
         "blanks": 1
       },
       {
@@ -1548,15 +1548,15 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "With a one-time gift of just $10, you can save this child from ____.",
+        "text": "With a one-time gift of just $10, you can save this child from [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "____ be all like ____.",
+        "text": "[[BLANK]] be all like [[BLANK]].",
         "blanks": 2
       },
       {
-        "text": "You know who else liked ____? Hitler.",
+        "text": "You know who else liked [[BLANK]]? Hitler.",
         "blanks": 1
       },
       {
@@ -1564,27 +1564,27 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "I don't believe in God. I believe in ____.",
+        "text": "I don't believe in God. I believe in [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "She's just one of the guys, you know? She likes beer, and football, and ____.",
+        "text": "She's just one of the guys, you know? She likes beer, and football, and [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Congratulations! You have been selected for our summer internship program. While we are unable to offer a salary, we <i>can</i> offer you ____.",
+        "text": "Congratulations! You have been selected for our summer internship program. While we are unable to offer a salary, we <i>can</i> offer you [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "I tell you, it was a non-stop fuckfest. When it was over, my asshole looked like ____.",
+        "text": "I tell you, it was a non-stop fuckfest. When it was over, my asshole looked like [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "We do not shake with our left hands in this country. That is the hand we use for ____.",
+        "text": "We do not shake with our left hands in this country. That is the hand we use for [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "As Teddy Roosevelt said, the four manly virtues are honor, temperance, industry, and ____.",
+        "text": "As Teddy Roosevelt said, the four manly virtues are honor, temperance, industry, and [[BLANK]].",
         "blanks": 1
       }
     ]
@@ -1597,27 +1597,27 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "Siskel and Ebert have panned ____ as \"poorly conceived\" and \"sloppily executed.\"",
+        "text": "Siskel and Ebert have panned [[BLANK]] as \"poorly conceived\" and \"sloppily executed.\"",
         "blanks": 1
       },
       {
-        "text": "Up next on Nickelodeon: \"Clarissa Explains ____.\"",
+        "text": "Up next on Nickelodeon: \"Clarissa Explains [[BLANK]].\"",
         "blanks": 1
       },
       {
-        "text": "It's Morphin' Time! Mastodon! Pterodactyl! Triceratops! Sabertooth Tiger! ____!",
+        "text": "It's Morphin' Time! Mastodon! Pterodactyl! Triceratops! Sabertooth Tiger! [[BLANK]]!",
         "blanks": 1
       },
       {
-        "text": "Believe it or not, Jim Carrey can do a dead-on impression of ____.",
+        "text": "Believe it or not, Jim Carrey can do a dead-on impression of [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "I'm a bitch, I'm a lover, I'm a child, I'm ____.",
+        "text": "I'm a bitch, I'm a lover, I'm a child, I'm [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Tonight on SNICK: \"Are You Afraid of ____?\"",
+        "text": "Tonight on SNICK: \"Are You Afraid of [[BLANK]]?\"",
         "blanks": 1
       }
     ]
@@ -1626,7 +1626,7 @@ export const blackSets: any = {
     "mark": "❄2012",
     "cards": [
       {
-        "text": "After blacking out during New Year's Eve, I was awoken by ____.",
+        "text": "After blacking out during New Year's Eve, I was awoken by [[BLANK]].",
         "blanks": 1
       },
       {
@@ -1634,15 +1634,15 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "Wake up, America. Christmas is under attack by secular liberals and their ____.",
+        "text": "Wake up, America. Christmas is under attack by secular liberals and their [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Every Christmas, my uncle gets drunk and tells the story about ____.",
+        "text": "Every Christmas, my uncle gets drunk and tells the story about [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "On the third day of Christmas, my true love gave to me: three French hens, two turtle doves, and ____.",
+        "text": "On the third day of Christmas, my true love gave to me: three French hens, two turtle doves, and [[BLANK]].",
         "blanks": 1
       }
     ]
@@ -1651,15 +1651,15 @@ export const blackSets: any = {
     "mark": "V4HIL",
     "cards": [
       {
-        "text": "As reparations for slavery, all African Americans will receive ____.",
+        "text": "As reparations for slavery, all African Americans will receive [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "When you go to the polls on Tuesday, remember: a vote for me is a vote for ____.",
+        "text": "When you go to the polls on Tuesday, remember: a vote for me is a vote for [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Senator, I trust you enjoyed ____ last night. Now, can I count on your vote?",
+        "text": "Senator, I trust you enjoyed [[BLANK]] last night. Now, can I count on your vote?",
         "blanks": 1
       }
     ]
@@ -1668,15 +1668,15 @@ export const blackSets: any = {
     "mark": "V4TR",
     "cards": [
       {
-        "text": "Trump's great! Trump's got ____. I love that.",
+        "text": "Trump's great! Trump's got [[BLANK]]. I love that.",
         "blanks": 1
       },
       {
-        "text": "It's 3 AM. The red phone rings. It's ____. Who do you want answering?",
+        "text": "It's 3 AM. The red phone rings. It's [[BLANK]]. Who do you want answering?",
         "blanks": 1
       },
       {
-        "text": "According to Arizona's stand-your-ground law, you're allowed to shoot someone if they're ____.",
+        "text": "According to Arizona's stand-your-ground law, you're allowed to shoot someone if they're [[BLANK]].",
         "blanks": 1
       }
     ]
@@ -1685,35 +1685,35 @@ export const blackSets: any = {
     "mark": "HCARD",
     "cards": [
       {
-        "text": "I can't believe Netflix is using ____ to promote <i>House of Cards.</i>",
+        "text": "I can't believe Netflix is using [[BLANK]] to promote <i>House of Cards.</i>",
         "blanks": 1
       },
       {
-        "text": "A wise man said, \"Everything is about sex. Except sex. Sex is about ____.\"",
+        "text": "A wise man said, \"Everything is about sex. Except sex. Sex is about [[BLANK]].\"",
         "blanks": 1
       },
       {
-        "text": "I'm not going to lie. I despise ____. There, I said it.",
+        "text": "I'm not going to lie. I despise [[BLANK]]. There, I said it.",
         "blanks": 1
       },
       {
-        "text": "Corruption. Betrayal. ____. Coming soon to Netflix, \"House of ____.\"",
+        "text": "Corruption. Betrayal. [[BLANK]]. Coming soon to Netflix, \"House of [[BLANK]].\"",
         "blanks": 2
       },
       {
-        "text": "We're not like other news organizations. Here at Slugline, we welcome ____ in the office.",
+        "text": "We're not like other news organizations. Here at Slugline, we welcome [[BLANK]] in the office.",
         "blanks": 1
       },
       {
-        "text": "Because you enjoyed ____, we thought you'd like ____.",
+        "text": "Because you enjoyed [[BLANK]], we thought you'd like [[BLANK]].",
         "blanks": 2
       },
       {
-        "text": "Cancel all my meetings. We've got a situation with ____ that requires my immediate attention.",
+        "text": "Cancel all my meetings. We've got a situation with [[BLANK]] that requires my immediate attention.",
         "blanks": 1
       },
       {
-        "text": "Our relationship is strictly professional. Let's not complicate things with ____.",
+        "text": "Our relationship is strictly professional. Let's not complicate things with [[BLANK]].",
         "blanks": 1
       }
     ]
@@ -1722,27 +1722,27 @@ export const blackSets: any = {
     "mark": "COLEG",
     "cards": [
       {
-        "text": "My memory of last night is pretty hazy. I remember ____ and that's pretty much it.",
+        "text": "My memory of last night is pretty hazy. I remember [[BLANK]] and that's pretty much it.",
         "blanks": 1
       },
       {
-        "text": "Pledges! Time to prove you're Delta Phi material. Chug this beer, take off your shirts, and get ready for ____.",
+        "text": "Pledges! Time to prove you're Delta Phi material. Chug this beer, take off your shirts, and get ready for [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "All classes today are canceled due to ____.",
+        "text": "All classes today are canceled due to [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Did you know? Our college was recently named the #1 school for ____!",
+        "text": "Did you know? Our college was recently named the #1 school for [[BLANK]]!",
         "blanks": 1
       },
       {
-        "text": "The Department of Psychology is looking for paid research volunteers. Are you 18-25 and suffering from ____?",
+        "text": "The Department of Psychology is looking for paid research volunteers. Are you 18-25 and suffering from [[BLANK]]?",
         "blanks": 1
       },
       {
-        "text": "In this paper, I will explore ____ from a feminist perspective.",
+        "text": "In this paper, I will explore [[BLANK]] from a feminist perspective.",
         "blanks": 1
       }
     ]
@@ -1751,27 +1751,27 @@ export const blackSets: any = {
     "mark": "❄2013",
     "cards": [
       {
-        "text": "Because they are forbidden from masturbating, Mormons channel their repressed sexual energy into ____.",
+        "text": "Because they are forbidden from masturbating, Mormons channel their repressed sexual energy into [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Revealed: Why He Really Resigned! Pope Benedict's Secret Struggle with ____!",
+        "text": "Revealed: Why He Really Resigned! Pope Benedict's Secret Struggle with [[BLANK]]!",
         "blanks": 1
       },
       {
-        "text": "Kids these days with their iPods and their internet. In my day, we all needed to pass the time was ____.",
+        "text": "Kids these days with their iPods and their internet. In my day, we all needed to pass the time was [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "GREETINGS<br>HUMANS<br><br>I AM ____ BOT<br><br>EXECUTING PROGRAM",
+        "text": "GREETINGS<br>HUMANS<br><br>I AM [[BLANK]] BOT<br><br>EXECUTING PROGRAM",
         "blanks": 1
       },
       {
-        "text": "But wait, there's more! If you order ____ in the next 15 minutes, we'll throw in ____ absolutely free!",
+        "text": "But wait, there's more! If you order [[BLANK]] in the next 15 minutes, we'll throw in [[BLANK]] absolutely free!",
         "blanks": 2
       },
       {
-        "text": "I really hope my grandma doesn't ask me to explain ____ again.",
+        "text": "I really hope my grandma doesn't ask me to explain [[BLANK]] again.",
         "blanks": 1
       }
     ]
@@ -1780,19 +1780,19 @@ export const blackSets: any = {
     "mark": "FNTSY",
     "cards": [
       {
-        "text": "Critics are raving about HBO's new <i>Game of Thrones</i> spin-off, \"____ of ____.\"",
+        "text": "Critics are raving about HBO's new <i>Game of Thrones</i> spin-off, \"[[BLANK]] of [[BLANK]].\"",
         "blanks": 2
       },
       {
-        "text": "Your father was a powerful wizard, Harry. Before he died, he left you something very precious: ____.",
+        "text": "Your father was a powerful wizard, Harry. Before he died, he left you something very precious: [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Having tired of poetry and music, the immortal elves now fill their days with ____.",
+        "text": "Having tired of poetry and music, the immortal elves now fill their days with [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "And in the end, the dragon was not evil; he just wanted ____.",
+        "text": "And in the end, the dragon was not evil; he just wanted [[BLANK]].",
         "blanks": 1
       },
       {
@@ -1800,7 +1800,7 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "Legend tells of a princess who has been asleep for a thousand years and can only be awoken by ____.",
+        "text": "Legend tells of a princess who has been asleep for a thousand years and can only be awoken by [[BLANK]].",
         "blanks": 1
       }
     ]
@@ -1809,19 +1809,19 @@ export const blackSets: any = {
     "mark": "MSFX",
     "cards": [
       {
-        "text": "Coming this spring from BioWare, <i>Mass Effect: ____.</i>",
+        "text": "Coming this spring from BioWare, <i>Mass Effect: [[BLANK]].</i>",
         "blanks": 1
       },
       {
-        "text": "I'm Commander Shepard, and this is my favorite place for ____ on the Citadel.",
+        "text": "I'm Commander Shepard, and this is my favorite place for [[BLANK]] on the Citadel.",
         "blanks": 1
       },
       {
-        "text": "It turns out The Reapers didn't want to destroy the galaxy. They just wanted ____.",
+        "text": "It turns out The Reapers didn't want to destroy the galaxy. They just wanted [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "We were the best hand-to-hand combatants on the ship. I had reach, but she had ____.",
+        "text": "We were the best hand-to-hand combatants on the ship. I had reach, but she had [[BLANK]].",
         "blanks": 1
       }
     ]
@@ -1830,23 +1830,23 @@ export const blackSets: any = {
     "mark": "❄2014",
     "cards": [
       {
-        "text": "Behold the Four Horsemen of the Apocalypse! War, Famine, Death, and ____.",
+        "text": "Behold the Four Horsemen of the Apocalypse! War, Famine, Death, and [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Honey, Mommy and Daddy love you very much.But apparently Mommy loves ____ more than she loves Daddy.",
+        "text": "Honey, Mommy and Daddy love you very much.But apparently Mommy loves [[BLANK]] more than she loves Daddy.",
         "blanks": 1
       },
       {
-        "text": "A curse upon thee! Many years from now, just when you think you're safe, ____ shall turn into ____.",
+        "text": "A curse upon thee! Many years from now, just when you think you're safe, [[BLANK]] shall turn into [[BLANK]].",
         "blanks": 2
       },
       {
-        "text": "Dear Mom and Dad, Camp is fun. I like capture the flag. Yesterday, one of the older kids taught me about ____. I love you, Casey",
+        "text": "Dear Mom and Dad, Camp is fun. I like capture the flag. Yesterday, one of the older kids taught me about [[BLANK]]. I love you, Casey",
         "blanks": 1
       },
       {
-        "text": "Today on Buzzfeed: 10 Pictures of ____ That Look Like ____!",
+        "text": "Today on Buzzfeed: 10 Pictures of [[BLANK]] That Look Like [[BLANK]]!",
         "blanks": 2
       },
       {
@@ -1859,11 +1859,11 @@ export const blackSets: any = {
     "mark": "NASA",
     "cards": [
       {
-        "text": "Curiosity was put into safe mode after its hazcams detected ____.",
+        "text": "Curiosity was put into safe mode after its hazcams detected [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "NASA will spend 15 billion dollars on an unprecedented mission: ____ in space.",
+        "text": "NASA will spend 15 billion dollars on an unprecedented mission: [[BLANK]] in space.",
         "blanks": 1
       }
     ]
@@ -1872,27 +1872,27 @@ export const blackSets: any = {
     "mark": "FOOD",
     "cards": [
       {
-        "text": "It's not delivery. It's ____.",
+        "text": "It's not delivery. It's [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Don't miss Rachel Ray's hit new show, <i>Cooking with ____.</i>",
+        "text": "Don't miss Rachel Ray's hit new show, <i>Cooking with [[BLANK]].</i>",
         "blanks": 1
       },
       {
-        "text": "I'm Bobby Flay, and if you can't stand ____, get out of the kitchen!",
+        "text": "I'm Bobby Flay, and if you can't stand [[BLANK]], get out of the kitchen!",
         "blanks": 1
       },
       {
-        "text": "Now on Netflix: <i>Jiro Dreams of ____.</i>",
+        "text": "Now on Netflix: <i>Jiro Dreams of [[BLANK]].</i>",
         "blanks": 1
       },
       {
-        "text": "Aw babe, your burps smell like ____!",
+        "text": "Aw babe, your burps smell like [[BLANK]]!",
         "blanks": 1
       },
       {
-        "text": "Excuse me, waiter. Could you take this back? This soup tastes like ____.",
+        "text": "Excuse me, waiter. Could you take this back? This soup tastes like [[BLANK]].",
         "blanks": 1
       }
     ]
@@ -1901,11 +1901,11 @@ export const blackSets: any = {
     "mark": "PE13A",
     "cards": [
       {
-        "text": "You have been waylaid by ____ and must defend yourself.",
+        "text": "You have been waylaid by [[BLANK]] and must defend yourself.",
         "blanks": 1
       },
       {
-        "text": "I have an idea even better than Kickstarter, and it's called ____starter.",
+        "text": "I have an idea even better than Kickstarter, and it's called [[BLANK]]starter.",
         "blanks": 1
       }
     ]
@@ -1914,19 +1914,19 @@ export const blackSets: any = {
     "mark": "❄2012",
     "cards": [
       {
-        "text": "Jesus is ____.",
+        "text": "Jesus is [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "This holiday season, Tim Allen must overcome his fear of ____ to save Christmas.",
+        "text": "This holiday season, Tim Allen must overcome his fear of [[BLANK]] to save Christmas.",
         "blanks": 1
       },
       {
-        "text": "Blessed are you, Lord our God, creator of the universe, who has granted us ____.",
+        "text": "Blessed are you, Lord our God, creator of the universe, who has granted us [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Here's what you can expect for the new year. Out: ____. In: ____.",
+        "text": "Here's what you can expect for the new year. Out: [[BLANK]]. In: [[BLANK]].",
         "blanks": 2
       },
       {
@@ -1934,11 +1934,11 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "Donna, pick up my dry cleaning and get my wife something for christmas. I think she likes ____.",
+        "text": "Donna, pick up my dry cleaning and get my wife something for christmas. I think she likes [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "It's beginning to look a lot like ____.",
+        "text": "It's beginning to look a lot like [[BLANK]].",
         "blanks": 1
       }
     ]
@@ -1947,11 +1947,11 @@ export const blackSets: any = {
     "mark": "PE13B",
     "cards": [
       {
-        "text": "In the final round of this year's Omegathon, Omeganauts must face off in a game of ____.",
+        "text": "In the final round of this year's Omegathon, Omeganauts must face off in a game of [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Action stations! Action stations! Set condition one throughout the fleet and brace for ____!",
+        "text": "Action stations! Action stations! Set condition one throughout the fleet and brace for [[BLANK]]!",
         "blanks": 1
       }
     ]
@@ -1960,7 +1960,7 @@ export const blackSets: any = {
     "mark": "PE13C",
     "cards": [
       {
-        "text": "I don't know exactly how I got the PAX plague, but I suspect it had something to do with ____.",
+        "text": "I don't know exactly how I got the PAX plague, but I suspect it had something to do with [[BLANK]].",
         "blanks": 1
       }
     ]
@@ -1969,11 +1969,11 @@ export const blackSets: any = {
     "mark": "GEEK",
     "cards": [
       {
-        "text": "Press &darr;&darr;&larr;&rarr;B to unleash ____.",
+        "text": "Press &darr;&darr;&larr;&rarr;B to unleash [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "____ is way better in ____ mode.",
+        "text": "[[BLANK]] is way better in [[BLANK]] mode.",
         "blanks": 2
       }
     ]
@@ -1982,23 +1982,23 @@ export const blackSets: any = {
     "mark": "PE14",
     "cards": [
       {
-        "text": "<i>(Heavy breathing)</i> Luke, I am ____.",
+        "text": "<i>(Heavy breathing)</i> Luke, I am [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "What the hell?! They added a 6/6 with flying, trample, and ____.",
+        "text": "What the hell?! They added a 6/6 with flying, trample, and [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "____ is way better in ____mode.",
+        "text": "[[BLANK]] is way better in [[BLANK]]mode.",
         "blanks": 2
       },
       {
-        "text": "Unfortunately, Neo, no one can be <i>told</i> what ____ is. You have to see it for yourself.",
+        "text": "Unfortunately, Neo, no one can be <i>told</i> what [[BLANK]] is. You have to see it for yourself.",
         "blanks": 1
       },
       {
-        "text": "You think you have defeated me? Well, let's see how you handle ____!",
+        "text": "You think you have defeated me? Well, let's see how you handle [[BLANK]]!",
         "blanks": 1
       }
     ]
@@ -2011,19 +2011,19 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "According to Freud, all children progress through three stages of development: the oral stage, the anal stage, and the ____ stage.",
+        "text": "According to Freud, all children progress through three stages of development: the oral stage, the anal stage, and the [[BLANK]] stage.",
         "blanks": 1
       },
       {
-        "text": "Oh, your daughter should meet my son! He gives to charity, he loves ____ and did I mention he's a doctor?",
+        "text": "Oh, your daughter should meet my son! He gives to charity, he loves [[BLANK]] and did I mention he's a doctor?",
         "blanks": 1
       },
       {
-        "text": "Coming to Broadway next season: \"____ on the Roof.\"",
+        "text": "Coming to Broadway next season: \"[[BLANK]] on the Roof.\"",
         "blanks": 1
       },
       {
-        "text": "Can't you see? The Jews are behind everything--the banks, the media, even ____!",
+        "text": "Can't you see? The Jews are behind everything--the banks, the media, even [[BLANK]]!",
         "blanks": 1
       }
     ]
@@ -2032,7 +2032,7 @@ export const blackSets: any = {
     "mark": "PAX13",
     "cards": [
       {
-        "text": "____: Achievement unlocked.",
+        "text": "[[BLANK]]: Achievement unlocked.",
         "blanks": 1
       },
       {
@@ -2044,19 +2044,19 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "In the new DLC for Mass Effect, Shepard must save the galaxy from ____.",
+        "text": "In the new DLC for Mass Effect, Shepard must save the galaxy from [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "The most controversial game at PAX this year is an 8-bit indie platformer about ____.",
+        "text": "The most controversial game at PAX this year is an 8-bit indie platformer about [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "There was a riot at the Gearbox panel when they gave the attendees ____.",
+        "text": "There was a riot at the Gearbox panel when they gave the attendees [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "No Enforcer wants to manage the panel on ____.",
+        "text": "No Enforcer wants to manage the panel on [[BLANK]].",
         "blanks": 1
       }
     ]
@@ -2069,23 +2069,23 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "My body, my voice! ____, my choice!",
+        "text": "My body, my voice! [[BLANK]], my choice!",
         "blanks": 1
       },
       {
-        "text": "My vagina's angry. My vagina's furious and it needs to talk. It needs to talk about ____.",
+        "text": "My vagina's angry. My vagina's furious and it needs to talk. It needs to talk about [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Can a woman really have it all? A career <i>and ____?</i>",
+        "text": "Can a woman really have it all? A career <i>and [[BLANK]]?</i>",
         "blanks": 1
       },
       {
-        "text": "Tampax&reg;: Don't let your period ruin ____.",
+        "text": "Tampax&reg;: Don't let your period ruin [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "New from Mattel, it's ____ Barbie!",
+        "text": "New from Mattel, it's [[BLANK]] Barbie!",
         "blanks": 1
       }
     ]
@@ -2094,15 +2094,15 @@ export const blackSets: any = {
     "mark": "PSTT",
     "cards": [
       {
-        "text": "Donald Trump's first act as president was to outlaw ____.",
+        "text": "Donald Trump's first act as president was to outlaw [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Donald Trump has nominated ____ for his VP.",
+        "text": "Donald Trump has nominated [[BLANK]] for his VP.",
         "blanks": 1
       },
       {
-        "text": "In 2019, Donald Trump eliminated our national parks to make room for ____.",
+        "text": "In 2019, Donald Trump eliminated our national parks to make room for [[BLANK]].",
         "blanks": 1
       }
     ]
@@ -2115,11 +2115,11 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "From WBEZ Chicago, it's <i>This American Life.</i> Today on our program, ____. Stay with us.",
+        "text": "From WBEZ Chicago, it's <i>This American Life.</i> Today on our program, [[BLANK]]. Stay with us.",
         "blanks": 1
       },
       {
-        "text": "My name is Inigo Montoya. You killed my father. Prepare for ____.",
+        "text": "My name is Inigo Montoya. You killed my father. Prepare for [[BLANK]].",
         "blanks": 1
       },
       {
@@ -2131,15 +2131,15 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "You can't wait forever. It's time to talk to your doctor about ____.",
+        "text": "You can't wait forever. It's time to talk to your doctor about [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "The elders of the Ibo tribe of Nigeria recommend ____ as a cure for impotence.",
+        "text": "The elders of the Ibo tribe of Nigeria recommend [[BLANK]] as a cure for impotence.",
         "blanks": 1
       },
       {
-        "text": "The Westboro Baptist Church is now picketing soldiers' funerals with signs that read 'GOD HATES ____!'",
+        "text": "The Westboro Baptist Church is now picketing soldiers' funerals with signs that read 'GOD HATES [[BLANK]]!'",
         "blanks": 1
       }
     ]
@@ -2148,7 +2148,7 @@ export const blackSets: any = {
     "mark": "RTAIL",
     "cards": [
       {
-        "text": "Looking to earn big bucks? Learn how to make ____ work for you!",
+        "text": "Looking to earn big bucks? Learn how to make [[BLANK]] work for you!",
         "blanks": 1
       },
       {
@@ -2161,27 +2161,27 @@ export const blackSets: any = {
     "mark": "SCIFI",
     "cards": [
       {
-        "text": "Fear leads to anger. Anger leads to hate. Hate leads to ____.",
+        "text": "Fear leads to anger. Anger leads to hate. Hate leads to [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Computer! Display ____ on screen. Enhance.",
+        "text": "Computer! Display [[BLANK]] on screen. Enhance.",
         "blanks": 1
       },
       {
-        "text": "You're not going to believe this, but I'm you from the future! You've got to stop ____.",
+        "text": "You're not going to believe this, but I'm you from the future! You've got to stop [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "This won't be like negotiating with the Vogons. Humans only respond to one thing: ____.",
+        "text": "This won't be like negotiating with the Vogons. Humans only respond to one thing: [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Madam President, the asteroid is headed directly for Earth and there's one one thing that can stop it: ____.",
+        "text": "Madam President, the asteroid is headed directly for Earth and there's one one thing that can stop it: [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "You have violated the Prime Directive! You exposed an alien culture to ____ before they were ready.",
+        "text": "You have violated the Prime Directive! You exposed an alien culture to [[BLANK]] before they were ready.",
         "blanks": 1
       },
       {
@@ -2198,27 +2198,27 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "Some men aren't looking for anything logical, like money. They can't be bought, bullied, reasoned, or negotiated with. Some men just want ____.",
+        "text": "Some men aren't looking for anything logical, like money. They can't be bought, bullied, reasoned, or negotiated with. Some men just want [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "America is hungry. America needs ____.",
+        "text": "America is hungry. America needs [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "In bourgeois society, capital is independent and has individuality, while the living person is ____.",
+        "text": "In bourgeois society, capital is independent and has individuality, while the living person is [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Housekeeping! You want ____?",
+        "text": "Housekeeping! You want [[BLANK]]?",
         "blanks": 1
       },
       {
-        "text": "BowWOW! is the first pet hotel in LA that offers ____ for dogs.",
+        "text": "BowWOW! is the first pet hotel in LA that offers [[BLANK]] for dogs.",
         "blanks": 1
       },
       {
-        "text": "Astronomers have discovered that the universe consists of 5% ordinary matter, 25% dark matter, and 70% ____.",
+        "text": "Astronomers have discovered that the universe consists of 5% ordinary matter, 25% dark matter, and 70% [[BLANK]].",
         "blanks": 1
       },
       {
@@ -2230,7 +2230,7 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "You say tomato, I say ____.",
+        "text": "You say tomato, I say [[BLANK]].",
         "blanks": 1
       }
     ]
@@ -2239,7 +2239,7 @@ export const blackSets: any = {
     "mark": "SCI",
     "cards": [
       {
-        "text": "A study published in <i>Nature</i> this week found that ____ is good for you in small doses.",
+        "text": "A study published in <i>Nature</i> this week found that [[BLANK]] is good for you in small doses.",
         "blanks": 1
       },
       {
@@ -2247,23 +2247,23 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "In line with our predictions, we find a robust correlation between ____ and ____ ( <i>p&lt;.05).</i>",
+        "text": "In line with our predictions, we find a robust correlation between [[BLANK]] and [[BLANK]] ( <i>p&lt;.05).</i>",
         "blanks": 2
       },
       {
-        "text": "In an attempt to recreate conditions just after the Big Bang, physicists at the LHC are observing collisions between ____ and ____.",
+        "text": "In an attempt to recreate conditions just after the Big Bang, physicists at the LHC are observing collisions between [[BLANK]] and [[BLANK]].",
         "blanks": 2
       },
       {
-        "text": "In what's being hailed as a major breakthrough, scientists have synthesized ____ in the lab.",
+        "text": "In what's being hailed as a major breakthrough, scientists have synthesized [[BLANK]] in the lab.",
         "blanks": 1
       },
       {
-        "text": "Hey there, Young Scientists! Put on your labcoats and strap on your safety goggles, because today we're learning about ____!",
+        "text": "Hey there, Young Scientists! Put on your labcoats and strap on your safety goggles, because today we're learning about [[BLANK]]!",
         "blanks": 1
       },
       {
-        "text": "Today on <i>Mythbusters,</i> we find out how long ____ can withstand ____.",
+        "text": "Today on <i>Mythbusters,</i> we find out how long [[BLANK]] can withstand [[BLANK]].",
         "blanks": 2
       }
     ]
@@ -2272,15 +2272,15 @@ export const blackSets: any = {
     "mark": "WEED",
     "cards": [
       {
-        "text": "Hold up. I gotta deal with ____, then I'mma smoke this.",
+        "text": "Hold up. I gotta deal with [[BLANK]], then I'mma smoke this.",
         "blanks": 1
       },
       {
-        "text": "Okay here's the pitch. James Franco and Seth Rogen are trying to score some weed, and then ____ happens.",
+        "text": "Okay here's the pitch. James Franco and Seth Rogen are trying to score some weed, and then [[BLANK]] happens.",
         "blanks": 1
       },
       {
-        "text": "You know what's like, really funny when you think about it? ____.",
+        "text": "You know what's like, really funny when you think about it? [[BLANK]].",
         "blanks": 1
       },
       {
@@ -2288,7 +2288,7 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "Everyone is staring at you because you're ____.",
+        "text": "Everyone is staring at you because you're [[BLANK]].",
         "blanks": 1
       }
     ]
@@ -2297,7 +2297,7 @@ export const blackSets: any = {
     "mark": "RTPRD",
     "cards": [
       {
-        "text": "Wait, I came here to buy socks. How did I wind up with ____?",
+        "text": "Wait, I came here to buy socks. How did I wind up with [[BLANK]]?",
         "blanks": 1
       }
     ]
@@ -2306,15 +2306,15 @@ export const blackSets: any = {
     "mark": "TBLTP",
     "cards": [
       {
-        "text": "Hey, you guys want to try this awesome new game? It's called ____.",
+        "text": "Hey, you guys want to try this awesome new game? It's called [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "For my turn, I will spend four gold and allocate all three workers to ____.",
+        "text": "For my turn, I will spend four gold and allocate all three workers to [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "Backers who supported Tabletop at the $25,000 level were astonished to receive ____ from Wil Wheaton himself.",
+        "text": "Backers who supported Tabletop at the $25,000 level were astonished to receive [[BLANK]] from Wil Wheaton himself.",
         "blanks": 1
       }
     ]
@@ -2323,7 +2323,7 @@ export const blackSets: any = {
     "mark": "WWW",
     "cards": [
       {
-        "text": "I'm just gonna stay in tonight. You know, Netflix and ____.",
+        "text": "I'm just gonna stay in tonight. You know, Netflix and [[BLANK]].",
         "blanks": 1
       },
       {
@@ -2331,31 +2331,31 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "This app is basically Tinder, but for ____.",
+        "text": "This app is basically Tinder, but for [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "You guys, you can buy ____ on the dark web.",
+        "text": "You guys, you can buy [[BLANK]] on the dark web.",
         "blanks": 1
       },
       {
-        "text": "Don't worry, Penny! Go Go Gadget ____!",
+        "text": "Don't worry, Penny! Go Go Gadget [[BLANK]]!",
         "blanks": 1
       },
       {
-        "text": "TRIGGER WARNING: ____.",
+        "text": "TRIGGER WARNING: [[BLANK]].",
         "blanks": 1
       },
       {
-        "text": "I need you like ____ needs ____.",
+        "text": "I need you like [[BLANK]] needs [[BLANK]].",
         "blanks": 2
       },
       {
-        "text": "Such ____. Very ____. Wow.",
+        "text": "Such [[BLANK]]. Very [[BLANK]]. Wow.",
         "blanks": 2
       },
       {
-        "text": "Nothing says \"I love you\" like ____.",
+        "text": "Nothing says \"I love you\" like [[BLANK]].",
         "blanks": 1
       }
     ]

@@ -10,7 +10,7 @@ class Header extends React.Component {
       <div className="header">
         {this.props.showHome &&
           <div className="homeContainer" onClick={_ => this.props.history.push("/")}>
-            <img className="home" src={home}></img>
+            <img alt="Home" className="home" src={home}></img>
           </div>
         }
         <span>Yet another <a href="https://cardsagainsthumanity.com/">Cards against Humanity</a> clone.</span>

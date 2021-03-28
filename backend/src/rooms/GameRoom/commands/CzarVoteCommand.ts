@@ -13,12 +13,14 @@ export class CzarVoteCommand extends Command<GameRoomState, {sessionId: string, 
     this.state.cardsPlayed[index].chosenByCzar = true;
     this.state.czarDidVote = true;
     let winnerId: string = this.state.cardsPlayed[index].playedBy;
+    this.state.roundWinner = winnerId;
     let winner = this.state.players.get(winnerId);
     winner.score ++;
     if (winner.score >= this.state.pointsToWin)
       return [new DisplayWinnerCommand().setPayload({wait: 5000, winnerId: winnerId})]
-    else
+    else{
       return [new NewRoundCommand().setPayload({wait: 5000})]
+    }
     
   }
 

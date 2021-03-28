@@ -60,8 +60,12 @@ export class Player extends Schema {
   @type("boolean")
   isOwner: boolean = false;
 
+  @type("boolean")
+  played: boolean = false;
+
   timesCzar: number = 0;
 
+  @type("string")
   id: string;
 }
 
@@ -87,6 +91,9 @@ export class GameRoomState extends Schema {
 
   @type("boolean")
   gameRunning: boolean = false;
+
+  @type("string")
+  roundWinner: string;
 
   @type("string")
   winner: string;

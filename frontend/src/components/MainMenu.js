@@ -6,7 +6,7 @@ class MainMenu extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { name: localStorage.getItem("name") || "Anonymous"};
+    this.state = { name: localStorage.getItem("name") || "Anonymous", displayGreeting: false};
   }
 
   whiteCardClicked(me, index){
@@ -41,16 +41,26 @@ class MainMenu extends React.Component {
     }
   }
 
+  saveNameToState(me, name) {
+    me.setState({...this.state, name: name});
+  }
+
+  saveName(me) {
+    me.setState({...this.state, displayGreeting: true});
+    localStorage.setItem("name", this.state.name)
+  }
+
   render() {
 
-    let whiteCards = [{content: "Join a public game"}, {content: "Join a private game"}, {content: "Create a new game"}]
+    let whiteCards = [{content: "Join a public ga fa a conversationist ga"}, {content: "Join a private game"}, {content: "Create a new game"}]
     if (localStorage.getItem("roomId"))
       whiteCards.push({content: "Rejoin the last game (might be closed already)"})
 
     let sidebar = (
       <div>
         <span>Set your name:</span>
-        <input value={this.state.name} onChange={e => {this.setState({...this.state, name: e.target.value})}}/><button onClick={_=>localStorage.setItem("name", this.state.name)}>Set</button>
+        <input value={this.state.name} onChange={e => {this.saveNameToState(this, e.target.value)}}/><button onClick={_=>this.saveName(this)}>Set</button>
+        {this.state.displayGreeting && <span className="greeting">Hi, {this.state.name}!</span>}
       </div>
     )
 
