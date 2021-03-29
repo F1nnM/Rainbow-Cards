@@ -21,8 +21,7 @@
     width: 10vw;
 }
 .card.white:hover {
-    /*transform: translateY(-20px);*/
-    transform: translateY(-20px);
+    transform: scale(1.1);
 }
 .card.white:active {
     color: white;
@@ -80,8 +79,8 @@ span {
 }
 
 .raised {
-    transform: scale(1.1)/*translateY(-20px);*/
+    transform: translateY(-30px);
 }
 .raised:hover {
-    transform: scale(1.1) translateY(-20px) !important;
+    transform: scale(1.1) translateY(-30px) !important;
 }
