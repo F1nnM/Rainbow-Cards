@@ -147,7 +147,7 @@ class Game extends React.Component {
     let sidebar =
     <div>
       <Scoreboard players={Array.from(this.state.game.players.values())} gameRunning={this.state.game.gameRunning} winner={this.state.game.winner || this.state.game.roundWinner}/>
-      <button onClick={_ => this.startGame()}>Start Game</button>
+      {!this.state.game.gameRunning && !this.state.game.winner && <button onClick={_ => this.startGame()}>Start Game</button>}
     </div>
 
     return (

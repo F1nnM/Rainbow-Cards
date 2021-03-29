@@ -61,6 +61,9 @@ export class CardArea extends React.Component {
           })}
         </div>
         <div className='additionalSpace'>
+          {this.props.blocker &&
+            <div className="czarContainer"/>
+          }
           {this.props.additionalSpace}
         </div>
       </div>

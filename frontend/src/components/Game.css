@@ -1,7 +1,6 @@
 .replaceHandButton {
-    border: 1px solid black;
+    border: 1px solid var(--text);
     border-radius: 10px;
-    background-color: white;
     font-family: 'Cards';
     font-size: larger;
     padding: 2%;
@@ -23,6 +22,7 @@
 
 .replaceHandButton:disabled {
     background-color: gray;
+    border-color: gray;
 }
 
 .replaceHandButton:hover:disabled {
