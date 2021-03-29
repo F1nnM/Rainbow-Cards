@@ -4,6 +4,22 @@ import './CardArea.css'
 
 export class CardArea extends React.Component {
 
+  constructor(props) {
+    super(props);
+    this.state = { selectedCard: null };
+  }
+
+  whiteCardClicked(me, index){
+    if(me.props.confirm)
+      if(me.state.selectedCard===index){
+        me.setState({...me.state, selectedCard: null})
+        me.props.whiteCardClicked(index)
+      }else
+        me.setState({...me.state, selectedCard: index})
+    else
+      me.props.whiteCardClicked(index)
+  }
+
   render() {
     return (
       <div className='cardArea'>
@@ -52,11 +68,12 @@ export class CardArea extends React.Component {
           }
           {this.props.whiteCards && this.props.whiteCards.map((card, index) => {
             return <Card
+              raised={this.state.selectedCard === index}
               trust={true}
               type='white'
               text={card.content}
               mark={card.mark}
-              onclick={_ => this.props.whiteCardClicked(index)}
+              onclick={_ => this.whiteCardClicked(this, index)}
               key={card.content + "" + index} />
           })}
         </div>

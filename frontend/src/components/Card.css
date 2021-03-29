@@ -21,6 +21,7 @@
     width: 10vw;
 }
 .card.white:hover {
+    /*transform: translateY(-20px);*/
     transform: translateY(-20px);
 }
 .card.white:active {
@@ -76,4 +77,11 @@ span {
 
 .black .mark{
     color:white;
+}
+
+.raised {
+    transform: scale(1.1)/*translateY(-20px);*/
+}
+.raised:hover {
+    transform: scale(1.1) translateY(-20px) !important;
 }

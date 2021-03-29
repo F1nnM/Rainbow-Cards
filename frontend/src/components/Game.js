@@ -153,6 +153,7 @@ class Game extends React.Component {
     return (
       
       <CardArea
+        confirm={true} 
         blocker={this.state.game.winner?'Game over':player.isCzar?(this.state.game.czarsTurn?"It's you're turn to vote!":"You are the czar!"):this.state.game.czarsTurn?"It's the czars turn to vote":null}
         enablePlayedCards={player.isCzar && !this.state.game.czarDidVote}
         blackCard={blackcard}
