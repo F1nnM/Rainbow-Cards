@@ -77,12 +77,12 @@
 
 .czarPrompt {
     font-size: xxx-large;
-    color: white;
+    color: var(--text);
 }
 
 .czarBackdrop {
-    background-color: #000000aa;
-    box-shadow: 0px 0px 40px 40px #000000aa;
+    background-color: var(--background);
+    box-shadow: 0px 0px 40px 40px var(--background);
 }
 
 .blocked::after {
