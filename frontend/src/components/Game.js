@@ -139,16 +139,16 @@ class Game extends React.Component {
     let player = this.state.game.players[this.props.room.sessionId];
 
     let blackcardText = this.state.game.winner? 'And the winner is [[BLANK]]' : this.state.game.blackCard.content || "Invite players with the code: " + this.state.roomId
-    let blackCardChildren;
-    if (player.isOwner && !this.state.game.gameRunning && !this.state.game.winner)
-      blackCardChildren = <button onClick={_ => this.startGame()}>Start Game</button>
-    let blackcard = { content: blackcardText, children: blackCardChildren, mark: this.state.game.blackCard.mark}
+
+    let blackcard = { content: blackcardText, mark: this.state.game.blackCard.mark}
 
     let playedCards = this.state.game.winner ? [{cards: [{content: this.state.game.players[this.state.game.winner].name, mark: "WIN"}], chosenByCzar: true}] : this.state.game.cardsPlayed
 
-    console.log("Winners")
-    console.log(this.state.game.winner)
-    console.log(this.state.game.roundWinner)
+    let sidebar =
+    <div>
+      <Scoreboard players={Array.from(this.state.game.players.values())} gameRunning={this.state.game.gameRunning} winner={this.state.game.winner || this.state.game.roundWinner}/>
+      <button onClick={_ => this.startGame()}>Start Game</button>
+    </div>
 
     return (
       
@@ -160,7 +160,7 @@ class Game extends React.Component {
         whiteCardClicked={ index => this.playCard(this, index)}
         playedCards={playedCards}
         playedCardsClicked={index => this.czarVote(this, index)}
-        sidebar={<Scoreboard players={Array.from(this.state.game.players.values())} gameRunning={this.state.game.gameRunning} winner={this.state.game.winner || this.state.game.roundWinner}/>}
+        sidebar={sidebar}
         trustPlayedCards={!this.state.game.winner}
         additionalSpace={<button hidden={!this.state.game.gameRunning} className='replaceHandButton' onClick={_=>this.replaceHand()} disabled={this.state.game.czarsTurn || player.isCzar || player.cards.length === 0}>Replace hand instead of playing a card</button>}/>
     );

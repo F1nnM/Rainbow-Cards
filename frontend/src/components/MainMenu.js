@@ -2,6 +2,8 @@ import React from 'react';
 import { CardArea } from "./CardArea";
 import { withRouter } from "react-router-dom";
 
+import "./MainMenu.css"
+
 class MainMenu extends React.Component {
 
   constructor(props) {
@@ -58,7 +60,7 @@ class MainMenu extends React.Component {
 
     let sidebar = (
       <div>
-        <span>Set your name:</span>
+        <span className="label">Set your name:</span>
         <input value={this.state.name} onChange={e => {this.saveNameToState(this, e.target.value)}}/><button onClick={_=>this.saveName(this)}>Set</button>
         {this.state.displayGreeting && <span className="greeting">Hi, {this.state.name}!</span>}
       </div>

@@ -1,9 +1,9 @@
 .header {
     flex: 0.05;
-    background-color: black;
-    color: white;
+    background-color: var(--background-secondary);
+    color: var(--text);
     font-family: 'Cards';
-    border-bottom: white solid 1px;
+    border-bottom: var(--text) solid 1px;
     display: flex;
     align-items: center;
     padding-left: 0.8%;
@@ -16,7 +16,7 @@ span{
 }
 
 a {
-    color: white
+    color: var(--text)
 }
 
 .spreader{
@@ -29,8 +29,7 @@ a {
     margin-left: 0.5%;
 }
 
-.home {
-    max-height: 25px;
+.homeIcon {
     transition-duration: 0.5s;
 }
 
@@ -38,11 +37,19 @@ a {
     padding-right: 0.5%;
 }
 
-.home:hover {
-    transform: rotateY(180deg);
+.homeIcon:hover {
+    color: var(--background);
 }
 
 .homeContainer:active {
     transition-duration: 0.1s;
     filter: blur(2px)
+}
+
+.themeToggle {
+    margin-right: 2%;
+}
+.themeToggleButton {
+    border: none;
+    outline: none;
 }

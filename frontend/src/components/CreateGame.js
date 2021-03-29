@@ -8,7 +8,7 @@ class CreateGame extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { sets: [], currentTotalWhite: 0, currentTotalBlack: 0, maxPlayers: 10, private: false, pointsNeeded: 10 }
+    this.state = { sets: [], currentTotalWhite: Infinity, currentTotalBlack: Infinity, maxPlayers: 10, private: false, pointsNeeded: 10 }
   }
 
   componentDidMount() {

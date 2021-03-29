@@ -1,5 +1,5 @@
 .App {
-  background: #00000000;
+  background: var(--background);
   display: flex;
   flex-direction: column;
   top: 0;
@@ -8,19 +8,7 @@
   right: 0;
   position: absolute;
   overflow: hidden;
-}
-.App::after {
-  content: '';
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: linear-gradient( #ffffff, #ffffff 20%, #cccccc 60%, #00000000 90%, #00000000);
-  background-color: #000000;
-  filter: blur(3px);
-  position: absolute;
-  z-index: -10;
-  margin: -10px;
+  color: var(--text);
 }
 
 .homeButton{
@@ -28,4 +16,39 @@
   border: 1px solid black;
   color: black;
   border-radius: 5px;
+}
+
+.App.dark {
+  --background: #1d1d25;
+  --background-secondary: #2f2f40;
+  --text: white;
+}
+
+.App.light {
+  --background: #e1f4ff;
+  --background-secondary: #c3e0ff;
+  --text: black
+}
+
+input {
+  background-color: transparent;
+  color: var(--text);
+  border: none;
+  border-bottom: 2px solid var(--background);
+  outline: none;
+  font-size: inherit;
+}
+input:focus {
+  border-bottom-color: var(--text)
+}
+
+button {
+  background-color: var(--background-secondary);
+  color: var(--text);
+  border: 2px solid var(--background);
+  font-size: inherit;
+}
+
+button:hover {
+  background-color: var(--background);
 }

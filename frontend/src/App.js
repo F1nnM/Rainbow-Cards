@@ -17,7 +17,7 @@ class App extends React.Component{
 
   constructor(props){
     super(props)
-    this.state = {client: new Colyseus.Client(`${env.REACT_APP_USE_HTTPS?'wss':'ws'}://${env.REACT_APP_BACKEND}`), room: null}
+    this.state = {client: new Colyseus.Client(`${env.REACT_APP_USE_HTTPS?'wss':'ws'}://${env.REACT_APP_BACKEND}`), room: null, theme: "dark"}
   }
 
   setRoom(me, room) {
@@ -29,10 +29,12 @@ class App extends React.Component{
     this.props.history.push("/")
   }
 
+
+
   render(){
     return (
-      <div className="App">
-        <Header showHome={this.props.location.pathname !== "/"}/>
+      <div className={`App ${this.state.theme}`}>
+        <Header showHome={this.props.location.pathname !== "/"} theme={this.state.theme} setTheme={(theme)=>this.setState({...this.state, theme})}/>
         <Switch>
           <Route path="/create">
             <CreateGame client={this.state.client} setRoom={(room) => this.setRoom(this, room)}/>

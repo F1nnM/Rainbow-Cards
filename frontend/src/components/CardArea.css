@@ -55,9 +55,9 @@
 }
 
 .sidebarContent {
-    border: solid black 2px;
+    border: solid var(--text) 1px;
     border-radius: 10px;
-    background-color: white;
+    background-color: var(--background-secondary);
     padding: 5%
 }
 

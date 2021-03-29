@@ -15,9 +15,6 @@
     font-size: larger;
     outline: none;
 }
-.start-button:hover {
-    transform: translateY(-5%);
-}
 .start-button:active {
     color: white;
     background-color: black;
@@ -26,11 +23,13 @@
 
 .options {
     margin: .5%;
-    border: solid 1px black;
+    border: solid 1px var(--text);
     font-family: 'Cards';
-    background-color: white;
+    background-color: var(--background-secondary);
     border-radius: 10px;
     padding: 0.5%;
+    color: var(--text);
+    font-weight: lighter;
 }
 .options.warn {
     background-color: orange;
