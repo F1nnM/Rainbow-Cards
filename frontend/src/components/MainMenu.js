@@ -33,7 +33,9 @@ class MainMenu extends React.Component {
 
   joinPrivate(){
     let roomId = prompt("Enter the game code:")
-    if (!roomId || roomId.length !== 9){
+    if (!roomId)
+      return
+    if (roomId.length !== 9){
       alert("Invalid code! A valid one is 9 characters long")
       return;
     }
