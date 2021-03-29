@@ -52,7 +52,7 @@ class MainMenu extends React.Component {
 
   render() {
 
-    let whiteCards = [{content: "Join a public ga fa a conversationist ga"}, {content: "Join a private game"}, {content: "Create a new game"}]
+    let whiteCards = [{content: "Join a public"}, {content: "Join a private game"}, {content: "Create a new game"}]
     if (localStorage.getItem("roomId"))
       whiteCards.push({content: "Rejoin the last game (might be closed already)"})
 
