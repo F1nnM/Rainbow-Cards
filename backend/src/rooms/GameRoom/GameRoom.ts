@@ -7,6 +7,7 @@ import { NewRoundCommand } from "./commands/NewRoundCommand";
 import { PlayCardCommand } from "./commands/PlayCardCommand";
 import { ReplaceHandCommand } from "./commands/ReplaceHandCommand";
 import { StartGameCommand } from "./commands/StartGameCommand";
+import { SkipRoundCommand } from "./commands/SkipRoundCommand";
 import { GameRoomState, Player } from "./GameRoomState";
 
 export class GameRoom extends Room<GameRoomState> {
@@ -42,6 +43,10 @@ export class GameRoom extends Room<GameRoomState> {
 
     this.onMessage("replaceHand", (client, message) => {
       this.dispatcher.dispatch(new ReplaceHandCommand(), {sessionId: client.sessionId})
+    })
+
+    this.onMessage("skipRound", (client, message) => {
+      this.dispatcher.dispatch(new SkipRoundCommand(), {sessionId: client.sessionId})
     })
 
   }

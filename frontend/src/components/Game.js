@@ -133,6 +133,10 @@ class Game extends React.Component {
     this.props.room.send("replaceHand")
   }
 
+  skipRound() {
+    this.props.room.send("skipRound")
+  }
+
   render() {
     if (!this.props.room || !this.state.game)
       return <div></div>
@@ -147,7 +151,8 @@ class Game extends React.Component {
     let sidebar =
     <div>
       <Scoreboard players={Array.from(this.state.game.players.values())} gameRunning={this.state.game.gameRunning} winner={this.state.game.winner || this.state.game.roundWinner}/>
-      {!this.state.game.gameRunning && !this.state.game.winner && <button onClick={_ => this.startGame()}>Start Game</button>}
+      {!this.state.game.gameRunning && player.isOwner && !this.state.game.winner && <button onClick={_ => this.startGame()}>Start Game</button>}
+      {this.state.game.gameRunning && player.isOwner && <button onClick={_ => this.skipRound()}>Skip Round</button>}
     </div>
 
     return (
