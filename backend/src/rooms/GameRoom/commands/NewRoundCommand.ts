@@ -1,5 +1,6 @@
 import { Command } from "@colyseus/command";
 import { GameRoomState, Player } from "../GameRoomState";
+import { DisplayWinnerCommand } from "./DisplayWinnerCommand";
 
 export class NewRoundCommand extends Command<GameRoomState, {wait: number}> {
 
@@ -9,7 +10,7 @@ export class NewRoundCommand extends Command<GameRoomState, {wait: number}> {
 
   async execute({wait} = this.payload) {
 
-    await new Promise((resolve) => {
+    return await new Promise((resolve) => {
       setTimeout(() => {
 
         // remove played cards
@@ -33,13 +34,25 @@ export class NewRoundCommand extends Command<GameRoomState, {wait: number}> {
           
           minTimesCzar = Math.min(minTimesCzar, player.timesCzar);
 
-          player.played = false;
+          if (player.connected)
+            player.played = false;
         })
 
         possibleCzars = possibleCzars.filter(player => player.timesCzar === minTimesCzar);
 
+        console.log(possibleCzars)
+
         let newCzarId: string;
-        if (possibleCzars.length === 1)
+        if (possibleCzars.length === 0){
+          let winner: Player = null
+          this.state.players.forEach(player => {
+            if( ! winner || player.score > winner.score)
+              winner=player
+          });
+          resolve([new DisplayWinnerCommand().setPayload({wait: 0, winnerId: winner.id})]);
+          return;
+        }
+        else if (possibleCzars.length === 1)
           newCzarId = possibleCzars[0].id;
         else
           newCzarId = possibleCzars[Math.floor(Math.random()*possibleCzars.length)].id;
@@ -52,7 +65,7 @@ export class NewRoundCommand extends Command<GameRoomState, {wait: number}> {
 
         // draw cards until everyone has 10 cards. Handles players joining late
         this.state.players.forEach((player)=>{
-          let maxCards = player.isCzar ? 10 : (9+this.state.blackCard.blanks)
+          let maxCards = player.isCzar || !player.connected ? 10 : (9+this.state.blackCard.blanks)
 
           while(player.cards.length < maxCards){
             if(this.state.whiteCardStack.length == 0)

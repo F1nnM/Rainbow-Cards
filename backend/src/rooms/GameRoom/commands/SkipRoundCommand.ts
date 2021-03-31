@@ -2,10 +2,10 @@ import { Command } from "@colyseus/command";
 import { Card, GameRoomState } from "../GameRoomState";
 import { NewRoundCommand } from "./NewRoundCommand";
 
-export class SkipRoundCommand extends Command<GameRoomState, {sessionId: string}> {
+export class SkipRoundCommand extends Command<GameRoomState, {sessionId: string, force: boolean}> {
 
-  validate({sessionId} = this.payload){
-    return this.state.gameRunning && this.state.players.get(sessionId).isOwner
+  validate({sessionId, force} = this.payload){
+    return this.state.gameRunning && (force || this.state.players.get(sessionId).isOwner)
   }
 
   execute() {

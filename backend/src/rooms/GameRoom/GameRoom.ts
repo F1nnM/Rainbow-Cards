@@ -9,6 +9,8 @@ import { ReplaceHandCommand } from "./commands/ReplaceHandCommand";
 import { StartGameCommand } from "./commands/StartGameCommand";
 import { SkipRoundCommand } from "./commands/SkipRoundCommand";
 import { GameRoomState, Player } from "./GameRoomState";
+import { ReconnectPlayerCommand } from "./commands/ReconnectPlayerCommand";
+import { FinishRoundCommand } from "./commands/FinishRoundCommand";
 
 export class GameRoom extends Room<GameRoomState> {
 
@@ -46,7 +48,7 @@ export class GameRoom extends Room<GameRoomState> {
     })
 
     this.onMessage("skipRound", (client, message) => {
-      this.dispatcher.dispatch(new SkipRoundCommand(), {sessionId: client.sessionId})
+      this.dispatcher.dispatch(new SkipRoundCommand(), {force: false, sessionId: client.sessionId})
     })
 
   }
@@ -56,22 +58,44 @@ export class GameRoom extends Room<GameRoomState> {
   }
 
   async onLeave (client: Client, consented: boolean) {
-    this.state.players.get(client.sessionId).connected = false;
+    let player = this.state.players.get(client.sessionId);
+    player.connected = false;
 
     // if the owner left replace them after 10 seconds.
     let replaceOwnerTimeout;
-    if (this.state.players.get(client.sessionId).isOwner){
+    if (player.isOwner){
       console.log(client.sessionId + " was owner")
-      replaceOwnerTimeout = this.clock.setTimeout(() => this.dispatcher.dispatch(new NewOwnerCommand(), {lastOwnerId: client.sessionId}), 10_000);
+      replaceOwnerTimeout = this.clock.setTimeout(() => this.dispatcher.dispatch(new NewOwnerCommand(), {lastOwnerId: client.sessionId}), 15_000);
+    }
+
+    // if the czar left skip round after 30 seconds.
+    let czarLeftTimeout;
+    if (player.isCzar){
+      console.log(client.sessionId + " was czar")
+      czarLeftTimeout = this.clock.setTimeout(() => this.dispatcher.dispatch(new SkipRoundCommand(), {force: true, sessionId: null}), 15_000);
+    }
+
+    // if a player left, after 10 seconds try to finish the round.
+    let continueRoundTimeout;
+    if (!player.played && !player.isCzar){
+      console.log(client.sessionId + " had to play")
+      continueRoundTimeout = this.clock.setTimeout(() => {
+        player.played = true;
+        this.dispatcher.dispatch(new FinishRoundCommand(), {sessionId: client.sessionId});
+      }, 15_000);
     }
         
     try{
       await this.allowReconnection(client, 60*5);
       if (replaceOwnerTimeout)
         replaceOwnerTimeout.clear()
-      this.state.players.get(client.sessionId).connected = true;
+      if (czarLeftTimeout)
+        czarLeftTimeout.clear()
+      if (continueRoundTimeout)
+        continueRoundTimeout.clear()
+      this.dispatcher.dispatch(new ReconnectPlayerCommand(), {sessionId: client.sessionId})
     } catch {
-      this.state.players.get(client.sessionId).left = true;
+      player.left = true;
     }
   }
 

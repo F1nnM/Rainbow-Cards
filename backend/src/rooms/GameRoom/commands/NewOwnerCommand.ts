@@ -8,9 +8,8 @@ export class NewOwnerCommand extends Command<GameRoomState, {lastOwnerId: string
         return;
     let newOwner: string;
     this.state.players.forEach((player, id) => {
-        console.log(id +" : "+ player.connected)
         if(player.connected)
-        newOwner = id
+          newOwner = id
     })
     if (newOwner){
         this.state.players.get(newOwner).isOwner = true;
