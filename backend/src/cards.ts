@@ -69,7 +69,7 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "Mabe she's born with it. Maybe it's [[BLANK]].",
+        "text": "Maybe she's born with it. Maybe it's [[BLANK]].",
         "blanks": 1
       },
       {
@@ -89,7 +89,7 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "I'm no doctor but I'm pretty sure what you're suffering from is called \"[[BLANK]].\"",
+        "text": "I'm no doctor, but I'm pretty sure what you're suffering from is called \"[[BLANK]].\"",
         "blanks": 1
       },
       {
@@ -126,7 +126,7 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "As the mom of five rambunctious boys, I'm not stranger to [[BLANK]].",
+        "text": "As the mom of five rambunctious boys, I'm no stranger to [[BLANK]].",
         "blanks": 1
       },
       {
@@ -251,7 +251,7 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "And the BAFTA for [[BLANK]] goes to[[BLANK]].",
+        "text": "And the BAFTA for [[BLANK]] goes to [[BLANK]].",
         "blanks": 2
       },
       {
@@ -267,7 +267,7 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "Next on Sky Sports: The World Champion of [[BLANK]]..",
+        "text": "Next on Sky Sports: The World Champion of [[BLANK]].",
         "blanks": 1
       },
       {
@@ -476,7 +476,7 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "As the mum of five rambunctious boys, I'm not stranger to [[BLANK]].",
+        "text": "As the mum of five rambunctious boys, I'm no stranger to [[BLANK]].",
         "blanks": 1
       },
       {
@@ -773,7 +773,7 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "Tonight's top story: What you don't know about [[BLANK]] could kills you.",
+        "text": "Tonight's top story: What you don't know about [[BLANK]] could kill you.",
         "blanks": 1
       },
       {
@@ -2177,7 +2177,7 @@ export const blackSets: any = {
         "blanks": 1
       },
       {
-        "text": "Madam President, the asteroid is headed directly for Earth and there's one one thing that can stop it: [[BLANK]].",
+        "text": "Madam President, the asteroid is headed directly for Earth and there's only one thing that can stop it: [[BLANK]].",
         "blanks": 1
       },
       {
@@ -4607,6 +4607,11 @@ export const whiteSets: any = {
       "Futuristic death sports."
     ]
   }
+}
+
+for(let set in blackSets){
+  for(let card of blackSets[set]["cards"])
+    console.log(card.text)
 }
 
 export function getShuffledStack(allSets: any, setsToUse: string[]) {
