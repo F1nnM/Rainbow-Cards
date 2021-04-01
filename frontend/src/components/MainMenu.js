@@ -61,7 +61,7 @@ class MainMenu extends React.Component {
       whiteCards.push({content: "Rejoin the last game (might be closed already)"})
 
     let sidebar = (
-      <div>
+      <div data-nosnippet>
         <span className="label">Set your name:</span>
         <input value={this.state.name} onChange={e => {this.saveNameToState(this, e.target.value)}}/><button onClick={_=>this.saveName(this)}>Set</button>
         {this.state.displayGreeting && <span className="greeting">Hi, {this.state.name}!</span>}

@@ -35,7 +35,7 @@ class Header extends React.Component {
               {this.props.theme==="light" && <Brightness4/>}
           </button>
         </div>
-        <span>
+        <span data-nosnippet>
           Infos and Licensing:
         </span>
         <div className="github">
