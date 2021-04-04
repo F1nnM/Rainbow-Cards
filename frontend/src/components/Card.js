@@ -11,7 +11,7 @@ export class Card extends React.Component {
           {this.props.text && this.props.trust && <span dangerouslySetInnerHTML={{__html: text}}></span>}
           {this.props.text && (this.props.trust || <span>{text}</span>)}
           {this.props.children && (
-            <div style={this.props.style}>
+            <div className="children" style={this.props.style}>
               {this.props.children}
             </div>
           )}

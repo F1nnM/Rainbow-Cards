@@ -84,3 +84,12 @@ span {
 .raised:hover {
     transform: scale(1.1) translateY(-30px) !important;
 }
+.children input {
+    font-size: smaller !important;
+    width: 100%;
+}
+.children button {
+    font-size: smaller !important;
+    width: 100%;
+    color: var(--text);
+}
