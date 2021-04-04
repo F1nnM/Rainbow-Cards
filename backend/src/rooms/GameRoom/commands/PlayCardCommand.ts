@@ -1,5 +1,4 @@
 import { Command } from "@colyseus/command";
-import { shuffleArrayInplace } from "../../../utils";
 import { GameRoomState, PlayedCardStack, PlayedCard } from "../GameRoomState";
 import { FinishRoundCommand } from "./FinishRoundCommand";
 

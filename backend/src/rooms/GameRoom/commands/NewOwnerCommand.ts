@@ -1,5 +1,5 @@
 import { Command } from "@colyseus/command";
-import { GameRoomState, Player } from "../GameRoomState";
+import { GameRoomState } from "../GameRoomState";
 
 export class NewOwnerCommand extends Command<GameRoomState, {lastOwnerId: string}> {
 

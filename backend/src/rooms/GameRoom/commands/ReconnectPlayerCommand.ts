@@ -1,7 +1,5 @@
 import { Command } from "@colyseus/command";
 import { GameRoomState } from "../GameRoomState";
-import { DisplayWinnerCommand } from "./DisplayWinnerCommand";
-import { NewRoundCommand } from "./NewRoundCommand";
 
 export class ReconnectPlayerCommand extends Command<GameRoomState, {sessionId: string}> {
 

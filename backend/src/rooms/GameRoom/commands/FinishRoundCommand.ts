@@ -1,6 +1,6 @@
 import { Command } from "@colyseus/command";
 import { shuffleArrayInplace } from "../../../utils";
-import { GameRoomState, PlayedCardStack, PlayedCard } from "../GameRoomState";
+import { GameRoomState } from "../GameRoomState";
 import { NewRoundCommand } from "./NewRoundCommand";
 
 export class FinishRoundCommand extends Command<GameRoomState> {

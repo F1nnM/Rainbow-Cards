@@ -8,7 +8,7 @@ import { PlayCardCommand } from "./commands/PlayCardCommand";
 import { ReplaceHandCommand } from "./commands/ReplaceHandCommand";
 import { StartGameCommand } from "./commands/StartGameCommand";
 import { SkipRoundCommand } from "./commands/SkipRoundCommand";
-import { GameRoomState, Player } from "./GameRoomState";
+import { GameRoomState } from "./GameRoomState";
 import { ReconnectPlayerCommand } from "./commands/ReconnectPlayerCommand";
 import { FinishRoundCommand } from "./commands/FinishRoundCommand";
 

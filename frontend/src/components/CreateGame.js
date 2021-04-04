@@ -23,7 +23,9 @@ class CreateGame extends React.Component {
             currentTotalWhite += data[set].white;
           }
         }
-        this.setState({ ...this.state, sets: data, currentTotalWhite, currentTotalBlack})
+        this.setState((previousState) => {
+          return {...previousState, sets: data, currentTotalWhite, currentTotalBlack}
+        })
       });
   }
 

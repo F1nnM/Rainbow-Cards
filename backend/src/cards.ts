@@ -4609,11 +4609,6 @@ export const whiteSets: any = {
   }
 }
 
-for(let set in blackSets){
-  for(let card of blackSets[set]["cards"])
-    console.log(card.text)
-}
-
 export function getShuffledStack(allSets: any, setsToUse: string[]) {
   let cards = []
   for (let set of setsToUse) {
