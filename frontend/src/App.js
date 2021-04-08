@@ -17,7 +17,7 @@ class App extends React.Component {
 
   constructor(props) {
     super(props)
-    this.state = { client: null, room: null, theme: "dark", serverList: [], selectedServer: null }
+    this.state = { client: null, room: null, theme: "dark", serverList: [], selectedServer: null, serverDropdownValue: null }
   }
 
   setRoom(me, room) {
@@ -52,7 +52,7 @@ class App extends React.Component {
     let url = (server.ssl?'wss://': 'ws://')+server.url
     
     let client = new Colyseus.Client(url)
-    this.setState({ ...this.state, client, selectedServer: server})
+    this.setState({ ...this.state, client, selectedServer: server, serverDropdownValue: serverIndex})
   }
 
   render() {
@@ -62,7 +62,7 @@ class App extends React.Component {
     let serverSwitcher = (
       <div>
         Server: 
-        <select onChange={e => this.setServer(e.target.value)} value="0">
+        <select onChange={e => this.setServer(e.target.value)} value={this.state.serverDropdownValue}>
           {this.state.serverList.map((server, index) => {
             return (
               <option key={server.name} value={index}>
