@@ -38,7 +38,7 @@ Template:
 }
 ```
 
-# Run your own, completely seperate version of the game
+# Run your own, completely separate version of the game
 Please don't run a new instance with the intent of replacing me, however you're welcome to run a new instance of this game for your friends or other groups.
 
 Also, did you consider, just running the backend as described above and helping everyone out?

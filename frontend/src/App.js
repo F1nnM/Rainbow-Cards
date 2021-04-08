@@ -34,15 +34,26 @@ class App extends React.Component {
       .then(response => response.json())
       .then(data => {
         let client = new Colyseus.Client(data[0].url)
-        this.setState({ ...this.state, serverList: data, client })
+        this.setState({ ...this.state, serverList: data, client, selectedServer: data[0] })
       });
   }
 
   setServer(serverIndex) {
-    let client = new Colyseus.Client(this.state.serverList[serverIndex].url)
-    this.setState({ ...this.state, client, selectedServer: serverIndex})
-  }
+    let server;
+    if(serverIndex === "custom"){
+      server = {
+        url: prompt('URL of the server (optional: with port)? Example: "cah-backend.mfinn.de"'),
+        ssl: prompt('Does the server use ssl? (true / false)').match(/true/gi)
+      }
+    } else {
+      server = this.state.serverList[serverIndex]
+    }
 
+    let url = (server.ssl?'wss://': 'ws://')+server.url
+    
+    let client = new Colyseus.Client(url)
+    this.setState({ ...this.state, client, selectedServer: server})
+  }
 
   render() {
 
@@ -51,7 +62,7 @@ class App extends React.Component {
     let serverSwitcher = (
       <div>
         Server: 
-        <select onChange={e => this.setServer(e.target.value)}>
+        <select onChange={e => this.setServer(e.target.value)} value="0">
           {this.state.serverList.map((server, index) => {
             return (
               <option key={server.name} value={index}>
@@ -59,6 +70,7 @@ class App extends React.Component {
               </option>
             );
           })}
+          <option value="custom">Custom</option>
         </select>
       </div>
 
@@ -69,7 +81,7 @@ class App extends React.Component {
         <Header showHome={!isHome} center={isHome ? serverSwitcher : null} theme={this.state.theme} setTheme={(theme) => this.setState({ ...this.state, theme })} />
         <Switch>
           <Route path="/create">
-            <CreateGame client={this.state.client} server={this.state.serverList[this.state.selectedServer]} setRoom={(room) => this.setRoom(this, room)} />
+            <CreateGame client={this.state.client} server={this.state.selectedServer} setRoom={(room) => this.setRoom(this, room)} />
           </Route>
           <Route path="/game">
             <Game client={this.state.client} room={this.state.room} setRoom={(room) => this.setRoom(this, room)} />

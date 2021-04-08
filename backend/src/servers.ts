@@ -5,8 +5,8 @@ const servers = [
     ssl: true
   },
   {
-    name: "localhost (development)",
-    url: "localhost",
+    name: "localhost (development, port 2567)",
+    url: "localhost:2567",
     ssl: false
   }
 ]
