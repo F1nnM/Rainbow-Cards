@@ -26,6 +26,9 @@ You can do this with for example the following command:
 docker run -p <target port>:8080 --env REACT_APP_MASTER_BACKEND=cah-backend.mfinn.de --env REACT_APP_MASTER_BACKEND_USE_HTTPS=true f1nnm/yacahc_backend:release-<version>
 ```
 
+## Check if it works
+In the frontend select a custom server and enter yours. Please check if you can create a game without errors. If this works, everything should be alright.
+
 ## Making it available to players
 Create a pull request editing the `backend/src/servers.ts` file, adding your server to the list. Please add it at the bottom, just above localhost.
 Template:
@@ -33,10 +36,11 @@ Template:
 {
     name: "A display name", // shouldn't be longer than maybe 25 characters
     url: "example.com",     // this can be an url or an ip-address, it may include a port (example.com:8080)
-    ssl: true              // should the game use ssl to connect to your server.
+    ssl: true               // should the game use ssl to connect to your server.
                             // It's 2021, everybody should be using SSL encryption on the web, but hey, you do you.
 }
 ```
+If you don't know how to do that, just mail me that information.
 
 # Run your own, completely separate version of the game
 Please don't run a new instance with the intent of replacing me, however you're welcome to run a new instance of this game for your friends or other groups.
