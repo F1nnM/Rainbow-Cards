@@ -8,16 +8,18 @@ As the title suggests, this is yet another [Cards against Humanity](https://card
 The game is available to play [here](https://cah.mfinn.de).
 
 # Help the game
+
+## Running another backend server
 As the resources of my server are limited the game might become slow on the main server. You can help by running the backend on your own server. 
 Doing so is very easy, if you have some experience with git and Docker. 
 If you need help or have any questions, feel free to mail me at `cah@mfinn.de`, I'm happy to help you.
 
-## Prerequisites
+### Prerequisites
 - A server with a good uptime and enough bandwidth / resources. Doesn't have to be perfect, but the players should experience as few disconnections as possible.
 - Docker
 - Motivation to update the backend quickly after a new version is released here. Important, as new versions might introduce incompatibilities with the frontend.
 
-## Running the backend
+### Running the backend
 
 Simply start the backend docker and expose the port 8080. 
 You can do this with for example the following command:
@@ -26,10 +28,10 @@ You can do this with for example the following command:
 docker run -p <target port>:8080 --env REACT_APP_MASTER_BACKEND=cah-backend.mfinn.de --env REACT_APP_MASTER_BACKEND_USE_HTTPS=true f1nnm/yacahc_backend:release-<version>
 ```
 
-## Check if it works
+### Check if it works
 In the frontend select a custom server and enter yours. Please check if you can create a game without errors. If this works, everything should be alright.
 
-## Making it available to players
+### Making it available to players
 Create a pull request editing the `backend/src/servers.ts` file, adding your server to the list. Please add it at the bottom, just above localhost.
 Template:
 ```js
@@ -41,6 +43,11 @@ Template:
 }
 ```
 If you don't know how to do that, just mail me that information.
+
+## Contribute to this repository
+
+Be it design improvements, new features or just a fixed typo, any contribution to this repository are very welcome.
+For larger contributions please check back with me first, so we don't work on the same thing separately.
 
 # Run your own, completely separate version of the game
 Please don't run a new instance with the intent of replacing me, however you're welcome to run a new instance of this game for your friends or other groups.
