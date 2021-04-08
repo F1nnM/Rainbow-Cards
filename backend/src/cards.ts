@@ -4638,4 +4638,4 @@ for (let set of sortedLabels) {
   clientDataPrep[set] = { white: whiteSets[set] ? whiteSets[set].cards.length : 0, black: blackSets[set] ? blackSets[set].cards.length : 0, checked: defaultSets.includes(set) }
 }
 
-export const clientData = clientDataPrep
+export const clientStartGameData = clientDataPrep
