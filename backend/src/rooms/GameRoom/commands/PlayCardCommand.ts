@@ -23,7 +23,7 @@ export class PlayCardCommand extends Command<GameRoomState, {sessionId: string, 
     card.mark = handCard.mark;
     playedCardStack.cards.push(card)
     this.state.players.get(sessionId).cards.deleteAt(index);
-    this.state.players.get(sessionId).played = true;
+    this.state.players.get(sessionId).played = playedCardStack.cards.length >= this.state.blackCard.blanks;
 
     return [new FinishRoundCommand()]
   }
