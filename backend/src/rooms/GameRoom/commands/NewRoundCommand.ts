@@ -27,13 +27,13 @@ export class NewRoundCommand extends Command<GameRoomState, {wait: number}> {
         var minTimesCzar = Infinity;
 
         this.state.players.forEach((player, id) => {
-          if (!player.isCzar && player.connected)
+          if (!player.isCzar && player.connected){
+            minTimesCzar = Math.min(minTimesCzar, player.timesCzar);
             possibleCzars.push(player);
+          }
           else
             player.isCzar = false;
           
-          minTimesCzar = Math.min(minTimesCzar, player.timesCzar);
-
           if (player.connected)
             player.played = false;
         })
