@@ -146,12 +146,12 @@ class Game extends React.Component {
     let player = this.state.game.players[this.props.room.sessionId];
 
     let blackcardText = this.state.game.winner ? 'And the winner is [[BLANK]]' : this.state.game.blackCard.content || "Invite players with the code: "
-    let blackcardChildren = (
+    let blackcardChildren = this.state.game.gameRunning ? (
       <div>
         <input value={this.state.roomId} />
         <button onClick={() => { navigator.clipboard.writeText(this.state.roomId) }}>Copy Code</button>
         {/*<button onClick={() => {navigator.clipboard.writeText(window.location.origin+"/#/game?"+this.state.roomId)}}>Copy Link</button> */}
-      </div>);
+      </div>) : null;
     let blackcard = { content: blackcardText, children: blackcardChildren, mark: this.state.game.blackCard.mark }
 
     let playedCards = this.state.game.winner ? [{ cards: [{ content: this.state.game.players[this.state.game.winner].name, mark: "WIN" }], chosenByCzar: true }] : this.state.game.cardsPlayed
