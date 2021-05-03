@@ -8,6 +8,14 @@ Play the game [here](https://rainbow-cards.mfinn.de)!
 
 This is a clone of the well known game [Cards against Humanity](https://cardsagainsthumanity.com/). Thanks a lot to them for making the cards available under the [CC BY-NC-SA 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
+# Screenshots
+
+![](/screenshots/2.png)
+![](/screenshots/1.png)
+![](/screenshots/4.png)
+![](/screenshots/5.png)
+![](/screenshots/3.png)
+
 <!--
 # Help the game
 As per the requirements of the license, I can't take any compensation or donations for this game, which means, I can't afford a more powerful server.
