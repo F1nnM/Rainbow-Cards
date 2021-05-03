@@ -9,7 +9,7 @@ ENV PATH /app/node_modules/.bin:$PATH
 # install app dependencies
 COPY package.json ./
 COPY package-lock.json ./
-RUN apk --no-cache --virtual build-dependencies add python
+RUN apk --no-cache --virtual build-dependencies add python make
 RUN npm ci
 RUN npm install react-scripts@3.4.1 -g
 
