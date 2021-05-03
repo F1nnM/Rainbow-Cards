@@ -33,7 +33,7 @@ class App extends React.Component {
     fetch(`${env.REACT_APP_MASTER_BACKEND_USE_HTTPS ? 'https' : 'http'}://${env.REACT_APP_MASTER_BACKEND}/getServerList`)
       .then(response => response.json())
       .then(data => {
-        let client = new Colyseus.Client(data[0].url)
+        let client = new Colyseus.Client(`${data[0].ssl ? 'wss' : 'ws'}://${data[0].url}`)
         this.setState({ ...this.state, serverList: data, client, selectedServer: data[0] })
       });
   }
