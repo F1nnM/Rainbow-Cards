@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-import './Scoreboard.css'
+import './Scoreboard.scss'
 export default class Scoreboard extends React.Component {
 
   getAnnotation(me, player){

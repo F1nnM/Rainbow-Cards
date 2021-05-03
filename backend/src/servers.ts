@@ -1,7 +1,7 @@
 const servers = [
   {
     name: "Mothership",
-    url: "cah-backend.mfinn.de",
+    url: "rainbow-cards-backend.mfinn.de",
     ssl: true
   },
   {

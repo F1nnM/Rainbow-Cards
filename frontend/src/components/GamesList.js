@@ -2,7 +2,7 @@ import React from 'react';
 import { withRouter } from 'react-router';
 import { Card } from './Card';
 
-import './GamesList.css'
+import './GamesList.scss'
 class GamesList extends React.Component {
 
   constructor(props) {

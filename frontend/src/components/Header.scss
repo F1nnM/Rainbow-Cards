@@ -8,11 +8,19 @@
     align-items: center;
     padding-left: 0.8%;
     padding-right: 0.8%;
+    span {
+        display: inline-block;
+        vertical-align: middle;
+    }
 }
 
-span{
-    display: inline-block;
-    vertical-align: middle;
+.rainbow {
+    padding: 10px;
+    background: linear-gradient(100deg, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #5d53e8, #dd00f3);
+    border-radius: 10px;
+    margin: 10px;
+    margin-right: 5px;
+    color: black;
 }
 
 a {
@@ -31,19 +39,17 @@ a {
 
 .homeIcon {
     transition-duration: 0.5s;
+    &:hover {
+        color: var(--background);
+    }
 }
 
 .homeContainer {
     padding-right: 0.5%;
-}
-
-.homeIcon:hover {
-    color: var(--background);
-}
-
-.homeContainer:active {
-    transition-duration: 0.1s;
-    filter: blur(2px)
+    &:active {
+        transition-duration: 0.1s;
+        filter: blur(2px)
+    }
 }
 
 .themeToggle {

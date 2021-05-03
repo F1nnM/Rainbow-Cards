@@ -9,7 +9,7 @@ import {
   Route,
   withRouter
 } from "react-router-dom";
-import './App.css';
+import './App.scss';
 import * as Colyseus from 'colyseus.js'
 import { env } from './config';
 
@@ -42,7 +42,7 @@ class App extends React.Component {
     let server;
     if(serverIndex === "custom"){
       server = {
-        url: prompt('URL of the server (optional: with port)? Example: "cah-backend.mfinn.de"'),
+        url: prompt('URL of the server (optional: with port)? Example: "rainbow-cards-backend-backend.mfinn.de"'),
         ssl: prompt('Does the server use ssl? (true / false)').match(/true/gi)
       }
     } else {
@@ -59,22 +59,22 @@ class App extends React.Component {
 
     let isHome = this.props.location.pathname === "/";
 
-    let serverSwitcher = (
-      <div>
-        Server: 
-        <select onChange={e => this.setServer(e.target.value)} value={this.state.serverDropdownValue}>
-          {this.state.serverList.map((server, index) => {
-            return (
-              <option key={server.name} value={index}>
-                {server.name}
-              </option>
-            );
-          })}
-          <option value="custom">Custom</option>
-        </select>
-      </div>
-
-    )
+    // let serverSwitcher = (
+    //   <div>
+    //     Server: 
+    //     <select onChange={e => this.setServer(e.target.value)} value={this.state.serverDropdownValue}>
+    //       {this.state.serverList.map((server, index) => {
+    //         return (
+    //           <option key={server.name} value={index}>
+    //             {server.name}
+    //           </option>
+    //         );
+    //       })}
+    //       <option value="custom">Custom</option>
+    //     </select>
+    //   </div>
+    // )
+    let serverSwitcher = null; // not yet required
 
     return (
       <div className={`App ${this.state.theme}`}>

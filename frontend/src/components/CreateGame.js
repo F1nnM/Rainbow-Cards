@@ -1,6 +1,6 @@
 import React from 'react';
 import { withRouter } from "react-router-dom";
-import './CreateGame.css'
+import './CreateGame.scss'
 
 class CreateGame extends React.Component {
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Header.css'
+import './Header.scss'
 
 import { withRouter } from 'react-router';
 
@@ -23,7 +23,7 @@ class Header extends React.Component {
             <Home className="homeIcon"/>
           </div>
         }
-        <span>Yet another <a href="https://cardsagainsthumanity.com/">Cards against Humanity</a> clone.</span>
+        <span><span className="rainbow">Rainbow</span> cards</span>
         <div className="spreader" />
         <div className="center">
           {this.props.center}

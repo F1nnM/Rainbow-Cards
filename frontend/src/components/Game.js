@@ -3,7 +3,7 @@ import { withRouter } from 'react-router';
 import { CardArea } from "./CardArea";
 import Scoreboard from './Scoreboard';
 
-import './Game.css'
+import './Game.scss'
 class Game extends React.Component {
 
   constructor(props) {

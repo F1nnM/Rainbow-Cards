@@ -14,11 +14,11 @@
 .start-button {
     font-size: larger;
     outline: none;
-}
-.start-button:active {
-    color: white;
-    background-color: black;
-    border-color: white;
+    &:active {
+        color: white;
+        background-color: black;
+        border-color: white;
+    }
 }
 
 .options {
@@ -30,19 +30,22 @@
     padding: 0.5%;
     color: var(--text);
     font-weight: lighter;
+    &.warn {
+        background-color: orange;
+    }
 }
-.options.warn {
-    background-color: orange;
-}
+
 .checkboxContainer {
     display: flex;
     flex-wrap: wrap;
 }
+
 .checkboxWithLabel {
     display: inline-block;
     margin-bottom: 0.5%;
     margin-right: 1%;
 }
+
 input[type="number"] {
     margin-left: 1%;
 }

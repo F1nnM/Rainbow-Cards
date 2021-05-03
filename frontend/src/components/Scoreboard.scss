@@ -6,10 +6,9 @@
 .player {
     padding: 0.5%;
     border-bottom: 1px solid black;
-}
-
-.player:last-child {
-    border-bottom: unset;
+    &:last-child {
+        border-bottom: unset;
+    }
 }
 
 .name {

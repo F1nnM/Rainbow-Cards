@@ -1,18 +1,20 @@
-# Yet another Cards Against Humanity clone
+# Rainbow cards
 
 [![Publish latest Docker image](https://github.com/F1nnM/Yet-another-Cards-Against-Humanity-clone/actions/workflows/docker_push.yaml/badge.svg)](https://github.com/F1nnM/Yet-another-Cards-Against-Humanity-clone/actions/workflows/docker_push.yaml)
 [![Publish release Docker image](https://github.com/F1nnM/Yet-another-Cards-Against-Humanity-clone/actions/workflows/docker_release.yaml/badge.svg)](https://github.com/F1nnM/Yet-another-Cards-Against-Humanity-clone/actions/workflows/docker_release.yaml)
 
-As the title suggests, this is yet another [Cards against Humanity](https://cardsagainsthumanity.com/) clone.
+Play the game [here](https://rainbow-cards.mfinn.de)!
 
-The game is available to play [here](https://cah.mfinn.de).
+This is a clone of the well known game [Cards against Humanity](https://cardsagainsthumanity.com/). Thanks a lot to them for making the cards available under the [CC BY-NC-SA 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
+<!--
 # Help the game
-
+As per the requirements of the license, I can't take any compensation or donations for this game, which means, I can't afford a more powerful server.
+However you can he
 ## Running another backend server
 As the resources of my server are limited the game might become slow on the main server. You can help by running the backend on your own server. 
 Doing so is very easy, if you have some experience with git and Docker. 
-If you need help or have any questions, feel free to mail me at `cah@mfinn.de`, I'm happy to help you.
+If you need help or have any questions, feel free to mail me at `rainbow-cards@mfinn.de`, I'm happy to help you.
 
 ### Prerequisites
 - A server with a good uptime and enough bandwidth / resources. Doesn't have to be perfect, but the players should experience as few disconnections as possible.
@@ -25,7 +27,7 @@ Simply start the backend docker and expose the port 8080.
 You can do this with for example the following command:
 
 ```bash
-docker run -p <target port>:8080 --env REACT_APP_MASTER_BACKEND=cah-backend.mfinn.de --env REACT_APP_MASTER_BACKEND_USE_HTTPS=true f1nnm/yacahc_backend:release-<version>
+docker run -p <target port>:8080 --env REACT_APP_MASTER_BACKEND=rainbow-cards-backend.mfinn.de --env REACT_APP_MASTER_BACKEND_USE_HTTPS=true f1nnm/yarainbow-cardsc_backend:release-<version>
 ```
 
 ### Check if it works

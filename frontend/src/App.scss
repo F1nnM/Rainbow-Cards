@@ -9,6 +9,18 @@
   position: absolute;
   overflow: hidden;
   color: var(--text);
+  &.dark {
+    --background: #1d1d25;
+    --background-secondary: #2f2f40;
+    --text: white;
+    --cardBase: #1229a2;
+  }
+  &.light {
+    --background: #ceced6;
+    --background-secondary: #ffffff;
+    --text: black;
+    --cardBase: #4961ec;
+  }
 }
 
 .homeButton{
@@ -18,18 +30,6 @@
   border-radius: 5px;
 }
 
-.App.dark {
-  --background: #1d1d25;
-  --background-secondary: #2f2f40;
-  --text: white;
-}
-
-.App.light {
-  --background: #ceced6;
-  --background-secondary: #ffffff;
-  --text: black
-}
-
 input {
   background-color: transparent;
   color: inherit;
@@ -37,9 +37,9 @@ input {
   border-bottom: 2px solid var(--background);
   outline: none;
   font-size: inherit;
-}
-input:focus {
-  border-bottom-color: var(--text)
+  &:focus {
+    border-bottom-color: var(--text)
+  }
 }
 
 button {
@@ -47,8 +47,7 @@ button {
   color: inherit;
   border: 2px solid var(--background);
   font-size: inherit;
-}
-
-button:hover {
-  background-color: var(--background);
+  &:hover {
+    background-color: var(--background);
+  }
 }

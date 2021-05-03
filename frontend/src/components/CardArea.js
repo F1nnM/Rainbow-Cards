@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from './Card';
-import './CardArea.css'
+import './CardArea.scss'
 
 export class CardArea extends React.Component {
 

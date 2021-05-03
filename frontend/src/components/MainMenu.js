@@ -2,7 +2,7 @@ import React from 'react';
 import { CardArea } from "./CardArea";
 import { withRouter } from "react-router-dom";
 
-import "./MainMenu.css"
+import "./MainMenu.scss"
 
 class MainMenu extends React.Component {
 

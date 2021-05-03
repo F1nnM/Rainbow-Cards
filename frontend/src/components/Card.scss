@@ -1,0 +1,104 @@
+.card {
+    font-family: 'Cards';
+    font-size: 1vw;
+    border: solid black 2px;
+    border-radius: 10px;
+    margin: 0.5%;
+    display: block;
+    text-align: start;
+    outline: none;
+    transition-duration: .1s;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    &.white {
+        color: black;
+        background-color: white;
+        border-color: black;
+        flex-shrink: 1;
+        width: 10vw;
+        &:hover {
+            transform: scale(1.1);
+        }
+        &:active {
+            color: white;
+            background-color: black;
+            border-color: white;
+        }
+        &.chosen {
+            background-color: gold;
+            box-shadow: 0px 0px 35px 10px gold;
+        }
+    }
+    &.black {
+        color: black;
+        background: linear-gradient(100deg, #e81d1d, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #5d53e8, #dd00f3, #dd00f3);
+        background-size: 100% 5000%;
+        flex: 1;
+        border-color: white;
+        font-size: xx-large;
+        animation: rainbow 40s linear infinite alternate-reverse;
+    }
+    &.sticky {
+        margin-left: -0.5%;
+    }
+}
+
+@keyframes rainbow { 
+    0%{background-position:0% 90%}
+    100%{background-position:0% 10%}
+}
+
+.aspect-ratio-box {
+    position: relative;
+    &:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: 139.6825396825%;
+    }
+    & > .aspect-ratio-box-inner {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 8%;
+        overflow-y: auto;
+    }
+}
+
+span {
+    display: block;
+}
+
+.mark {
+    position: absolute;
+    bottom: 2%;
+    right: 5%;
+}
+
+.black .mark{
+    color:white;
+}
+
+.raised {
+    transform: translateY(-30px);
+    &:hover {
+        transform: scale(1.1) translateY(-30px) !important;
+    }
+}
+
+.children {
+    input {
+        font-size: smaller !important;
+        width: 100%;
+    }
+    
+    button {
+        font-size: smaller !important;
+        width: 100%;
+        color: var(--text);
+    }
+}

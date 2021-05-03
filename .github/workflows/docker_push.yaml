@@ -20,12 +20,12 @@ jobs:
       - name: Push frontend to Docker Hub
         uses: docker/build-push-action@v2
         with:
-          tags: f1nnm/yacahc:latest
+          tags: f1nnm/rainbow_cards:latest
           context: ./frontend
           push: true
       - name: Push backend to Docker Hub
         uses: docker/build-push-action@v2
         with:
-          tags: f1nnm/yacahc_backend:latest
+          tags: f1nnm/rainbow_cards_backend:latest
           context: ./backend
           push: true
