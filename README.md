@@ -8,6 +8,8 @@ Play the game [here](https://rainbow-cards.mfinn.de)!
 
 This is a clone of the well known game [Cards against Humanity](https://cardsagainsthumanity.com/). Thanks a lot to them for making the cards available under the [CC BY-NC-SA 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
+To provide feedback, you can also join the [discord channel](https://discord.gg/3NG7nwEfcF)!
+
 # Screenshots
 
 ![](/screenshots/2.png)
