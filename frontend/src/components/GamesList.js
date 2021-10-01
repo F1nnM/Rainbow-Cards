@@ -3,16 +3,20 @@ import { withRouter } from 'react-router';
 import { Card } from './Card';
 
 import './GamesList.scss'
+import * as Colyseus from "colyseus.js/dist/colyseus";
 class GamesList extends React.Component {
 
   constructor(props) {
     super(props);
-
     this.state = {rooms: []}
+    if (this.props.client) { // we store endpoint to prevent reload
+      localStorage.setItem("endpoint", this.props.client.endpoint)
+    }
   }
 
   componentDidMount(){
-    this.props.client.getAvailableRooms().then(rooms => {
+    const client = this.props.client || new Colyseus.Client(localStorage.getItem("endpoint"))
+    client.getAvailableRooms().then(rooms => {
       this.setState({rooms: rooms})
     }).catch(e => {
       console.log(e)
