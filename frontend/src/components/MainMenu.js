@@ -14,17 +14,17 @@ class MainMenu extends React.Component {
   whiteCardClicked(me, index){
     switch (index){
       case 0:
-        me.props.history.push("/public_games");
+        // me.props.history.push("/public_games");
         break;
       case 1:
         this.joinPrivate()
-        me.props.history.push("/game");
+        // me.props.history.push("/game");
         break;
       case 2:
-        me.props.history.push("/create");
+        // me.props.history.push("/create");
         break;
       case 3:
-        me.props.history.push("/game");
+        // me.props.history.push("/game");
         break;
       default:
         break;
