@@ -49,4 +49,4 @@ app.get('/getServerList', function (req, res) {
 })
 
 gameServer.listen(port, host);
-console.log(`Listening on ws://localhost:${port}`)
+console.log(`Listening on ws://${host}:${port}`)

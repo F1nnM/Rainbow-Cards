@@ -54,9 +54,11 @@ Yes, the last line is complete the way it's written here. This disables Secured 
 
 You can now start the frontend with the corresponding npm script:
 ```
-cd backend
+cd frontend
 npm run start
 ```
+
+Should you get any errors a la "Failed to fetch", you might want to replace `0.0.0.0` in the `.env` file with either `localhost` or your local IP-address.
 
 ## Developing
 Now that both frontend and backend are up and running, you can start developing.
