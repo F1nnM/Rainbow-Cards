@@ -10,6 +10,60 @@ This is a clone of the well known game [Cards against Humanity](https://cardsaga
 
 To provide feedback, you can also join the [discord channel](https://discord.gg/3NG7nwEfcF)!
 
+# Local development
+If you need any help, feel free to also join the [discord channel](https://discord.gg/3NG7nwEfcF) and ask there! 
+
+## Requirements
+- Node
+- npm
+
+## Running the app
+After cloning the repository, first, install the npm packages for both directories, frontend and backend.
+```
+cd ./backend
+npm i
+```
+```
+cd ./frontend
+npm i
+```
+
+After this, you need to configure the environment variables for both the frontend and the backend. This can be done by adding `.env`-files in the root of the frontend and backend directory.
+
+First, create the file for the backend:
+
+`./backend/.env`
+```
+ADMIN_PASS=<password for the colyseus admin panel>
+```
+
+You can now run the backend by running the npm start script.
+```
+cd backend
+npm run start
+```
+
+The console output should contain `Listening on ws://0.0.0.0:2567`. This IP-address and port are required in the file for the frontend:
+
+`/frontend/.env`
+```
+REACT_APP_MASTER_BACKEND=0.0.0.0:2567
+REACT_APP_MASTER_BACKEND_USE_HTTPS=
+```
+Yes, the last line is complete the way it's written here. This disables Secured connections for local development.
+
+You can now start the frontend with the corresponding npm script:
+```
+cd backend
+npm run start
+```
+
+## Developing
+Now that both frontend and backend are up and running, you can start developing.
+
+Whenever you save a file, the code is hot-swapped, which means you don't need to restart anything, it happens by itself.
+
+
 # Screenshots
 
 ![](/screenshots/2.png)
