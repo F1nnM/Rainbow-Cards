@@ -54,7 +54,7 @@ Yes, the last line is complete the way it's written here. This disables Secured 
 
 You can now start the frontend with the corresponding npm script:
 ```
-cd backend
+cd frontend
 npm run start
 ```
 
