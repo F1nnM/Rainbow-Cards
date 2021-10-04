@@ -18,13 +18,13 @@ class MainMenu extends React.Component {
         break;
       case 1:
         this.joinPrivate()
-        me.props.history.push("/");
+        me.props.history.push("/game");
         break;
       case 2:
-        me.props.history.push("/");
+        me.props.history.push("/create");
         break;
       case 3:
-        me.props.history.push("/");
+        me.props.history.push("/game");
         break;
       default:
         break;
